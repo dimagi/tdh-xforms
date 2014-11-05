@@ -1,0 +1,1981 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:orx="http://openrosa.org/jr/xforms" xmlns="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:vellum="http://commcarehq.org/xforms/vellum">
+	<h:head>
+		<h:title>Infant Classification</h:title>
+		<model>
+			<instance>
+				<data xmlns:jrm="http://dev.commcarehq.org/jr/xforms" xmlns="http://openrosa.org/formdesigner/B70118AE-67BB-424E-8873-901C65ED748F" uiVersion="1" version="1" name="Infant Classification">
+					<authentication>
+						<selected_user />
+						<entered_pin />
+						<invalid_pin_message />
+					</authentication>
+					<vitals>
+						<height />
+						<weight />
+						<temp />
+						<muac />
+					</vitals>
+					<zscore_results>
+						<show_zscore_wfa />
+						<show_zscore_wfh />
+						<show_zscore_hfa />
+						<show_muac_status />
+						<warn_bad_height />
+					</zscore_results>
+					<vaccines>
+						<bcg />
+					</vaccines>
+					<inf_bac>
+						<inf_bac_grave />
+						<inf_bac_locale />
+						<inf_bac_non />
+						<inf_bac_qa />
+						<inf_bac_freq_resp />
+						<inf_bac_qc />
+						<inf_bac_qd />
+						<inf_bac_qe />
+						<inf_bac_qf />
+						<inf_bac_qg />
+						<inf_bac_qh />
+						<inf_bac_qi />
+						<inf_bac_qj />
+						<inf_bac_qk />
+						<inf_bac_ql />
+						<inf_bac_qm />
+					</inf_bac>
+					<diarrhee>
+						<diarrhee_non />
+						<deshy_severe />
+						<deshy_evident />
+						<deshy_non />
+						<diarrhee_persistante />
+						<diarrhee_sang />
+						<diarrhee_qa />
+						<diarrhee_qb />
+						<diarrhee_qc />
+						<diarrhee_qd />
+						<diarrhee_qe />
+					</diarrhee>
+					<alimentation>
+						<alimentation_high />
+						<alimentation_medium />
+						<alimentation_low />
+						<alimentation_qa />
+						<alimentation_qb />
+						<alimentation_qc />
+						<alimentation_qd />
+						<alimentation_qe />
+						<alimentation_qf />
+						<alimentation_qg />
+						<alimentation_qh />
+					</alimentation>
+					<vih>
+						<vih_symptomatique />
+						<vih_asymptomatique />
+						<vih_symp_possible />
+						<vih_probable />
+						<vih_non />
+						<vih_qa />
+						<vih_qb />
+						<vih_qc />
+						<vih_qd />
+						<vih_qe />
+						<vih_qf />
+						<vih_qg />
+						<vih_qh />
+						<vih_qi />
+						<vih_qj />
+						<vih_qk />
+						<vih_ql />
+					</vih>
+					<other_comments />
+					<debug>
+						<add_debug_dob />
+						<debug_input_dob />
+						<debug_input_sex />
+					</debug>
+					<infection_bac_grave />
+					<infection_bac_locale />
+					<signes_deshy_severe />
+					<signes_deshy_evident />
+					<incapable_nourir />
+					<signes_pb_alim />
+					<au_moins_deux_signes_vih />
+					<pas_signes_vih />
+					<seriousness_inf_bac />
+					<seriousness_diarrhee />
+					<seriousness_alimentation />
+					<seriousness_vih />
+					<classification_infection />
+					<classification_deshydratation />
+					<classification_diahree />
+					<classification_malnutrition />
+					<classification_vih />
+					<visit_date />
+					<visit_type />
+					<dob_loaded />
+					<sex_loaded />
+					<dob />
+					<sex />
+					<age_in_months />
+					<age_in_weeks />
+					<bad_height />
+					<L_wfa />
+					<M_wfa />
+					<S_wfa />
+					<sd3neg_wfa />
+					<sd2neg_wfa />
+					<mean_wfa />
+					<sd2pos_wfa />
+					<sd3pos_wfa />
+					<zscore_unrounded_wfa />
+					<zscore_wfa />
+					<zscore_grading_wfa />
+					<prev_zscore_wfa />
+					<zscore_wfa_change />
+					<zscore_wfa_change_status />
+					<centile_wfa />
+					<zscore_wfa_image_path />
+					<height_rounded />
+					<L_wfh />
+					<M_wfh />
+					<S_wfh />
+					<sd3neg_wfh />
+					<sd2neg_wfh />
+					<mean_wfh />
+					<sd2pos_wfh />
+					<sd3pos_wfh />
+					<zscore_unrounded_wfh />
+					<zscore_wfh />
+					<zscore_grading_wfh />
+					<prev_zscore_wfh />
+					<zscore_wfh_change />
+					<zscore_wfh_change_status />
+					<centile_wfh />
+					<zscore_wfh_image_path />
+					<L_hfa />
+					<M_hfa />
+					<S_hfa />
+					<sd3neg_hfa />
+					<sd2neg_hfa />
+					<mean_hfa />
+					<sd2pos_hfa />
+					<sd3pos_hfa />
+					<zscore_unrounded_hfa />
+					<zscore_hfa />
+					<zscore_grading_hfa />
+					<prev_zscore_hfa />
+					<zscore_hfa_change />
+					<zscore_hfa_change_status />
+					<centile_hfa />
+					<zscore_hfa_image_path />
+					<muac_grading />
+					<prev_muac />
+					<muac_change />
+					<muac_change_status />
+					<muac_image_path />
+					<selected_username />
+					<selected_user_pin />
+				</data>
+			</instance>
+			<instance id="wfa_0_5_zscores" src="jr://fixture/item-list:wfa_0_5_zscores"></instance>
+			<instance id="wfa_0_13_zscores" src="jr://fixture/item-list:wfa_0_13_zscores"></instance>
+			<instance id="wfl_0_2_zscores" src="jr://fixture/item-list:wfl_0_2_zscores"></instance>
+			<instance id="wfh_2_5_zscores" src="jr://fixture/item-list:wfh_2_5_zscores"></instance>
+			<instance id="lhfa_0_5_zscores" src="jr://fixture/item-list:lhfa_0_5_zscores"></instance>
+			<instance id="lhfa_0_13_zscores" src="jr://fixture/item-list:lhfa_0_13_zscores"></instance>
+			<instance id="casedb" src="jr://instance/casedb"></instance>
+			<bind nodeset="/data/authentication" />
+			<bind nodeset="/data/authentication/selected_user" required="true()" />
+			<bind nodeset="/data/authentication/entered_pin" type="xsd:string" relevant="/data/authentication/selected_user != ''" required="true()" />
+			<bind nodeset="/data/authentication/invalid_pin_message" constraint="1=2" jr:constraintMsg="jr:itext('authentication/invalid_pin_message-constraintMsg')" relevant="/data/authentication/entered_pin != '' and /data/authentication/entered_pin != /data/selected_user_pin" />
+			<bind nodeset="/data/vitals" />
+			<bind nodeset="/data/vitals/height" type="xsd:double" constraint=". &gt; 35 and . &lt; 140" jr:constraintMsg="jr:itext('vitals/height-constraintMsg')" required="true()" />
+			<bind nodeset="/data/vitals/weight" type="xsd:double" constraint=". &gt; 2 and . &lt; 40" jr:constraintMsg="jr:itext('vitals/weight-constraintMsg')" required="true()" />
+			<bind nodeset="/data/vitals/temp" type="xsd:double" constraint=". &gt; 35 and . &lt; 45" jr:constraintMsg="jr:itext('vitals/temp-constraintMsg')" required="true()" />
+			<bind nodeset="/data/vitals/muac" type="xsd:double" constraint=". &gt; 50 and . &lt; 250" jr:constraintMsg="jr:itext('vitals/muac-constraintMsg')" required="true()" />
+			<bind nodeset="/data/zscore_results" />
+			<bind nodeset="/data/zscore_results/show_zscore_wfa" relevant="/data/zscore_wfa != ''" />
+			<bind nodeset="/data/zscore_results/show_zscore_wfh" relevant="/data/zscore_wfh != ''" />
+			<bind nodeset="/data/zscore_results/show_zscore_hfa" relevant="/data/zscore_hfa != ''" />
+			<bind nodeset="/data/zscore_results/show_muac_status" relevant="/data/vitals/muac != ''" />
+			<bind nodeset="/data/zscore_results/warn_bad_height" relevant="/data/bad_height = 'yes'" />
+			<bind nodeset="/data/vaccines" />
+			<bind nodeset="/data/vaccines/bcg" required="true()" />
+			<bind nodeset="/data/inf_bac" />
+			<bind nodeset="/data/inf_bac/inf_bac_grave" relevant="/data/infection_bac_grave = 'yes' and /data/inf_bac/inf_bac_qm != ''" />
+			<bind nodeset="/data/inf_bac/inf_bac_locale" relevant="/data/infection_bac_locale = 'yes' and /data/inf_bac/inf_bac_qm != ''" />
+			<bind nodeset="/data/inf_bac/inf_bac_non" relevant="/data/infection_bac_grave != 'yes' and /data/infection_bac_locale != 'yes' and /data/inf_bac/inf_bac_qm != ''" />
+			<bind nodeset="/data/inf_bac/inf_bac_qa" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_freq_resp" type="xsd:int" constraint=". &gt;= 10 and .&lt;= 120" jr:constraintMsg="jr:itext('inf_bac/inf_bac_freq_resp-constraintMsg')" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qc" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qd" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qe" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qf" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qg" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qh" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qi" relevant="/data/inf_bac/inf_bac_qh = 'yes'" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qj" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qk" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_ql" required="true()" />
+			<bind nodeset="/data/inf_bac/inf_bac_qm" required="true()" />
+			<bind nodeset="/data/diarrhee" />
+			<bind nodeset="/data/diarrhee/diarrhee_non" relevant="/data/diarrhee/diarrhee_qa = 'no' and (/data/diarrhee/diarrhee_qe != '' or /data/diarrhee/diarrhee_qa = 'no')" />
+			<bind nodeset="/data/diarrhee/deshy_severe" relevant="/data/diarrhee/diarrhee_qa = 'yes' and /data/signes_deshy_severe = 'yes' and (/data/diarrhee/diarrhee_qe != '' or /data/diarrhee/diarrhee_qa = 'no')" />
+			<bind nodeset="/data/diarrhee/deshy_evident" relevant="/data/diarrhee/diarrhee_qa = 'yes' and /data/signes_deshy_severe != 'yes' and /data/signes_deshy_evident = 'yes' and (/data/diarrhee/diarrhee_qe != '' or /data/diarrhee/diarrhee_qa = 'no')" />
+			<bind nodeset="/data/diarrhee/deshy_non" relevant="/data/diarrhee/diarrhee_qa = 'yes' and /data/signes_deshy_severe != 'yes' and /data/signes_deshy_evident != 'yes' and (/data/diarrhee/diarrhee_qe != '' or /data/diarrhee/diarrhee_qa = 'no')" />
+			<bind nodeset="/data/diarrhee/diarrhee_persistante" relevant="/data/diarrhee/diarrhee_qa = 'yes' and /data/diarrhee/diarrhee_qb &gt;= 14 and (/data/diarrhee/diarrhee_qe != '' or /data/diarrhee/diarrhee_qa = 'no')" />
+			<bind nodeset="/data/diarrhee/diarrhee_sang" relevant="/data/diarrhee/diarrhee_qa = 'yes' and /data/diarrhee/diarrhee_qc = 'yes' and (/data/diarrhee/diarrhee_qe != '' or /data/diarrhee/diarrhee_qa = 'no')" />
+			<bind nodeset="/data/diarrhee/diarrhee_qa" required="true()" />
+			<bind nodeset="/data/diarrhee/diarrhee_qb" type="xsd:int" relevant="/data/diarrhee/diarrhee_qa = 'yes'" required="true()" />
+			<bind nodeset="/data/diarrhee/diarrhee_qc" relevant="/data/diarrhee/diarrhee_qa = 'yes'" required="true()" />
+			<bind nodeset="/data/diarrhee/diarrhee_qd" relevant="/data/diarrhee/diarrhee_qa = 'yes'" required="true()" />
+			<bind nodeset="/data/diarrhee/diarrhee_qe" relevant="/data/diarrhee/diarrhee_qa = 'yes'" required="true()" />
+			<bind nodeset="/data/alimentation" />
+			<bind nodeset="/data/alimentation/alimentation_high" relevant="/data/incapable_nourir = 'yes' and /data/alimentation/alimentation_qh != ''" />
+			<bind nodeset="/data/alimentation/alimentation_medium" relevant="/data/incapable_nourir != 'yes' and /data/signes_pb_alim = 'yes' and /data/alimentation/alimentation_qh != ''" />
+			<bind nodeset="/data/alimentation/alimentation_low" relevant="/data/incapable_nourir != 'yes' and /data/signes_pb_alim != 'yes' and /data/alimentation/alimentation_qh != ''" />
+			<bind nodeset="/data/alimentation/alimentation_qa" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qb" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qc" type="xsd:int" relevant="/data/alimentation/alimentation_qb = 'yes'" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qd" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qe" type="xsd:int" relevant="/data/alimentation/alimentation_qd = 'yes'" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qf" relevant="/data/alimentation/alimentation_qb = 'yes'" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qg" relevant="/data/alimentation/alimentation_qb = 'yes'" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qh" required="true()" />
+			<bind nodeset="/data/vih" />
+			<bind nodeset="/data/vih/vih_symptomatique" relevant="/data/vih/vih_qj = 'positive' and /data/vih/vih_ql = 'positive' and /data/au_moins_deux_signes_vih = 'yes' and /data/vih/vih_ql != ''" />
+			<bind nodeset="/data/vih/vih_asymptomatique" relevant="/data/vih/vih_ql = 'positive' and /data/vih/vih_qj = 'positive' and /data/pas_signes_vih = 'yes' and /data/vih/vih_ql != ''" />
+			<bind nodeset="/data/vih/vih_symp_possible" relevant="/data/vih/vih_qj = 'inconnue' and /data/au_moins_deux_signes_vih = 'yes' and /data/vih/vih_ql != ''" />
+			<bind nodeset="/data/vih/vih_probable" relevant="/data/vih/vih_qj = 'negative' and /data/au_moins_deux_signes_vih = 'yes' and /data/vih/vih_ql != 'negative' and /data/vih/vih_ql != ''" />
+			<bind nodeset="/data/vih/vih_non" relevant="/data/vih/vih_ql = 'negative' and /data/vih/vih_qj = 'negative' and /data/vih/vih_ql != ''" />
+			<bind nodeset="/data/vih/vih_qa" required="true()" />
+			<bind nodeset="/data/vih/vih_qb" required="true()" />
+			<bind nodeset="/data/vih/vih_qc" required="true()" />
+			<bind nodeset="/data/vih/vih_qd" required="true()" />
+			<bind nodeset="/data/vih/vih_qe" required="true()" />
+			<bind nodeset="/data/vih/vih_qf" required="true()" />
+			<bind nodeset="/data/vih/vih_qg" required="true()" />
+			<bind nodeset="/data/vih/vih_qh" required="true()" />
+			<bind nodeset="/data/vih/vih_qi" required="true()" />
+			<bind nodeset="/data/vih/vih_qj" required="true()" />
+			<bind nodeset="/data/vih/vih_qk" required="true()" />
+			<bind nodeset="/data/vih/vih_ql" required="true()" />
+			<bind nodeset="/data/other_comments" type="xsd:string" />
+			<bind nodeset="/data/debug" relevant="true()" />
+			<bind nodeset="/data/debug/add_debug_dob" />
+			<bind nodeset="/data/debug/debug_input_dob" type="xsd:date" relevant="/data/debug/add_debug_dob = 'yes'" />
+			<bind nodeset="/data/debug/debug_input_sex" />
+			<bind nodeset="/data/infection_bac_grave" calculate="if(/data/inf_bac/inf_bac_qa = 'yes' or (/data/inf_bac/inf_bac_freq_resp &gt;= 60) or /data/inf_bac/inf_bac_qc = 'yes' or /data/inf_bac/inf_bac_qd = 'yes' or /data/inf_bac/inf_bac_qe = 'yes' or /data/inf_bac/inf_bac_qf = 'yes' or /data/inf_bac/inf_bac_qg = 'yes' or (/data/inf_bac/inf_bac_qh = 'yes' and /data/inf_bac/inf_bac_qi = 'yes') or (/data/inf_bac/inf_bac_qj != 'normale') or (/data/inf_bac/inf_bac_qk = 'nombreuses_severes') or (/data/inf_bac/inf_bac_ql = 'lethargique_inconscient') or /data/inf_bac/inf_bac_qm = 'yes', 'yes', 'no')" />
+			<bind nodeset="/data/infection_bac_locale" calculate="if(/data/infection_bac_grave != 'yes' and (/data/inf_bac/inf_bac_qh = 'yes' or /data/inf_bac/inf_bac_qk = 'presentes'), 'yes', 'no')" />
+			<bind nodeset="/data/signes_deshy_severe" calculate="if((int(/data/inf_bac/inf_bac_ql = &quot;lethargique_inconscient&quot;) + int(/data/diarrhee/diarrhee_qd = 'yes') + int(/data/diarrhee/diarrhee_qe = &quot;tres_lentement&quot;)) &gt;= 2, 'yes', 'no')" />
+			<bind nodeset="/data/signes_deshy_evident" calculate="if((int(/data/inf_bac/inf_bac_ql = &quot;agite_irritable&quot;) + int(/data/diarrhee/diarrhee_qd = 'yes') + int(/data/diarrhee/diarrhee_qe = &quot;lentement&quot;)) &gt;= 2, 'yes', 'no')" />
+			<bind nodeset="/data/incapable_nourir" calculate="if(/data/alimentation/alimentation_qa = 'yes' or (/data/alimentation/alimentation_qb = 'yes' and ((/data/alimentation/alimentation_qf = 'pas_prise') or (/data/alimentation/alimentation_qg = 'pas_succion'))), 'yes', 'no')" />
+			<bind nodeset="/data/signes_pb_alim" calculate="if((/data/alimentation/alimentation_qb = 'yes' and ((/data/alimentation/alimentation_qf = 'mauvaise_prise') or (/data/alimentation/alimentation_qg = 'non_efficace') or (/data/alimentation/alimentation_qc &lt; 12))) or /data/alimentation/alimentation_qd = 'yes' or /data/alimentation/alimentation_qh = 'yes' or ((/data/vitals/weight &lt; 2.5) and (/data/vitals/weight &gt;= 1.5)), 'yes', 'no')" />
+			<bind nodeset="/data/au_moins_deux_signes_vih" calculate="if((int(/data/vih/vih_qa = 'yes') + int(/data/vih/vih_qb = 'yes') + int(/data/vih/vih_qc = 'yes') + int(/data/vih/vih_qd = 'yes') + int(/data/vih/vih_qe = 'yes') + int(/data/diarrhee/diarrhee_qa = 'yes' and /data/diarrhee/diarrhee_qb &gt;= 14) + int(/data/vih/vih_qf = 'yes') + int(/data/vih/vih_qg = 'yes') + int(/data/vih/vih_qh = 'yes') + int(/data/vitals/weight &lt; 1.5) + int(/data/vih/vih_qi = 'yes') + int(/data/vih/vih_qk = 'yes') + int(/data/alimentation/alimentation_qh = 'yes')) &gt;= 2, 'yes', 'no')" />
+			<bind nodeset="/data/pas_signes_vih" calculate="if(/data/vih/vih_qa != 'yes' and /data/vih/vih_qb != 'yes' and /data/vih/vih_qc != 'yes' and /data/vih/vih_qd != 'yes' and /data/vih/vih_qe != 'yes' and not(/data/diarrhee/diarrhee_qa = 'yes' and /data/diarrhee/diarrhee_qb &gt;= 14) and /data/vih/vih_qf != 'yes' and /data/vih/vih_qg != 'yes' and /data/vih/vih_qh != 'yes' and not(/data/vitals/weight &lt; 1.5) and /data/vih/vih_qi != 'yes' and /data/vih/vih_qk != 'yes' and /data/alimentation/alimentation_qh != 'yes', 'yes', 'no')" />
+			<bind nodeset="/data/seriousness_inf_bac" calculate="if(count(/data/inf_bac/inf_bac_grave) &gt; 0, 'high', if(count(/data/inf_bac/inf_bac_locale) &gt; 0, 'medium', if(count(/data/inf_bac/inf_bac_non) &gt; 0, 'low', '')))" />
+			<bind nodeset="/data/seriousness_diarrhee" calculate="if(count(/data/diarrhee/diarrhee_non) &gt; 0 or count(/data/diarrhee/deshy_non) &gt; 0, 'low', if(count(/data/diarrhee/deshy_evident) &gt; 0, 'medium', if(count(/data/diarrhee/deshy_severe) &gt; 0 or count(/data/diarrhee/diarrhee_persistante) &gt; 0 or count(/data/diarrhee/diarrhee_sang) &gt; 0, 'high', '')))" />
+			<bind nodeset="/data/seriousness_alimentation" calculate="if(count(/data/alimentation/alimentation_high) &gt; 0, 'high', if(count(/data/alimentation/alimentation_medium) &gt; 0, 'medium', if(count(/data/alimentation/alimentation_low) &gt; 0, 'low', '')))" />
+			<bind nodeset="/data/seriousness_vih" calculate="if(count(/data/vih/vih_symptomatique) &gt; 0 or count(/data/vih/vih_asymptomatique) &gt; 0 or count(/data/vih/vih_symp_possible) &gt; 0, 'medium', if(count(/data/vih/vih_probable) &gt; 0 or count(/data/vih/vih_non) &gt; 0, 'low', ''))" />
+			<bind nodeset="/data/classification_infection" calculate="if(count(/data/inf_bac/inf_bac_grave) &gt; 0, 'infection_grave', if(count(/data/inf_bac/inf_bac_locale) &gt; 0, 'infection_locale', if(count(/data/inf_bac/inf_bac_non) &gt; 0, 'pas_infection', '')))" />
+			<bind nodeset="/data/classification_deshydratation" calculate="if(count(/data/diarrhee/deshy_severe) &gt; 0, 'deshydratation_severe', if(count(/data/diarrhee/deshy_evident) &gt; 0, 'signe_deshydratation', if(count(/data/diarrhee/deshy_non) &gt; 0, 'pas_deshydratation', '')))" />
+			<bind nodeset="/data/classification_diahree" calculate="if(count(/data/diarrhee/diarrhee_persistante) &gt; 0, 'diahree_persistante_grave', if(count(/data/diarrhee/diarrhee_sang) &gt; 0, 'sang_scelles', ''))" />
+			<bind nodeset="/data/classification_malnutrition" calculate="if(count(/data/alimentation/alimentation_high) &gt; 0, 'incapable_nourrir', if(count(/data/alimentation/alimentation_medium) &gt; 0, 'probleme_alimentation', if(count(/data/alimentation/alimentation_low) &gt; 0, 'pas_pb_alimentation', '')))" />
+			<bind nodeset="/data/classification_vih" calculate="if(count(/data/vih/vih_symptomatique) &gt; 0, 'vih_symp_confirmee', if(count(/data/vih/vih_asymptomatique) &gt; 0, 'vih_asymp_confirmee', if(count(/data/vih/vih_non) &gt; 0, 'vih_pas_infection', if(count(/data/vih/vih_probable) &gt; 0, 'vih_peu_probable', if(count(/data/vih/vih_symp_possible) &gt; 0, 'vih_possible', '')))))" />
+			<bind nodeset="/data/visit_date" calculate="today()" />
+			<bind nodeset="/data/visit_type" calculate="'imci_infant'" />
+			<bind nodeset="/data/dob_loaded" />
+			<bind nodeset="/data/sex_loaded" />
+			<bind nodeset="/data/dob" calculate="if(/data/debug/add_debug_dob = 'yes', /data/debug/debug_input_dob, /data/dob_loaded)" />
+			<bind nodeset="/data/sex" calculate="if(/data/debug/debug_input_sex != '', /data/debug/debug_input_sex, /data/sex_loaded)" />
+			<bind nodeset="/data/age_in_months" calculate="int((today() - date(/data/dob)) div 30.4)" />
+			<bind nodeset="/data/age_in_weeks" calculate="int((today() - date(/data/dob)) div 7)" />
+			<bind nodeset="/data/bad_height" calculate="if((/data/age_in_months &lt; 24 and /data/height_rounded &lt; 45) or (/data/age_in_months &lt; 24 and /data/height_rounded &gt; 110) or (/data/age_in_months &gt;= 24 and /data/height_rounded &lt; 65) or (/data/age_in_months &gt;= 24 and /data/height_rounded &gt; 120), 'yes', 'no')" />
+			<bind nodeset="/data/L_wfa" calculate="if(/data/age_in_weeks = '', '', if(/data/age_in_weeks &lt;= 13, instance('wfa_0_13_zscores')/wfa_0_13_zscores_list/wfa_0_13_zscores[Week = /data/age_in_weeks][Gender = /data/sex]/L, instance('wfa_0_5_zscores')/wfa_0_5_zscores_list/wfa_0_5_zscores[Month = /data/age_in_months][Gender = /data/sex]/L))" />
+			<bind nodeset="/data/M_wfa" calculate="if(/data/age_in_weeks = '', '', if(/data/age_in_weeks &lt;= 13, instance('wfa_0_13_zscores')/wfa_0_13_zscores_list/wfa_0_13_zscores[Week = /data/age_in_weeks][Gender = /data/sex]/M, instance('wfa_0_5_zscores')/wfa_0_5_zscores_list/wfa_0_5_zscores[Month = /data/age_in_months][Gender = /data/sex]/M))" />
+			<bind nodeset="/data/S_wfa" calculate="if(/data/age_in_weeks = '', '', if(/data/age_in_weeks &lt;= 13, instance('wfa_0_13_zscores')/wfa_0_13_zscores_list/wfa_0_13_zscores[Week = /data/age_in_weeks][Gender = /data/sex]/S, instance('wfa_0_5_zscores')/wfa_0_5_zscores_list/wfa_0_5_zscores[Month = /data/age_in_months][Gender = /data/sex]/S))" />
+			<bind nodeset="/data/sd3neg_wfa" calculate="/data/M_wfa * pow(1 + /data/L_wfa * /data/S_wfa * -3, 1 div /data/L_wfa)" />
+			<bind nodeset="/data/sd2neg_wfa" calculate="/data/M_wfa * pow(1 + /data/L_wfa * /data/S_wfa * -2, 1 div /data/L_wfa)" />
+			<bind nodeset="/data/mean_wfa" calculate="/data/M_wfa * pow(1, 1 div /data/L_wfa)" />
+			<bind nodeset="/data/sd2pos_wfa" calculate="/data/M_wfa * pow(1 + /data/L_wfa * /data/S_wfa * 2, 1 div /data/L_wfa)" />
+			<bind nodeset="/data/sd3pos_wfa" calculate="/data/M_wfa * pow(1 + /data/L_wfa * /data/S_wfa * 3, 1 div /data/L_wfa)" />
+			<bind nodeset="/data/zscore_unrounded_wfa" calculate="if(/data/vitals/weight &lt; /data/sd3neg_wfa, -3 + (/data/vitals/weight - /data/sd3neg_wfa) div (/data/sd2neg_wfa - /data/sd3neg_wfa), if(/data/vitals/weight &gt; /data/sd3pos_wfa, 3 + (/data/vitals/weight - /data/sd3pos_wfa) div (/data/sd3pos_wfa - /data/sd2pos_wfa),  (pow((/data/vitals/weight div /data/M_wfa),/data/L_wfa)-1) div (/data/S_wfa * /data/L_wfa)))" />
+			<bind nodeset="/data/zscore_wfa" calculate="if(/data/zscore_unrounded_wfa &gt; 0, int((/data/zscore_unrounded_wfa + 0.005) * 100) div 100, int((/data/zscore_unrounded_wfa - 0.005) * 100) div 100)" />
+			<bind nodeset="/data/zscore_grading_wfa" calculate="if(/data/zscore_wfa = '', '', if(/data/zscore_wfa &lt; -3, 'red', if(/data/zscore_wfa &lt; -2, 'yellow', if(/data/zscore_wfa &lt; 2, 'green', 'green'))))" />
+			<bind nodeset="/data/prev_zscore_wfa" />
+			<bind nodeset="/data/zscore_wfa_change" calculate="int((/data/zscore_wfa - /data/prev_zscore_wfa) * 100) div 100" />
+			<bind nodeset="/data/zscore_wfa_change_status" calculate="if(/data/zscore_wfa_change &gt;= 0.1, 'increased', if(/data/zscore_wfa_change &lt;= -0.1, 'decreased', if(/data/zscore_wfa_change = '', 'no_prev', 'constant')))" />
+			<bind nodeset="/data/centile_wfa" calculate="int((/data/vitals/weight div /data/mean_wfa) * 100)" />
+			<bind nodeset="/data/zscore_wfa_image_path" relevant="/data/zscore_wfa != ''" calculate="concat('jr://file/commcare/image/data/', /data/zscore_grading_wfa, '_', /data/zscore_wfa_change_status, '.png')" />
+			<bind nodeset="/data/height_rounded" calculate="int((/data/vitals/height + .25)*2) div 2" />
+			<bind nodeset="/data/L_wfh" calculate="if(/data/age_in_months = '', '', if(/data/age_in_months &lt; 24, instance('wfl_0_2_zscores')/wfl_0_2_zscores_list/wfl_0_2_zscores[Length = /data/height_rounded][Gender = /data/sex]/L, instance('wfh_2_5_zscores')/wfh_2_5_zscores_list/wfh_2_5_zscores[Height = /data/height_rounded][Gender = /data/sex]/L))" />
+			<bind nodeset="/data/M_wfh" calculate="if(/data/age_in_months = '', '', if(/data/age_in_months &lt; 24, instance('wfl_0_2_zscores')/wfl_0_2_zscores_list/wfl_0_2_zscores[Length = /data/height_rounded][Gender = /data/sex]/M, instance('wfh_2_5_zscores')/wfh_2_5_zscores_list/wfh_2_5_zscores[Height = /data/height_rounded][Gender = /data/sex]/M))" />
+			<bind nodeset="/data/S_wfh" calculate="if(/data/age_in_months = '', '', if(/data/age_in_months &lt; 24, instance('wfl_0_2_zscores')/wfl_0_2_zscores_list/wfl_0_2_zscores[Length = /data/height_rounded][Gender = /data/sex]/S, instance('wfh_2_5_zscores')/wfh_2_5_zscores_list/wfh_2_5_zscores[Height = /data/height_rounded][Gender = /data/sex]/S))" />
+			<bind nodeset="/data/sd3neg_wfh" calculate="/data/M_wfh * pow(1 + /data/L_wfh * /data/S_wfh * -3, 1 div /data/L_wfh)" />
+			<bind nodeset="/data/sd2neg_wfh" calculate="/data/M_wfh * pow(1 + /data/L_wfh * /data/S_wfh * -2, 1 div /data/L_wfh)" />
+			<bind nodeset="/data/mean_wfh" calculate="/data/M_wfh * pow(1, 1 div /data/L_wfh)" />
+			<bind nodeset="/data/sd2pos_wfh" calculate="/data/M_wfh * pow(1 + /data/L_wfh * /data/S_wfh * 2, 1 div /data/L_wfh)" />
+			<bind nodeset="/data/sd3pos_wfh" calculate="/data/M_wfh * pow(1 + /data/L_wfh * /data/S_wfh * 3, 1 div /data/L_wfh)" />
+			<bind nodeset="/data/zscore_unrounded_wfh" calculate="if(/data/vitals/weight &lt; /data/sd3neg_wfh, -3 + (/data/vitals/weight - /data/sd3neg_wfh) div (/data/sd2neg_wfh - /data/sd3neg_wfh), if(/data/vitals/weight &gt; /data/sd3pos_wfh, 3 + (/data/vitals/weight - /data/sd3pos_wfh) div (/data/sd3pos_wfh - /data/sd2pos_wfh),  (pow((/data/vitals/weight div /data/M_wfh),/data/L_wfh)-1) div (/data/S_wfh * /data/L_wfh)))" />
+			<bind nodeset="/data/zscore_wfh" calculate="if(/data/zscore_unrounded_wfh &gt; 0, int((/data/zscore_unrounded_wfh + 0.005) * 100) div 100, int((/data/zscore_unrounded_wfh - 0.005) * 100) div 100)" />
+			<bind nodeset="/data/zscore_grading_wfh" calculate="if(/data/zscore_wfh = '', '', if(/data/zscore_wfh &lt; -3, 'red', if(/data/zscore_wfh &lt; -2, 'yellow', if(/data/zscore_wfh &lt; 2, 'green', 'green'))))" />
+			<bind nodeset="/data/prev_zscore_wfh" />
+			<bind nodeset="/data/zscore_wfh_change" calculate="int((/data/zscore_wfh - /data/prev_zscore_wfh) * 100) div 100" />
+			<bind nodeset="/data/zscore_wfh_change_status" calculate="if(/data/zscore_wfh_change &gt;= 0.1, 'increased', if(/data/zscore_wfh_change &lt;= -0.1, 'decreased', if(/data/zscore_wfh_change = '', 'no_prev', 'constant')))" />
+			<bind nodeset="/data/centile_wfh" calculate="int((/data/vitals/weight div /data/mean_wfh) * 100)" />
+			<bind nodeset="/data/zscore_wfh_image_path" relevant="/data/zscore_wfh != ''" calculate="concat('jr://file/commcare/image/data/', /data/zscore_grading_wfh, '_', /data/zscore_wfh_change_status, '.png')" />
+			<bind nodeset="/data/L_hfa" calculate="if(/data/age_in_weeks = '', '', if(/data/age_in_weeks &lt;= 13, instance('lhfa_0_13_zscores')/lhfa_0_13_zscores_list/lhfa_0_13_zscores[Week = /data/age_in_weeks][Gender = /data/sex]/L, instance('lhfa_0_5_zscores')/lhfa_0_5_zscores_list/lhfa_0_5_zscores[Month = /data/age_in_months][Gender = /data/sex]/L))" />
+			<bind nodeset="/data/M_hfa" calculate="if(/data/age_in_weeks = '', '', if(/data/age_in_weeks &lt;= 13, instance('lhfa_0_13_zscores')/lhfa_0_13_zscores_list/lhfa_0_13_zscores[Week = /data/age_in_weeks][Gender = /data/sex]/M, instance('lhfa_0_5_zscores')/lhfa_0_5_zscores_list/lhfa_0_5_zscores[Month = /data/age_in_months][Gender = /data/sex]/M))" />
+			<bind nodeset="/data/S_hfa" calculate="if(/data/age_in_weeks = '', '', if(/data/age_in_weeks &lt;= 13, instance('lhfa_0_13_zscores')/lhfa_0_13_zscores_list/lhfa_0_13_zscores[Week = /data/age_in_weeks][Gender = /data/sex]/S, instance('lhfa_0_5_zscores')/lhfa_0_5_zscores_list/lhfa_0_5_zscores[Month = /data/age_in_months][Gender = /data/sex]/S))" />
+			<bind nodeset="/data/sd3neg_hfa" calculate="/data/M_hfa * pow(1 + /data/L_hfa * /data/S_hfa * -3, 1 div /data/L_hfa)" />
+			<bind nodeset="/data/sd2neg_hfa" calculate="/data/M_hfa * pow(1 + /data/L_hfa * /data/S_hfa * -2, 1 div /data/L_hfa)" />
+			<bind nodeset="/data/mean_hfa" calculate="/data/M_hfa * pow(1, 1 div /data/L_hfa)" />
+			<bind nodeset="/data/sd2pos_hfa" calculate="/data/M_hfa * pow(1 + /data/L_hfa * /data/S_hfa * 2, 1 div /data/L_hfa)" />
+			<bind nodeset="/data/sd3pos_hfa" calculate="/data/M_hfa * pow(1 + /data/L_hfa * /data/S_hfa * 3, 1 div /data/L_hfa)" />
+			<bind nodeset="/data/zscore_unrounded_hfa" calculate="if(/data/vitals/height &lt; /data/sd3neg_hfa, -3 + (/data/vitals/height - /data/sd3neg_hfa) div (/data/sd2neg_hfa - /data/sd3neg_hfa), if(/data/vitals/height &gt; /data/sd3pos_hfa, 3 + (/data/vitals/height - /data/sd3pos_hfa) div (/data/sd3pos_hfa - /data/sd2pos_hfa),  (pow((/data/vitals/height div /data/M_hfa),/data/L_hfa)-1) div (/data/S_hfa * /data/L_hfa)))" />
+			<bind nodeset="/data/zscore_hfa" calculate="if(/data/zscore_unrounded_hfa &gt; 0, int((/data/zscore_unrounded_hfa + 0.005) * 100) div 100, int((/data/zscore_unrounded_hfa - 0.005) * 100) div 100)" />
+			<bind nodeset="/data/zscore_grading_hfa" calculate="if(/data/zscore_hfa = '', '', if(/data/zscore_hfa &lt; -3, 'red', if(/data/zscore_hfa &lt; -2, 'yellow', if(/data/zscore_hfa &lt; 2, 'green', 'green'))))" />
+			<bind nodeset="/data/prev_zscore_hfa" />
+			<bind nodeset="/data/zscore_hfa_change" calculate="int((/data/zscore_hfa - /data/prev_zscore_hfa) * 100) div 100" />
+			<bind nodeset="/data/zscore_hfa_change_status" calculate="if(/data/zscore_hfa_change &gt;= 0.1, 'increased', if(/data/zscore_hfa_change &lt;= -0.1, 'decreased', if(/data/zscore_hfa_change = '', 'no_prev', 'constant')))" />
+			<bind nodeset="/data/centile_hfa" calculate="int((/data/vitals/height div /data/mean_hfa) * 100)" />
+			<bind nodeset="/data/zscore_hfa_image_path" relevant="/data/zscore_hfa != ''" calculate="concat('jr://file/commcare/image/data/', /data/zscore_grading_hfa, '_', /data/zscore_hfa_change_status, '.png')" />
+			<bind nodeset="/data/muac_grading" calculate="if(/data/vitals/muac = '', '', if(/data/vitals/muac &lt; 115, 'red', if(/data/vitals/muac &lt; 125, 'yellow', if(/data/vitals/muac &gt;= 125, 'green', ''))))" />
+			<bind nodeset="/data/prev_muac" />
+			<bind nodeset="/data/muac_change" calculate="int((/data/vitals/muac - /data/prev_muac) * 100) div 100" />
+			<bind nodeset="/data/muac_change_status" calculate="if(/data/muac_change &gt;= 0.1, 'increased', if(/data/muac_change &lt;= -0.1, 'decreased', if(/data/muac_change = '', 'no_prev', 'constant')))" />
+			<bind nodeset="/data/muac_image_path" calculate="concat('jr://file/commcare/image/data/', /data/muac_grading, '_', /data/muac_change_status, '.png')" />
+			<bind nodeset="/data/selected_username" calculate="instance('casedb')/casedb/case[@case_type='tablet_user'][selected(/data/authentication/selected_user, @case_id)]/username" />
+			<bind nodeset="/data/selected_user_pin" calculate="instance('casedb')/casedb/case[@case_type='tablet_user'][selected(/data/authentication/selected_user, @case_id)]/pin" />
+			<itext>
+				<translation lang="en" default="">
+					<text id="authentication-label">
+						<value>Authentication</value>
+					</text>
+					<text id="authentication/selected_user-label">
+						<value>Please select your name from the list below. If you don't see your name, please exit this form and add yourself as a Tablet User first.</value>
+					</text>
+					<text id="authentication/entered_pin-label">
+						<value>Please enter the 4 digit pin number for the selected user:</value>
+					</text>
+					<text id="authentication/invalid_pin_message-label">
+						<value>The pin you have entered is incorrect! Please try again.</value>
+					</text>
+					<text id="authentication/invalid_pin_message-constraintMsg">
+						<value>The pin you have entered is incorrect! Please try again.</value>
+					</text>
+					<text id="vitals-label">
+						<value>Vital Signs</value>
+					</text>
+					<text id="height-label">
+						<value>Height (cm)</value>
+					</text>
+					<text id="vitals/height-constraintMsg">
+						<value>Height must be greater than 35 and less than 140 cm.</value>
+					</text>
+					<text id="weight-label">
+						<value>Weight (kg)</value>
+					</text>
+					<text id="vitals/weight-constraintMsg">
+						<value>Weight must be greater than 2 and less than 40 kg.</value>
+					</text>
+					<text id="temp-label">
+						<value>Temp. (°C)</value>
+					</text>
+					<text id="vitals/temp-constraintMsg">
+						<value>Temp must be greater than 35 and less than 45 °C.</value>
+					</text>
+					<text id="muac-label">
+						<value>Arm Span (mm)</value>
+					</text>
+					<text id="vitals/muac-constraintMsg">
+						<value>Arm Span must be greater than 50 and less than 250 mm</value>
+					</text>
+					<text id="debug-label">
+						<value>Debug</value>
+					</text>
+					<text id="debug/add_debug_dob-label">
+						<value>Add debug dob?</value>
+					</text>
+					<text id="debug/add_debug_dob-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="debug/add_debug_dob-no-label">
+						<value>No</value>
+					</text>
+					<text id="debug/debug_input_dob-label">
+						<value>Enter debug dob:</value>
+					</text>
+					<text id="debug/debug_input_sex-label">
+						<value>Enter debug sex</value>
+					</text>
+					<text id="debug/debu-item1-label">
+						<value>male</value>
+					</text>
+					<text id="debug/debu-item2-label">
+						<value>female</value>
+					</text>
+					<text id="zscore_results-label">
+						<value>ZScore Results</value>
+					</text>
+					<text id="warn_bad_height-label">
+						<value>Unable to display Weight/Height - child is out of height range</value>
+					</text>
+					<text id="zscore_results/show_zscore_wfa-label">
+						<value>Weight / Age 
+
+<output ref="/data/zscore_wfa"></output> / <output ref="/data/centile_wfa"></output>% <output ref="if(false() and /data/zscore_wfa_change != '', concat('(Zscore change: ',/data/zscore_wfa_change,')'), '')"></output></value>
+						<value form="image"><output ref="/data/zscore_wfa_image_path"></output></value>
+					</text>
+					<text id="zscore_results/show_zscore_wfh-label">
+						<value>Weight / Height
+						     
+<output ref="/data/zscore_wfh"></output> / <output ref="/data/centile_wfh"></output>% <output ref="if(false() and /data/zscore_wfh_change != '', concat('(Zscore change: ',/data/zscore_wfh_change,')'), '')"></output></value>
+						<value form="image"><output ref="/data/zscore_wfh_image_path"></output></value>
+					</text>
+					<text id="zscore_results/show_zscore_hfa-label">
+						<value>Height / Age 
+
+<output ref="/data/zscore_hfa"></output> / <output ref="/data/centile_hfa"></output>% <output ref="if(false() and /data/zscore_hfa_change != '', concat('(Zscore change: ',/data/zscore_hfa_change,')'), '')"></output></value>
+						<value form="image"><output ref="/data/zscore_hfa_image_path"></output></value>
+					</text>
+					<text id="zscore_results/show_muac_status-label">
+						<value>MUAC status <output ref="if(/data/muac_change != '', concat('(MUAC change in mm: ', /data/muac_change, ')'),'')"></output></value>
+						<value form="image"><output ref="/data/muac_image_path"></output></value>
+					</text>
+					<text id="vaccines-label">
+						<value>Vaccines</value>
+					</text>
+					<text id="bcg-label">
+						<value>BCG? </value>
+					</text>
+					<text id="bcg-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="bcg-no-label">
+						<value>No</value>
+					</text>
+					<text id="bcg-dont_know-label">
+						<value>Don't know</value>
+					</text>
+					<text id="inf_bac-label">
+						<value>Bacterial Infection</value>
+					</text>
+					<text id="inf_bac/inf_bac_grave-label">
+						<value>Possibility of serious bacterial infection </value>
+					</text>
+					<text id="inf_bac/inf_bac_locale-label">
+						<value>Local bacterial infection </value>
+					</text>
+					<text id="inf_bac/inf_bac_non-label">
+						<value>No bacterial infection </value>
+					</text>
+					<text id="inf_bac/inf_bac_qa-label">
+						<value>Request: The infant he had convulsions?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qa-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qa-no-label">
+						<value>No</value>
+					</text>
+					<text id="inf_bac/inf_bac_freq_resp-label">
+						<value>Count the respiratory rate</value>
+					</text>
+					<text id="inf_bac/inf_bac_freq_resp-constraintMsg">
+						<value>Must be between 10 and 120</value>
+					</text>
+					<text id="inf_bac/inf_bac_qc-label">
+						<value>Search grave indrawing</value>
+					</text>
+					<text id="inf_bac/inf_bac_qc-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qc-no-label">
+						<value>No</value>
+					</text>
+					<text id="inf_bac/inf_bac_qd-label">
+						<value>Search flaring nose</value>
+					</text>
+					<text id="inf_bac/inf_bac_qd-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qd-no-label">
+						<value>No</value>
+					</text>
+					<text id="inf_bac/inf_bac_qe-label">
+						<value>Listen if the baby makes a whimper</value>
+					</text>
+					<text id="inf_bac/inf_bac_qe-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qe-no-label">
+						<value>No</value>
+					</text>
+					<text id="inf_bac/inf_bac_qf-label">
+						<value>Palpate the fontanelle to feel if it is convex</value>
+					</text>
+					<text id="inf_bac/inf_bac_qf-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qf-no-label">
+						<value>No</value>
+					</text>
+					<text id="inf_bac/inf_bac_qg-label">
+						<value>Look if there is a discharge of pus from the ear</value>
+					</text>
+					<text id="inf_bac/inf_bac_qg-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qg-no-label">
+						<value>No</value>
+					</text>
+					<text id="inf_bac/inf_bac_qh-label">
+						<value>See if the umbilicus is red or draining pus</value>
+					</text>
+					<text id="inf_bac/inf_bac_qh-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qh-no-label">
+						<value>No</value>
+					</text>
+					<text id="inf_bac/inf_bac_qi-label">
+						<value>Redness does it extend to the skin?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qi-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qi-no-label">
+						<value>No</value>
+					</text>
+					<text id="inf_bac/inf_bac_qj-label">
+						<value>Measure temperature. The infant he or of fever (&gt; 37.5) or is it hypothermic (&lt;35.5 or cold to the touch)?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qj-normale-label">
+						<value>Normal</value>
+					</text>
+					<text id="inf_bac/inf_bac_qj-hypothermique-label">
+						<value>Hypothermic</value>
+					</text>
+					<text id="inf_bac/inf_bac_qj-fievre-label">
+						<value>Fever</value>
+					</text>
+					<text id="inf_bac/inf_bac_qk-label">
+						<value>Look for skin pustules. Are there many or severe?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qk-absentes-label">
+						<value>Absent</value>
+					</text>
+					<text id="inf_bac/inf_bac_qk-presentes-label">
+						<value>Present</value>
+					</text>
+					<text id="inf_bac/inf_bac_qk-nombreuses_severes-label">
+						<value>Many or Severe</value>
+					</text>
+					<text id="inf_bac/inf_bac_ql-label">
+						<value>The child is it normal, restless or irritable, lethargic or unconscious?</value>
+					</text>
+					<text id="inf_bac/inf_bac_ql-normal-label">
+						<value>Normal</value>
+					</text>
+					<text id="inf_bac/inf_bac_ql-agite_irritable-label">
+						<value>Agitated or Irritable</value>
+					</text>
+					<text id="inf_bac/inf_bac_ql-lethargique_inconscient-label">
+						<value>Lethargic or Unconscious</value>
+					</text>
+					<text id="inf_bac/inf_bac_qm-label">
+						<value>Watch the movements of the infant: Move there less than normal?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qm-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qm-no-label">
+						<value>No</value>
+					</text>
+					<text id="diarrhee-label">
+						<value>Diarrhea</value>
+					</text>
+					<text id="diarrhee/diarrhee_non-label">
+						<value>No diarrhea </value>
+					</text>
+					<text id="diarrhee/deshy_severe-label">
+						<value>Severe Dehydration </value>
+					</text>
+					<text id="diarrhee/deshy_evident-label">
+						<value>Obvious signs of dehydration </value>
+					</text>
+					<text id="diarrhee/deshy_non-label">
+						<value>No dehydration </value>
+					</text>
+					<text id="diarrhee/diarrhee_persistante-label">
+						<value>Severe persistent diarrhea </value>
+					</text>
+					<text id="diarrhee/diarrhee_sang-label">
+						<value>Blood in stool </value>
+					</text>
+					<text id="diarrhee/diarrhee_qa-label">
+						<value>The child he has diarrhea?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qa-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="diarrhee/diarrhee_qa-no-label">
+						<value>No</value>
+					</text>
+					<text id="diarrhee/diarrhee_qb-label">
+						<value>How many days?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qc-label">
+						<value>Y he has blood in the stool?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qc-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="diarrhee/diarrhee_qc-no-label">
+						<value>No</value>
+					</text>
+					<text id="diarrhee/diarrhee_qd-label">
+						<value>The child's eyes are they secured?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qd-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="diarrhee/diarrhee_qd-no-label">
+						<value>No</value>
+					</text>
+					<text id="diarrhee/diarrhee_qe-label">
+						<value>Pinch the skin of the abdomen. The skinfold is he back: Very slowly (longer than 2 seconds)? Or slowly?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qe-normalement-label">
+						<value>Normal</value>
+					</text>
+					<text id="diarrhee/diarrhee_qe-lentement-label">
+						<value>Slowly</value>
+					</text>
+					<text id="diarrhee/diarrhee_qe-tres_lentement-label">
+						<value>Very Slowly</value>
+					</text>
+					<text id="alimentation-label">
+						<value>Supply or underweight</value>
+					</text>
+					<text id="alimentation/alimentation_high-label">
+						<value>Unable to feed / possibility of serious bacterial infection </value>
+					</text>
+					<text id="alimentation/alimentation_medium-label">
+						<value>Feeding problems and / or low weight for age </value>
+					</text>
+					<text id="alimentation/alimentation_low-label">
+						<value>No low and / or no weight power problem </value>
+					</text>
+					<text id="alimentation/alimentation_qa-label">
+						<value>The infant he has difficulty feeding?</value>
+					</text>
+					<text id="alimentation/alimentation_qa-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="alimentation/alimentation_qa-no-label">
+						<value>No</value>
+					</text>
+					<text id="alimentation/alimentation_qb-label">
+						<value>The infant is breastfed it?</value>
+					</text>
+					<text id="alimentation/alimentation_qb-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="alimentation/alimentation_qb-no-label">
+						<value>No</value>
+					</text>
+					<text id="alimentation/alimentation_qc-label">
+						<value>If yes, how many times in 24 hours?</value>
+					</text>
+					<text id="alimentation/alimentation_qd-label">
+						<value>The infant receives it usually other foods or drinks?</value>
+					</text>
+					<text id="alimentation/alimentation_qd-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="alimentation/alimentation_qd-no-label">
+						<value>No</value>
+					</text>
+					<text id="alimentation/alimentation_qe-label">
+						<value>If yes, how often?</value>
+					</text>
+					<text id="alimentation/alimentation_qf-label">
+						<value>The infant can he take the breast?</value>
+					</text>
+					<text id="alimentation/alimentation_qf-pas_prise-label">
+						<value>No plug</value>
+					</text>
+					<text id="alimentation/alimentation_qf-mauvaise_prise-label">
+						<value>Taking bad</value>
+					</text>
+					<text id="alimentation/alimentation_qf-bonne_prise-label">
+						<value>Taking good </value>
+					</text>
+					<text id="alimentation/alimentation_qg-label">
+						<value>Is the infant suckling effectively (that is to say, by slow deep sucks with pauses)?</value>
+					</text>
+					<text id="alimentation/alimentation_qg-pas_succion-label">
+						<value>Not Sucking </value>
+					</text>
+					<text id="alimentation/alimentation_qg-non_efficace-label">
+						<value>Not Effective</value>
+					</text>
+					<text id="alimentation/alimentation_qg-efficace-label">
+						<value>Effective</value>
+					</text>
+					<text id="alimentation/alimentation_qh-label">
+						<value>Looking for mouth ulcers or white patches (thrush).</value>
+					</text>
+					<text id="alimentation/alimentation_qh-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="alimentation/alimentation_qh-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih-label">
+						<value>Search HIV infection</value>
+					</text>
+					<text id="vih/vih_symptomatique-label">
+						<value>Symptomatic HIV infection confirmed </value>
+					</text>
+					<text id="vih/vih_asymptomatique-label">
+						<value>Asymptomatic HIV infection confirmed </value>
+					</text>
+					<text id="vih/vih_symp_possible-label">
+						<value>Symptomatic HIV infection can </value>
+					</text>
+					<text id="vih/vih_probable-label">
+						<value>HIV infection little problable </value>
+					</text>
+					<text id="vih/vih_non-label">
+						<value>No HIV infection</value>
+					</text>
+					<text id="vih/vih_qa-label">
+						<value>Persistent generalized lymphadenopathy</value>
+					</text>
+					<text id="vih/vih_qa-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qa-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qb-label">
+						<value>Hepatomegaly</value>
+					</text>
+					<text id="vih/vih_qb-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qb-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qc-label">
+						<value>Splenomegaly</value>
+					</text>
+					<text id="vih/vih_qc-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qc-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qd-label">
+						<value>Chronic otitis media / recurrent</value>
+					</text>
+					<text id="vih/vih_qd-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qd-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qe-label">
+						<value>Mucocutaneous problems</value>
+					</text>
+					<text id="vih/vih_qe-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qe-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qf-label">
+						<value>Fever&gt; 1 month</value>
+					</text>
+					<text id="vih/vih_qf-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qf-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qg-label">
+						<value>Anemia</value>
+					</text>
+					<text id="vih/vih_qg-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qg-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qh-label">
+						<value>Recurrent severe pneumonia</value>
+					</text>
+					<text id="vih/vih_qh-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qh-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qi-label">
+						<value>Encephalopathy</value>
+					</text>
+					<text id="vih/vih_qi-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qi-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_qj-label">
+						<value>Mother serology</value>
+					</text>
+					<text id="vih/vih_qj-inconnue-label">
+						<value>Inconclusive</value>
+					</text>
+					<text id="vih/vih_qj-positive-label">
+						<value>Positive</value>
+					</text>
+					<text id="vih/vih_qj-negative-label">
+						<value>Negative</value>
+					</text>
+					<text id="vih/vih_qk-label">
+						<value>Oral thrush (excluding neonatal period)</value>
+					</text>
+					<text id="vih/vih_qk-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="vih/vih_qk-no-label">
+						<value>No</value>
+					</text>
+					<text id="vih/vih_ql-label">
+						<value>PCR Child</value>
+					</text>
+					<text id="vih/vih_ql-inconnue-label">
+						<value>Inconclusive</value>
+					</text>
+					<text id="vih/vih_ql-positive-label">
+						<value>Positive</value>
+					</text>
+					<text id="vih/vih_ql-negative-label">
+						<value>Negative</value>
+					</text>
+					<text id="other_comments-label">
+						<value>Any other symptoms or comments to enter?</value>
+					</text>
+				</translation>
+				<translation lang="fra">
+					<text id="authentication-label">
+						<value>Authentication</value>
+					</text>
+					<text id="authentication/selected_user-label">
+						<value>Veuillez choisir votre nom de la liste ci-dessous. Si vous ne voyez pas votre nom, veuillez sortir de ce formulaire et ajouter vous-même d'abord comme un utilisateur de la tablette.</value>
+					</text>
+					<text id="authentication/entered_pin-label">
+						<value>Veuillez entrer le code pin à 4 chiffres pour l'utilisateur choisi</value>
+					</text>
+					<text id="authentication/invalid_pin_message-label">
+						<value>Le code pin que vous avez entré n'est pas correct. Veuillez essayer encore</value>
+					</text>
+					<text id="authentication/invalid_pin_message-constraintMsg">
+						<value>Le code pin que vous avez entré n'est pas correct. Veuillez essayer encore</value>
+					</text>
+					<text id="vitals-label">
+						<value>Nouvelles mesures</value>
+					</text>
+					<text id="height-label">
+						<value>Taille (cm) </value>
+					</text>
+					<text id="vitals/height-constraintMsg">
+						<value>La taille doit être comprise entre 35 et 140 cm.</value>
+					</text>
+					<text id="weight-label">
+						<value>Poids (kg)</value>
+					</text>
+					<text id="vitals/weight-constraintMsg">
+						<value>Le poids doit être compris entre 2 et 40 kg.</value>
+					</text>
+					<text id="temp-label">
+						<value>Temp. (°C)</value>
+					</text>
+					<text id="vitals/temp-constraintMsg">
+						<value>La température doit être comprise entre 35 et 45 ° C.</value>
+					</text>
+					<text id="muac-label">
+						<value>Périm. Brac. (mm)</value>
+					</text>
+					<text id="vitals/muac-constraintMsg">
+						<value>Le PB doit être compris entre 50 et 250 mm.</value>
+					</text>
+					<text id="debug-label">
+						<value>Debug</value>
+					</text>
+					<text id="debug/add_debug_dob-label">
+						<value>Add debug dob?</value>
+					</text>
+					<text id="debug/add_debug_dob-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="debug/add_debug_dob-no-label">
+						<value>No</value>
+					</text>
+					<text id="debug/debug_input_dob-label">
+						<value>Enter debug dob:</value>
+					</text>
+					<text id="debug/debug_input_sex-label">
+						<value>Enter debug sex</value>
+					</text>
+					<text id="debug/debu-item1-label">
+						<value>male</value>
+					</text>
+					<text id="debug/debu-item2-label">
+						<value>female</value>
+					</text>
+					<text id="zscore_results-label">
+						<value>Résultats du Z-score</value>
+					</text>
+					<text id="warn_bad_height-label">
+						<value>Impossible d'afficher Poids / Taille - enfant est hors de portée en hauteur</value>
+					</text>
+					<text id="zscore_results/show_zscore_wfa-label">
+						<value>Poids / Âge 
+
+<output ref="/data/zscore_wfa"></output> / <output ref="/data/centile_wfa"></output>% <output ref="if(false() and /data/zscore_wfa_change != '', concat('(Zscore change: ',/data/zscore_wfa_change,')'), '')"></output></value>
+						<value form="image"><output ref="/data/zscore_wfa_image_path"></output></value>
+					</text>
+					<text id="zscore_results/show_zscore_wfh-label">
+						<value>Poids / Taille
+						     
+<output ref="/data/zscore_wfh"></output> / <output ref="/data/centile_wfh"></output>% <output ref="if(false() and /data/zscore_wfh_change != '', concat('(Zscore change: ',/data/zscore_wfh_change,')'), '')"></output></value>
+						<value form="image"><output ref="/data/zscore_wfh_image_path"></output></value>
+					</text>
+					<text id="zscore_results/show_zscore_hfa-label">
+						<value>Taille / Âge 
+
+<output ref="/data/zscore_hfa"></output> / <output ref="/data/centile_hfa"></output>% <output ref="if(false() and /data/zscore_hfa_change != '', concat('(Zscore change: ',/data/zscore_hfa_change,')'), '')"></output></value>
+						<value form="image"><output ref="/data/zscore_hfa_image_path"></output></value>
+					</text>
+					<text id="zscore_results/show_muac_status-label">
+						<value>PB statut <output ref="if(/data/muac_change != '', concat('(PB changement en mm: ', /data/muac_change, ')'),'')"></output></value>
+						<value form="image"><output ref="/data/muac_image_path"></output></value>
+					</text>
+					<text id="vaccines-label">
+						<value>Vaccins</value>
+					</text>
+					<text id="bcg-label">
+						<value>BCG? </value>
+					</text>
+					<text id="bcg-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="bcg-no-label">
+						<value>Non</value>
+					</text>
+					<text id="bcg-dont_know-label">
+						<value>Je ne sais pas</value>
+					</text>
+					<text id="inf_bac-label">
+						<value>Infection Bactérienne</value>
+					</text>
+					<text id="inf_bac/inf_bac_grave-label">
+						<value>Possibilité d'infection bactérienne grave</value>
+					</text>
+					<text id="inf_bac/inf_bac_locale-label">
+						<value>Infection bactérienne locale</value>
+					</text>
+					<text id="inf_bac/inf_bac_non-label">
+						<value>Pas d'infection bactérienne</value>
+					</text>
+					<text id="inf_bac/inf_bac_qa-label">
+						<value>Demander: Le nourrisson a-t-il eu des convulsions ?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qa-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qa-no-label">
+						<value>Non</value>
+					</text>
+					<text id="inf_bac/inf_bac_freq_resp-label">
+						<value>Compter la fréquence respiratoire</value>
+					</text>
+					<text id="inf_bac/inf_bac_freq_resp-constraintMsg">
+						<value>Doit être compris entre 10 et 120</value>
+					</text>
+					<text id="inf_bac/inf_bac_qc-label">
+						<value>Rechercher un tirage sous-costal grave</value>
+					</text>
+					<text id="inf_bac/inf_bac_qc-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qc-no-label">
+						<value>Non</value>
+					</text>
+					<text id="inf_bac/inf_bac_qd-label">
+						<value>Rechercher un battement des ailes du nez</value>
+					</text>
+					<text id="inf_bac/inf_bac_qd-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qd-no-label">
+						<value>Non</value>
+					</text>
+					<text id="inf_bac/inf_bac_qe-label">
+						<value>Ecouter si le nourrisson émet un geignement</value>
+					</text>
+					<text id="inf_bac/inf_bac_qe-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qe-no-label">
+						<value>Non</value>
+					</text>
+					<text id="inf_bac/inf_bac_qf-label">
+						<value>Palper la fontanelle pour sentir si elle est bombée</value>
+					</text>
+					<text id="inf_bac/inf_bac_qf-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qf-no-label">
+						<value>Non</value>
+					</text>
+					<text id="inf_bac/inf_bac_qg-label">
+						<value>Regarder s’il y a un écoulement de pus de l’oreille</value>
+					</text>
+					<text id="inf_bac/inf_bac_qg-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qg-no-label">
+						<value>Non</value>
+					</text>
+					<text id="inf_bac/inf_bac_qh-label">
+						<value>Regarder si l’ombilic est rouge ou suintant de pus</value>
+					</text>
+					<text id="inf_bac/inf_bac_qh-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qh-no-label">
+						<value>Non</value>
+					</text>
+					<text id="inf_bac/inf_bac_qi-label">
+						<value>La rougeur s'étend-elle à la peau ?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qi-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qi-no-label">
+						<value>Non</value>
+					</text>
+					<text id="inf_bac/inf_bac_qj-label">
+						<value>Mesurer la température. Le nourrisson a-t-il de la ou fièvre (&gt; 37.5) ou est-il hypothermique (&lt; 35.5 ou froid au toucher) ?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qj-normale-label">
+						<value>Normale</value>
+					</text>
+					<text id="inf_bac/inf_bac_qj-hypothermique-label">
+						<value>Hypothermique</value>
+					</text>
+					<text id="inf_bac/inf_bac_qj-fievre-label">
+						<value>Fièvre</value>
+					</text>
+					<text id="inf_bac/inf_bac_qk-label">
+						<value>Rechercher les pustules cutanées. Sont-elles nombreuses ou sévères?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qk-absentes-label">
+						<value>Absentes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qk-presentes-label">
+						<value>Présentes</value>
+					</text>
+					<text id="inf_bac/inf_bac_qk-nombreuses_severes-label">
+						<value>Plusieures ou sévères</value>
+					</text>
+					<text id="inf_bac/inf_bac_ql-label">
+						<value>L'enfant est-il normal, agité ou irritable, léthargique ou inconscient ?</value>
+					</text>
+					<text id="inf_bac/inf_bac_ql-normal-label">
+						<value>Normal</value>
+					</text>
+					<text id="inf_bac/inf_bac_ql-agite_irritable-label">
+						<value>Agité ou Irritable</value>
+					</text>
+					<text id="inf_bac/inf_bac_ql-lethargique_inconscient-label">
+						<value>Léthargique ou Inconscient</value>
+					</text>
+					<text id="inf_bac/inf_bac_qm-label">
+						<value>Regarder les mouvements du nourrisson : Bouge-t-il moins que la normale?</value>
+					</text>
+					<text id="inf_bac/inf_bac_qm-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="inf_bac/inf_bac_qm-no-label">
+						<value>Non</value>
+					</text>
+					<text id="diarrhee-label">
+						<value>Diarrhée</value>
+					</text>
+					<text id="diarrhee/diarrhee_non-label">
+						<value>Pas de diarrhée</value>
+					</text>
+					<text id="diarrhee/deshy_severe-label">
+						<value>Déshydratation sévère</value>
+					</text>
+					<text id="diarrhee/deshy_evident-label">
+						<value>Signes évidents de déshydratation</value>
+					</text>
+					<text id="diarrhee/deshy_non-label">
+						<value>Pas de déshydratation</value>
+					</text>
+					<text id="diarrhee/diarrhee_persistante-label">
+						<value>Diarrhée persistante grave</value>
+					</text>
+					<text id="diarrhee/diarrhee_sang-label">
+						<value>Sang dans les selles</value>
+					</text>
+					<text id="diarrhee/diarrhee_qa-label">
+						<value>L'enfant a-t-il la diarrhée ?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qa-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="diarrhee/diarrhee_qa-no-label">
+						<value>Non</value>
+					</text>
+					<text id="diarrhee/diarrhee_qb-label">
+						<value>Depuis combien de jours ?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qc-label">
+						<value>Y a-t-il du sang dans les selles?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qc-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="diarrhee/diarrhee_qc-no-label">
+						<value>Non</value>
+					</text>
+					<text id="diarrhee/diarrhee_qd-label">
+						<value>Les yeux de l'enfant sont-ils enfoncés ?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qd-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="diarrhee/diarrhee_qd-no-label">
+						<value>Non</value>
+					</text>
+					<text id="diarrhee/diarrhee_qe-label">
+						<value>Pincer la peau de l’abdomen. Le pli cutané s’efface-t-il: Très lentement (plus de 2 secondes)? Ou lentement?</value>
+					</text>
+					<text id="diarrhee/diarrhee_qe-normalement-label">
+						<value>Normalemente</value>
+					</text>
+					<text id="diarrhee/diarrhee_qe-lentement-label">
+						<value>Lentement</value>
+					</text>
+					<text id="diarrhee/diarrhee_qe-tres_lentement-label">
+						<value>Très lentement</value>
+					</text>
+					<text id="alimentation-label">
+						<value>Alimentation ou insuffisance pondérale</value>
+					</text>
+					<text id="alimentation/alimentation_high-label">
+						<value>Incapable de se nourrir / possibilité d’une infection bactérienne grave</value>
+					</text>
+					<text id="alimentation/alimentation_medium-label">
+						<value>Problème d’alimentation et/ou poids faible pour l’âge</value>
+					</text>
+					<text id="alimentation/alimentation_low-label">
+						<value>Pas de poids faible et/ou pas de problème d’alimentation</value>
+					</text>
+					<text id="alimentation/alimentation_qa-label">
+						<value>Le nourrisson a-t-il des difficultés à se nourrir ?</value>
+					</text>
+					<text id="alimentation/alimentation_qa-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="alimentation/alimentation_qa-no-label">
+						<value>Non</value>
+					</text>
+					<text id="alimentation/alimentation_qb-label">
+						<value>Le nourrisson est-il nourri au sein ?</value>
+					</text>
+					<text id="alimentation/alimentation_qb-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="alimentation/alimentation_qb-no-label">
+						<value>Non</value>
+					</text>
+					<text id="alimentation/alimentation_qc-label">
+						<value>Si oui, combien de fois en 24 heures ?</value>
+					</text>
+					<text id="alimentation/alimentation_qd-label">
+						<value>Le nourrisson reçoit-il d’habitude d’autres aliments ou d’autres boissons ?</value>
+					</text>
+					<text id="alimentation/alimentation_qd-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="alimentation/alimentation_qd-no-label">
+						<value>Non</value>
+					</text>
+					<text id="alimentation/alimentation_qe-label">
+						<value>Si oui, combien de fois ?</value>
+					</text>
+					<text id="alimentation/alimentation_qf-label">
+						<value>Le nourrisson peut-il bien prendre le sein?</value>
+					</text>
+					<text id="alimentation/alimentation_qf-pas_prise-label">
+						<value>Pas prise</value>
+					</text>
+					<text id="alimentation/alimentation_qf-mauvaise_prise-label">
+						<value>Mauvaise prise</value>
+					</text>
+					<text id="alimentation/alimentation_qf-bonne_prise-label">
+						<value>Bonne prise</value>
+					</text>
+					<text id="alimentation/alimentation_qg-label">
+						<value>Est-ce que le nourrisson tète efficacement (c’est-à-dire par succions profondes et lentes entrecoupées de pauses) ?</value>
+					</text>
+					<text id="alimentation/alimentation_qg-pas_succion-label">
+						<value>Pas succion</value>
+					</text>
+					<text id="alimentation/alimentation_qg-non_efficace-label">
+						<value> Non efficace</value>
+					</text>
+					<text id="alimentation/alimentation_qg-efficace-label">
+						<value>Efficace</value>
+					</text>
+					<text id="alimentation/alimentation_qh-label">
+						<value>Regarder la bouche pour détecter des ulcérations ou plaques blanches (muguet).</value>
+					</text>
+					<text id="alimentation/alimentation_qh-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="alimentation/alimentation_qh-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih-label">
+						<value>Recherche d'une infection VIH</value>
+					</text>
+					<text id="vih/vih_symptomatique-label">
+						<value>Infection VIH symptomatique confirmée</value>
+					</text>
+					<text id="vih/vih_asymptomatique-label">
+						<value>Infection VIH asymptomatique confirmée</value>
+					</text>
+					<text id="vih/vih_symp_possible-label">
+						<value>Infection VIH symptomatique possible</value>
+					</text>
+					<text id="vih/vih_probable-label">
+						<value>Infection VIH peu problable</value>
+					</text>
+					<text id="vih/vih_non-label">
+						<value>Pas d'infection VIH</value>
+					</text>
+					<text id="vih/vih_qa-label">
+						<value>Lymphadénopathie persistante généralisée</value>
+					</text>
+					<text id="vih/vih_qa-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qa-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qb-label">
+						<value>Hépatomégalie</value>
+					</text>
+					<text id="vih/vih_qb-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qb-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qc-label">
+						<value>Splénomégalie</value>
+					</text>
+					<text id="vih/vih_qc-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qc-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qd-label">
+						<value>Otite moyenne chronique / récurrente</value>
+					</text>
+					<text id="vih/vih_qd-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qd-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qe-label">
+						<value>Problèmes cutanéo-muqueux</value>
+					</text>
+					<text id="vih/vih_qe-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qe-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qf-label">
+						<value>Fièvre &gt; 1 mois</value>
+					</text>
+					<text id="vih/vih_qf-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qf-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qg-label">
+						<value>Anémie</value>
+					</text>
+					<text id="vih/vih_qg-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qg-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qh-label">
+						<value>Pneumonie grave récurrente</value>
+					</text>
+					<text id="vih/vih_qh-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qh-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qi-label">
+						<value>Encéphalopathie</value>
+					</text>
+					<text id="vih/vih_qi-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qi-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_qj-label">
+						<value>Sérologie mère</value>
+					</text>
+					<text id="vih/vih_qj-inconnue-label">
+						<value>Inconnue</value>
+					</text>
+					<text id="vih/vih_qj-positive-label">
+						<value>Positive</value>
+					</text>
+					<text id="vih/vih_qj-negative-label">
+						<value>Negative</value>
+					</text>
+					<text id="vih/vih_qk-label">
+						<value>Muguet buccal (hors période néonatale)</value>
+					</text>
+					<text id="vih/vih_qk-yes-label">
+						<value>Oui</value>
+					</text>
+					<text id="vih/vih_qk-no-label">
+						<value>Non</value>
+					</text>
+					<text id="vih/vih_ql-label">
+						<value>PCR Enfant</value>
+					</text>
+					<text id="vih/vih_ql-inconnue-label">
+						<value>Inconnue</value>
+					</text>
+					<text id="vih/vih_ql-positive-label">
+						<value>Positive</value>
+					</text>
+					<text id="vih/vih_ql-negative-label">
+						<value>Negative</value>
+					</text>
+					<text id="other_comments-label">
+						<value>D'autres symptômes ou des commentaires à entrer?</value>
+					</text>
+				</translation>
+			</itext>
+		</model>
+	</h:head>
+	<h:body>
+		<group ref="/data/authentication" appearance="field-list">
+			<label ref="jr:itext('authentication-label')" />
+			<select1 ref="/data/authentication/selected_user">
+				<label ref="jr:itext('authentication/selected_user-label')" />
+				<itemset nodeset="instance('casedb')/casedb/case[@case_type='tablet_user'][@status='open']">
+				  <label ref="username"></label>
+				  <value ref="@case_id"></value>
+			   </itemset>
+			</select1>
+			<secret ref="/data/authentication/entered_pin">
+				<label ref="jr:itext('authentication/entered_pin-label')" />
+			</secret>
+			<trigger ref="/data/authentication/invalid_pin_message" appearance="minimal">
+				<label ref="jr:itext('authentication/invalid_pin_message-label')" />
+			</trigger>
+		</group>
+		<group ref="/data/vitals" appearance="field-list">
+			<label ref="jr:itext('vitals-label')" />
+			<input ref="/data/vitals/height">
+				<label ref="jr:itext('height-label')" />
+			</input>
+			<input ref="/data/vitals/weight">
+				<label ref="jr:itext('weight-label')" />
+			</input>
+			<input ref="/data/vitals/temp">
+				<label ref="jr:itext('temp-label')" />
+			</input>
+			<input ref="/data/vitals/muac">
+				<label ref="jr:itext('muac-label')" />
+			</input>
+		</group>
+		<group ref="/data/debug" appearance="field-list">
+			<label ref="jr:itext('debug-label')" />
+			<select1 ref="/data/debug/add_debug_dob">
+				<label ref="jr:itext('debug/add_debug_dob-label')" />
+				<item>
+					<label ref="jr:itext('debug/add_debug_dob-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('debug/add_debug_dob-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<input ref="/data/debug/debug_input_dob">
+				<label ref="jr:itext('debug/debug_input_dob-label')" />
+			</input>
+			<select1 ref="/data/debug/debug_input_sex">
+				<label ref="jr:itext('debug/debug_input_sex-label')" />
+				<item>
+					<label ref="jr:itext('debug/debu-item1-label')" />
+					<value>male</value>
+				</item>
+				<item>
+					<label ref="jr:itext('debug/debu-item2-label')" />
+					<value>female</value>
+				</item>
+			</select1>
+		</group>
+		<group ref="/data/zscore_results" appearance="field-list">
+			<label ref="jr:itext('zscore_results-label')" />
+			<trigger ref="/data/zscore_results/warn_bad_height" appearance="minimal">
+				<label ref="jr:itext('warn_bad_height-label')" />
+			</trigger>
+			<trigger ref="/data/zscore_results/show_zscore_wfa" appearance="minimal">
+				<label ref="jr:itext('zscore_results/show_zscore_wfa-label')" />
+			</trigger>
+			<trigger ref="/data/zscore_results/show_zscore_wfh" appearance="minimal">
+				<label ref="jr:itext('zscore_results/show_zscore_wfh-label')" />
+			</trigger>
+			<trigger ref="/data/zscore_results/show_zscore_hfa" appearance="minimal">
+				<label ref="jr:itext('zscore_results/show_zscore_hfa-label')" />
+			</trigger>
+			<trigger ref="/data/zscore_results/show_muac_status" appearance="minimal">
+				<label ref="jr:itext('zscore_results/show_muac_status-label')" />
+			</trigger>
+		</group>
+		<group ref="/data/vaccines" appearance="field-list">
+			<label ref="jr:itext('vaccines-label')" />
+			<select1 ref="/data/vaccines/bcg">
+				<label ref="jr:itext('bcg-label')" />
+				<item>
+					<label ref="jr:itext('bcg-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('bcg-no-label')" />
+					<value>no</value>
+				</item>
+				<item>
+					<label ref="jr:itext('bcg-dont_know-label')" />
+					<value>dont_know</value>
+				</item>
+			</select1>
+		</group>
+		<group ref="/data/inf_bac" appearance="field-list">
+			<label ref="jr:itext('inf_bac-label')" />
+			<trigger ref="/data/inf_bac/inf_bac_grave">
+				<label ref="jr:itext('inf_bac/inf_bac_grave-label')" />
+			</trigger>
+			<trigger ref="/data/inf_bac/inf_bac_locale">
+				<label ref="jr:itext('inf_bac/inf_bac_locale-label')" />
+			</trigger>
+			<trigger ref="/data/inf_bac/inf_bac_non">
+				<label ref="jr:itext('inf_bac/inf_bac_non-label')" />
+			</trigger>
+			<select1 ref="/data/inf_bac/inf_bac_qa">
+				<label ref="jr:itext('inf_bac/inf_bac_qa-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qa-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qa-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<input ref="/data/inf_bac/inf_bac_freq_resp">
+				<label ref="jr:itext('inf_bac/inf_bac_freq_resp-label')" />
+			</input>
+			<select1 ref="/data/inf_bac/inf_bac_qc">
+				<label ref="jr:itext('inf_bac/inf_bac_qc-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qc-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qc-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qd">
+				<label ref="jr:itext('inf_bac/inf_bac_qd-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qd-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qd-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qe">
+				<label ref="jr:itext('inf_bac/inf_bac_qe-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qe-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qe-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qf">
+				<label ref="jr:itext('inf_bac/inf_bac_qf-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qf-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qf-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qg">
+				<label ref="jr:itext('inf_bac/inf_bac_qg-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qg-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qg-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qh">
+				<label ref="jr:itext('inf_bac/inf_bac_qh-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qh-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qh-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qi">
+				<label ref="jr:itext('inf_bac/inf_bac_qi-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qi-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qi-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qj">
+				<label ref="jr:itext('inf_bac/inf_bac_qj-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qj-normale-label')" />
+					<value>normale</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qj-hypothermique-label')" />
+					<value>hypothermique</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qj-fievre-label')" />
+					<value>fievre</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qk">
+				<label ref="jr:itext('inf_bac/inf_bac_qk-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qk-absentes-label')" />
+					<value>absentes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qk-presentes-label')" />
+					<value>presentes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qk-nombreuses_severes-label')" />
+					<value>nombreuses_severes</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_ql">
+				<label ref="jr:itext('inf_bac/inf_bac_ql-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_ql-normal-label')" />
+					<value>normal</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_ql-agite_irritable-label')" />
+					<value>agite_irritable</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_ql-lethargique_inconscient-label')" />
+					<value>lethargique_inconscient</value>
+				</item>
+			</select1>
+			<select1 ref="/data/inf_bac/inf_bac_qm">
+				<label ref="jr:itext('inf_bac/inf_bac_qm-label')" />
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qm-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('inf_bac/inf_bac_qm-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+		</group>
+		<group ref="/data/diarrhee" appearance="field-list">
+			<label ref="jr:itext('diarrhee-label')" />
+			<trigger ref="/data/diarrhee/diarrhee_non">
+				<label ref="jr:itext('diarrhee/diarrhee_non-label')" />
+			</trigger>
+			<trigger ref="/data/diarrhee/deshy_severe">
+				<label ref="jr:itext('diarrhee/deshy_severe-label')" />
+			</trigger>
+			<trigger ref="/data/diarrhee/deshy_evident">
+				<label ref="jr:itext('diarrhee/deshy_evident-label')" />
+			</trigger>
+			<trigger ref="/data/diarrhee/deshy_non">
+				<label ref="jr:itext('diarrhee/deshy_non-label')" />
+			</trigger>
+			<trigger ref="/data/diarrhee/diarrhee_persistante">
+				<label ref="jr:itext('diarrhee/diarrhee_persistante-label')" />
+			</trigger>
+			<trigger ref="/data/diarrhee/diarrhee_sang">
+				<label ref="jr:itext('diarrhee/diarrhee_sang-label')" />
+			</trigger>
+			<select1 ref="/data/diarrhee/diarrhee_qa">
+				<label ref="jr:itext('diarrhee/diarrhee_qa-label')" />
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qa-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qa-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<input ref="/data/diarrhee/diarrhee_qb">
+				<label ref="jr:itext('diarrhee/diarrhee_qb-label')" />
+			</input>
+			<select1 ref="/data/diarrhee/diarrhee_qc">
+				<label ref="jr:itext('diarrhee/diarrhee_qc-label')" />
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qc-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qc-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/diarrhee/diarrhee_qd">
+				<label ref="jr:itext('diarrhee/diarrhee_qd-label')" />
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qd-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qd-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/diarrhee/diarrhee_qe">
+				<label ref="jr:itext('diarrhee/diarrhee_qe-label')" />
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qe-normalement-label')" />
+					<value>normalement</value>
+				</item>
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qe-lentement-label')" />
+					<value>lentement</value>
+				</item>
+				<item>
+					<label ref="jr:itext('diarrhee/diarrhee_qe-tres_lentement-label')" />
+					<value>tres_lentement</value>
+				</item>
+			</select1>
+		</group>
+		<group ref="/data/alimentation" appearance="field-list">
+			<label ref="jr:itext('alimentation-label')" />
+			<trigger ref="/data/alimentation/alimentation_high">
+				<label ref="jr:itext('alimentation/alimentation_high-label')" />
+			</trigger>
+			<trigger ref="/data/alimentation/alimentation_medium">
+				<label ref="jr:itext('alimentation/alimentation_medium-label')" />
+			</trigger>
+			<trigger ref="/data/alimentation/alimentation_low">
+				<label ref="jr:itext('alimentation/alimentation_low-label')" />
+			</trigger>
+			<select1 ref="/data/alimentation/alimentation_qa">
+				<label ref="jr:itext('alimentation/alimentation_qa-label')" />
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qa-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qa-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/alimentation/alimentation_qb">
+				<label ref="jr:itext('alimentation/alimentation_qb-label')" />
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qb-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qb-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<input ref="/data/alimentation/alimentation_qc">
+				<label ref="jr:itext('alimentation/alimentation_qc-label')" />
+			</input>
+			<select1 ref="/data/alimentation/alimentation_qd">
+				<label ref="jr:itext('alimentation/alimentation_qd-label')" />
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qd-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qd-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<input ref="/data/alimentation/alimentation_qe">
+				<label ref="jr:itext('alimentation/alimentation_qe-label')" />
+			</input>
+			<select1 ref="/data/alimentation/alimentation_qf">
+				<label ref="jr:itext('alimentation/alimentation_qf-label')" />
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qf-pas_prise-label')" />
+					<value>pas_prise</value>
+				</item>
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qf-mauvaise_prise-label')" />
+					<value>mauvaise_prise</value>
+				</item>
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qf-bonne_prise-label')" />
+					<value>bonne_prise</value>
+				</item>
+			</select1>
+			<select1 ref="/data/alimentation/alimentation_qg">
+				<label ref="jr:itext('alimentation/alimentation_qg-label')" />
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qg-pas_succion-label')" />
+					<value>pas_succion</value>
+				</item>
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qg-non_efficace-label')" />
+					<value>non_efficace</value>
+				</item>
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qg-efficace-label')" />
+					<value>efficace</value>
+				</item>
+			</select1>
+			<select1 ref="/data/alimentation/alimentation_qh">
+				<label ref="jr:itext('alimentation/alimentation_qh-label')" />
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qh-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('alimentation/alimentation_qh-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+		</group>
+		<group ref="/data/vih" appearance="field-list">
+			<label ref="jr:itext('vih-label')" />
+			<trigger ref="/data/vih/vih_symptomatique">
+				<label ref="jr:itext('vih/vih_symptomatique-label')" />
+			</trigger>
+			<trigger ref="/data/vih/vih_asymptomatique">
+				<label ref="jr:itext('vih/vih_asymptomatique-label')" />
+			</trigger>
+			<trigger ref="/data/vih/vih_symp_possible">
+				<label ref="jr:itext('vih/vih_symp_possible-label')" />
+			</trigger>
+			<trigger ref="/data/vih/vih_probable">
+				<label ref="jr:itext('vih/vih_probable-label')" />
+			</trigger>
+			<trigger ref="/data/vih/vih_non">
+				<label ref="jr:itext('vih/vih_non-label')" />
+			</trigger>
+			<select1 ref="/data/vih/vih_qa">
+				<label ref="jr:itext('vih/vih_qa-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qa-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qa-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qb">
+				<label ref="jr:itext('vih/vih_qb-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qb-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qb-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qc">
+				<label ref="jr:itext('vih/vih_qc-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qc-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qc-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qd">
+				<label ref="jr:itext('vih/vih_qd-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qd-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qd-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qe">
+				<label ref="jr:itext('vih/vih_qe-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qe-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qe-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qf">
+				<label ref="jr:itext('vih/vih_qf-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qf-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qf-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qg">
+				<label ref="jr:itext('vih/vih_qg-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qg-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qg-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qh">
+				<label ref="jr:itext('vih/vih_qh-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qh-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qh-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qi">
+				<label ref="jr:itext('vih/vih_qi-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qi-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qi-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qj">
+				<label ref="jr:itext('vih/vih_qj-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qj-inconnue-label')" />
+					<value>inconnue</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qj-positive-label')" />
+					<value>positive</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qj-negative-label')" />
+					<value>negative</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_qk">
+				<label ref="jr:itext('vih/vih_qk-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_qk-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_qk-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
+			<select1 ref="/data/vih/vih_ql">
+				<label ref="jr:itext('vih/vih_ql-label')" />
+				<item>
+					<label ref="jr:itext('vih/vih_ql-inconnue-label')" />
+					<value>inconnue</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_ql-positive-label')" />
+					<value>positive</value>
+				</item>
+				<item>
+					<label ref="jr:itext('vih/vih_ql-negative-label')" />
+					<value>negative</value>
+				</item>
+			</select1>
+		</group>
+		<input ref="/data/other_comments">
+			<label ref="jr:itext('other_comments-label')" />
+		</input>
+	</h:body>
+</h:html>
