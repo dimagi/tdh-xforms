@@ -10,6 +10,7 @@
 						<entered_pin />
 						<invalid_pin_message />
 					</authentication>
+					<consultation_type />
 					<vitals>
 						<height />
 						<weight />
@@ -22,6 +23,7 @@
 						<show_zscore_hfa />
 						<show_muac_status />
 						<warn_bad_height />
+						<correct_extremes />
 					</zscore_results>
 					<vaccines>
 						<bcg />
@@ -190,17 +192,22 @@
 			<bind nodeset="/data/authentication/selected_user" required="true()" />
 			<bind nodeset="/data/authentication/entered_pin" type="xsd:string" relevant="/data/authentication/selected_user != ''" required="true()" />
 			<bind nodeset="/data/authentication/invalid_pin_message" constraint="1=2" jr:constraintMsg="jr:itext('authentication/invalid_pin_message-constraintMsg')" relevant="/data/authentication/entered_pin != '' and /data/authentication/entered_pin != /data/selected_user_pin" />
+
+			<bind nodeset="consultation_type" required="true()"/>
+
 			<bind nodeset="/data/vitals" />
-			<bind nodeset="/data/vitals/height" type="xsd:double" constraint=". &gt; 35 and . &lt; 140" jr:constraintMsg="jr:itext('vitals/height-constraintMsg')" required="true()" />
-			<bind nodeset="/data/vitals/weight" type="xsd:double" constraint=". &gt; 2 and . &lt; 40" jr:constraintMsg="jr:itext('vitals/weight-constraintMsg')" required="true()" />
-			<bind nodeset="/data/vitals/temp" type="xsd:double" constraint=". &gt; 35 and . &lt; 45" jr:constraintMsg="jr:itext('vitals/temp-constraintMsg')" required="true()" />
-			<bind nodeset="/data/vitals/muac" type="xsd:double" constraint=". &gt; 50 and . &lt; 250" jr:constraintMsg="jr:itext('vitals/muac-constraintMsg')" required="true()" />
+			<bind nodeset="/data/vitals/height" type="xsd:double" constraint=". &gt;= 35 and . &lt;= 140" jr:constraintMsg="jr:itext('vitals/height-constraintMsg')" required="true()" />
+			<bind nodeset="/data/vitals/weight" type="xsd:double" constraint=". &gt;= 2 and . &lt;= 40" jr:constraintMsg="jr:itext('vitals/weight-constraintMsg')" required="true()" />
+			<bind nodeset="/data/vitals/temp" type="xsd:double" constraint=". &gt;= 35 and . &lt;= 45" jr:constraintMsg="jr:itext('vitals/temp-constraintMsg')" required="true()" />
+			<bind nodeset="/data/vitals/muac" type="xsd:double" constraint=". &gt;= 50 and . &lt;= 250" jr:constraintMsg="jr:itext('vitals/muac-constraintMsg')" required="true()" />
 			<bind nodeset="/data/zscore_results" />
 			<bind nodeset="/data/zscore_results/show_zscore_wfa" relevant="/data/zscore_wfa != ''" />
 			<bind nodeset="/data/zscore_results/show_zscore_wfh" relevant="/data/zscore_wfh != ''" />
 			<bind nodeset="/data/zscore_results/show_zscore_hfa" relevant="/data/zscore_hfa != ''" />
 			<bind nodeset="/data/zscore_results/show_muac_status" relevant="/data/vitals/muac != ''" />
 			<bind nodeset="/data/zscore_results/warn_bad_height" relevant="/data/bad_height = 'yes'" />
+			<bind nodeset="/data/zscore_results/correct_extremes" required="true()" relevant="/data/zscore_unrounded_wfa &gt; 3 or /data/zscore_unrounded_wfa &lt; -3 or /data/zscore_unrounded_wfh &gt; 3 or /data/zscore_unrounded_wfh &lt; -3 or /data/zscore_unrounded_hfa &gt; 3 or /data/zscore_unrounded_hfa &lt; -3" />
+
 			<bind nodeset="/data/vaccines" />
 			<bind nodeset="/data/vaccines/bcg" required="true()" />
 			<bind nodeset="/data/inf_bac" />
@@ -366,6 +373,17 @@
 					<text id="authentication/invalid_pin_message-constraintMsg">
 						<value>The pin you have entered is incorrect! Please try again.</value>
 					</text>
+
+					<text id="consultation_type-label">
+						<value>Type of consultation</value>
+					</text>
+					<text id="consultation_type-new-label">
+						<value>New consultation</value>
+					</text>
+					<text id="consultation_type-followup-label">
+						<value>Followup consultation</value>
+					</text>
+
 					<text id="vitals-label">
 						<value>Vital Signs</value>
 					</text>
@@ -373,25 +391,25 @@
 						<value>Height (cm)</value>
 					</text>
 					<text id="vitals/height-constraintMsg">
-						<value>Height must be greater than 35 and less than 140 cm.</value>
+						<value>Height must be between 35 and 140 cm.</value>
 					</text>
 					<text id="weight-label">
 						<value>Weight (kg)</value>
 					</text>
 					<text id="vitals/weight-constraintMsg">
-						<value>Weight must be greater than 2 and less than 40 kg.</value>
+						<value>Weight must be between 2 and 40 kg.</value>
 					</text>
 					<text id="temp-label">
 						<value>Temp. (°C)</value>
 					</text>
 					<text id="vitals/temp-constraintMsg">
-						<value>Temp must be greater than 35 and less than 45 °C.</value>
+						<value>Temp must be between 35 and 45 °C.</value>
 					</text>
 					<text id="muac-label">
 						<value>Arm Span (mm)</value>
 					</text>
 					<text id="vitals/muac-constraintMsg">
-						<value>Arm Span must be greater than 50 and less than 250 mm</value>
+						<value>Arm Span must be between 50 and 250 mm</value>
 					</text>
 					<text id="debug-label">
 						<value>Debug</value>
@@ -445,6 +463,17 @@
 						<value>MUAC status <output ref="if(/data/muac_change != '', concat('(MUAC change in mm: ', /data/muac_change, ')'),'')"></output></value>
 						<value form="image"><output ref="/data/muac_image_path"></output></value>
 					</text>
+					<text id="zscore_results/correct_extremes-label">
+						<value>The indices have extreme values.
+Are the measurements correct?</value>
+					</text>
+					<text id="zscore_results/correct_extremes-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="zscore_results/correct_extremes-no-label">
+						<value>No</value>
+					</text>
+
 					<text id="vaccines-label">
 						<value>Vaccines</value>
 					</text>
@@ -888,6 +917,17 @@
 					<text id="authentication/invalid_pin_message-constraintMsg">
 						<value>Le code pin que vous avez entré n'est pas correct. Veuillez essayer encore</value>
 					</text>
+
+					<text id="consultation_type-label">
+						<value>Type de consultation</value>
+					</text>
+					<text id="consultation_type-new-label">
+						<value>Nouvelle consultation</value>
+					</text>
+					<text id="consultation_type-followup-label">
+						<value>Consultation de suivi</value>
+					</text>
+
 					<text id="vitals-label">
 						<value>Nouvelles mesures</value>
 					</text>
@@ -967,6 +1007,17 @@
 						<value>PB statut <output ref="if(/data/muac_change != '', concat('(PB changement en mm: ', /data/muac_change, ')'),'')"></output></value>
 						<value form="image"><output ref="/data/muac_image_path"></output></value>
 					</text>
+					<text id="zscore_results/correct_extremes-label">
+						<value>Les indices ont des valeurs extrêmes.
+Les mesures sont-elles correctes?</value>
+					</text>
+					<text id="zscore_results/correct_extremes-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="zscore_results/correct_extremes-no-label">
+						<value>No</value>
+					</text>
+
 					<text id="vaccines-label">
 						<value>Vaccins</value>
 					</text>
@@ -1414,6 +1465,19 @@
 				<label ref="jr:itext('authentication/invalid_pin_message-label')" />
 			</trigger>
 		</group>
+
+		<select1 ref="/data/consultation_type">
+			<label ref="jr:itext('consultation_type-label')" />
+			<item>
+				<label ref="jr:itext('consultation_type-new-label')" />
+				<value>new</value>
+			</item>
+			<item>
+				<label ref="jr:itext('consultation_type-followup-label')" />
+				<value>followup</value>
+			</item>
+		</select1>
+
 		<group ref="/data/vitals" appearance="field-list">
 			<label ref="jr:itext('vitals-label')" />
 			<input ref="/data/vitals/height">
@@ -1474,6 +1538,17 @@
 			<trigger ref="/data/zscore_results/show_muac_status" appearance="minimal">
 				<label ref="jr:itext('zscore_results/show_muac_status-label')" />
 			</trigger>
+			<select1 ref="/data/zscore_results/correct_extremes">
+				<label ref="jr:itext('zscore_results/correct_extremes-label')" />
+				<item>
+					<label ref="jr:itext('zscore_results/correct_extremes-yes-label')" />
+					<value>yes</value>
+				</item>
+				<item>
+					<label ref="jr:itext('zscore_results/correct_extremes-no-label')" />
+					<value>no</value>
+				</item>
+			</select1>
 		</group>
 		<group ref="/data/vaccines" appearance="field-list">
 			<label ref="jr:itext('vaccines-label')" />
