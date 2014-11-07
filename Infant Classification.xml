@@ -11,6 +11,11 @@
 						<invalid_pin_message />
 					</authentication>
 					<consultation_type />
+					<debug>
+						<add_debug_dob />
+						<debug_input_dob />
+						<debug_input_sex />
+					</debug>
 					<vitals>
 						<height />
 						<weight />
@@ -92,11 +97,6 @@
 						<vih_ql />
 					</vih>
 					<other_comments />
-					<debug>
-						<add_debug_dob />
-						<debug_input_dob />
-						<debug_input_sex />
-					</debug>
 					<infection_bac_grave />
 					<infection_bac_locale />
 					<signes_deshy_severe />
@@ -192,22 +192,23 @@
 			<bind nodeset="/data/authentication/selected_user" required="true()" />
 			<bind nodeset="/data/authentication/entered_pin" type="xsd:string" relevant="/data/authentication/selected_user != ''" required="true()" />
 			<bind nodeset="/data/authentication/invalid_pin_message" constraint="1=2" jr:constraintMsg="jr:itext('authentication/invalid_pin_message-constraintMsg')" relevant="/data/authentication/entered_pin != '' and /data/authentication/entered_pin != /data/selected_user_pin" />
-
-			<bind nodeset="consultation_type" required="true()"/>
-
+			<bind nodeset="/data/consultation_type" required="true()" />
+			<bind nodeset="/data/debug" relevant="true()" />
+			<bind nodeset="/data/debug/add_debug_dob" />
+			<bind nodeset="/data/debug/debug_input_dob" type="xsd:date" relevant="/data/debug/add_debug_dob = 'yes'" />
+			<bind nodeset="/data/debug/debug_input_sex" />
 			<bind nodeset="/data/vitals" />
 			<bind nodeset="/data/vitals/height" type="xsd:double" constraint=". &gt;= 35 and . &lt;= 140" jr:constraintMsg="jr:itext('vitals/height-constraintMsg')" required="true()" />
 			<bind nodeset="/data/vitals/weight" type="xsd:double" constraint=". &gt;= 2 and . &lt;= 40" jr:constraintMsg="jr:itext('vitals/weight-constraintMsg')" required="true()" />
 			<bind nodeset="/data/vitals/temp" type="xsd:double" constraint=". &gt;= 35 and . &lt;= 45" jr:constraintMsg="jr:itext('vitals/temp-constraintMsg')" required="true()" />
-			<bind nodeset="/data/vitals/muac" type="xsd:double" constraint=". &gt;= 50 and . &lt;= 250" jr:constraintMsg="jr:itext('vitals/muac-constraintMsg')" required="true()" />
+			<bind nodeset="/data/vitals/muac" type="xsd:double" constraint=". &gt;= 50 and . &lt;= 250" jr:constraintMsg="jr:itext('vitals/muac-constraintMsg')" relevant="today() - date(/data/dob) &gt;= 182 and today() - date(/data/dob) &lt; 1827" required="true()" />
 			<bind nodeset="/data/zscore_results" />
 			<bind nodeset="/data/zscore_results/show_zscore_wfa" relevant="/data/zscore_wfa != ''" />
 			<bind nodeset="/data/zscore_results/show_zscore_wfh" relevant="/data/zscore_wfh != ''" />
 			<bind nodeset="/data/zscore_results/show_zscore_hfa" relevant="/data/zscore_hfa != ''" />
 			<bind nodeset="/data/zscore_results/show_muac_status" relevant="/data/vitals/muac != ''" />
 			<bind nodeset="/data/zscore_results/warn_bad_height" relevant="/data/bad_height = 'yes'" />
-			<bind nodeset="/data/zscore_results/correct_extremes" required="true()" relevant="/data/zscore_unrounded_wfa &gt; 3 or /data/zscore_unrounded_wfa &lt; -3 or /data/zscore_unrounded_wfh &gt; 3 or /data/zscore_unrounded_wfh &lt; -3 or /data/zscore_unrounded_hfa &gt; 3 or /data/zscore_unrounded_hfa &lt; -3" />
-
+			<bind nodeset="/data/zscore_results/correct_extremes" relevant="/data/zscore_unrounded_wfa &gt; 3 or /data/zscore_unrounded_wfa &lt; -3 or /data/zscore_unrounded_wfh &gt; 3 or /data/zscore_unrounded_wfh &lt; -3 or /data/zscore_unrounded_hfa &gt; 3 or /data/zscore_unrounded_hfa &lt; -3" required="true()" />
 			<bind nodeset="/data/vaccines" />
 			<bind nodeset="/data/vaccines/bcg" required="true()" />
 			<bind nodeset="/data/inf_bac" />
@@ -270,10 +271,6 @@
 			<bind nodeset="/data/vih/vih_qk" required="true()" />
 			<bind nodeset="/data/vih/vih_ql" required="true()" />
 			<bind nodeset="/data/other_comments" type="xsd:string" />
-			<bind nodeset="/data/debug" relevant="true()" />
-			<bind nodeset="/data/debug/add_debug_dob" />
-			<bind nodeset="/data/debug/debug_input_dob" type="xsd:date" relevant="/data/debug/add_debug_dob = 'yes'" />
-			<bind nodeset="/data/debug/debug_input_sex" />
 			<bind nodeset="/data/infection_bac_grave" calculate="if(/data/inf_bac/inf_bac_qa = 'yes' or (/data/inf_bac/inf_bac_freq_resp &gt;= 60) or /data/inf_bac/inf_bac_qc = 'yes' or /data/inf_bac/inf_bac_qd = 'yes' or /data/inf_bac/inf_bac_qe = 'yes' or /data/inf_bac/inf_bac_qf = 'yes' or /data/inf_bac/inf_bac_qg = 'yes' or (/data/inf_bac/inf_bac_qh = 'yes' and /data/inf_bac/inf_bac_qi = 'yes') or (/data/inf_bac/inf_bac_qj != 'normale') or (/data/inf_bac/inf_bac_qk = 'nombreuses_severes') or (/data/inf_bac/inf_bac_ql = 'lethargique_inconscient') or /data/inf_bac/inf_bac_qm = 'yes', 'yes', 'no')" />
 			<bind nodeset="/data/infection_bac_locale" calculate="if(/data/infection_bac_grave != 'yes' and (/data/inf_bac/inf_bac_qh = 'yes' or /data/inf_bac/inf_bac_qk = 'presentes'), 'yes', 'no')" />
 			<bind nodeset="/data/signes_deshy_severe" calculate="if((int(/data/inf_bac/inf_bac_ql = &quot;lethargique_inconscient&quot;) + int(/data/diarrhee/diarrhee_qd = 'yes') + int(/data/diarrhee/diarrhee_qe = &quot;tres_lentement&quot;)) &gt;= 2, 'yes', 'no')" />
@@ -373,7 +370,6 @@
 					<text id="authentication/invalid_pin_message-constraintMsg">
 						<value>The pin you have entered is incorrect! Please try again.</value>
 					</text>
-
 					<text id="consultation_type-label">
 						<value>Type of consultation</value>
 					</text>
@@ -383,7 +379,30 @@
 					<text id="consultation_type-followup-label">
 						<value>Followup consultation</value>
 					</text>
-
+					<text id="debug-label">
+						<value>Debug</value>
+					</text>
+					<text id="debug/add_debug_dob-label">
+						<value>Add debug dob?</value>
+					</text>
+					<text id="debug/add_debug_dob-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="debug/add_debug_dob-no-label">
+						<value>No</value>
+					</text>
+					<text id="debug/debug_input_dob-label">
+						<value>Enter debug dob:</value>
+					</text>
+					<text id="debug/debug_input_sex-label">
+						<value>Enter debug sex</value>
+					</text>
+					<text id="debug/debu-item1-label">
+						<value>male</value>
+					</text>
+					<text id="debug/debu-item2-label">
+						<value>female</value>
+					</text>
 					<text id="vitals-label">
 						<value>Vital Signs</value>
 					</text>
@@ -410,30 +429,6 @@
 					</text>
 					<text id="vitals/muac-constraintMsg">
 						<value>Arm Span must be between 50 and 250 mm</value>
-					</text>
-					<text id="debug-label">
-						<value>Debug</value>
-					</text>
-					<text id="debug/add_debug_dob-label">
-						<value>Add debug dob?</value>
-					</text>
-					<text id="debug/add_debug_dob-yes-label">
-						<value>Yes</value>
-					</text>
-					<text id="debug/add_debug_dob-no-label">
-						<value>No</value>
-					</text>
-					<text id="debug/debug_input_dob-label">
-						<value>Enter debug dob:</value>
-					</text>
-					<text id="debug/debug_input_sex-label">
-						<value>Enter debug sex</value>
-					</text>
-					<text id="debug/debu-item1-label">
-						<value>male</value>
-					</text>
-					<text id="debug/debu-item2-label">
-						<value>female</value>
 					</text>
 					<text id="zscore_results-label">
 						<value>ZScore Results</value>
@@ -473,7 +468,6 @@ Are the measurements correct?</value>
 					<text id="zscore_results/correct_extremes-no-label">
 						<value>No</value>
 					</text>
-
 					<text id="vaccines-label">
 						<value>Vaccines</value>
 					</text>
@@ -917,7 +911,6 @@ Are the measurements correct?</value>
 					<text id="authentication/invalid_pin_message-constraintMsg">
 						<value>Le code pin que vous avez entré n'est pas correct. Veuillez essayer encore</value>
 					</text>
-
 					<text id="consultation_type-label">
 						<value>Type de consultation</value>
 					</text>
@@ -927,7 +920,30 @@ Are the measurements correct?</value>
 					<text id="consultation_type-followup-label">
 						<value>Consultation de suivi</value>
 					</text>
-
+					<text id="debug-label">
+						<value>Debug</value>
+					</text>
+					<text id="debug/add_debug_dob-label">
+						<value>Add debug dob?</value>
+					</text>
+					<text id="debug/add_debug_dob-yes-label">
+						<value>Yes</value>
+					</text>
+					<text id="debug/add_debug_dob-no-label">
+						<value>No</value>
+					</text>
+					<text id="debug/debug_input_dob-label">
+						<value>Enter debug dob:</value>
+					</text>
+					<text id="debug/debug_input_sex-label">
+						<value>Enter debug sex</value>
+					</text>
+					<text id="debug/debu-item1-label">
+						<value>male</value>
+					</text>
+					<text id="debug/debu-item2-label">
+						<value>female</value>
+					</text>
 					<text id="vitals-label">
 						<value>Nouvelles mesures</value>
 					</text>
@@ -954,30 +970,6 @@ Are the measurements correct?</value>
 					</text>
 					<text id="vitals/muac-constraintMsg">
 						<value>Le PB doit être compris entre 50 et 250 mm.</value>
-					</text>
-					<text id="debug-label">
-						<value>Debug</value>
-					</text>
-					<text id="debug/add_debug_dob-label">
-						<value>Add debug dob?</value>
-					</text>
-					<text id="debug/add_debug_dob-yes-label">
-						<value>Yes</value>
-					</text>
-					<text id="debug/add_debug_dob-no-label">
-						<value>No</value>
-					</text>
-					<text id="debug/debug_input_dob-label">
-						<value>Enter debug dob:</value>
-					</text>
-					<text id="debug/debug_input_sex-label">
-						<value>Enter debug sex</value>
-					</text>
-					<text id="debug/debu-item1-label">
-						<value>male</value>
-					</text>
-					<text id="debug/debu-item2-label">
-						<value>female</value>
 					</text>
 					<text id="zscore_results-label">
 						<value>Résultats du Z-score</value>
@@ -1017,7 +1009,6 @@ Les mesures sont-elles correctes?</value>
 					<text id="zscore_results/correct_extremes-no-label">
 						<value>No</value>
 					</text>
-
 					<text id="vaccines-label">
 						<value>Vaccins</value>
 					</text>
@@ -1465,7 +1456,6 @@ Les mesures sont-elles correctes?</value>
 				<label ref="jr:itext('authentication/invalid_pin_message-label')" />
 			</trigger>
 		</group>
-
 		<select1 ref="/data/consultation_type">
 			<label ref="jr:itext('consultation_type-label')" />
 			<item>
@@ -1477,22 +1467,6 @@ Les mesures sont-elles correctes?</value>
 				<value>followup</value>
 			</item>
 		</select1>
-
-		<group ref="/data/vitals" appearance="field-list">
-			<label ref="jr:itext('vitals-label')" />
-			<input ref="/data/vitals/height">
-				<label ref="jr:itext('height-label')" />
-			</input>
-			<input ref="/data/vitals/weight">
-				<label ref="jr:itext('weight-label')" />
-			</input>
-			<input ref="/data/vitals/temp">
-				<label ref="jr:itext('temp-label')" />
-			</input>
-			<input ref="/data/vitals/muac">
-				<label ref="jr:itext('muac-label')" />
-			</input>
-		</group>
 		<group ref="/data/debug" appearance="field-list">
 			<label ref="jr:itext('debug-label')" />
 			<select1 ref="/data/debug/add_debug_dob">
@@ -1520,6 +1494,21 @@ Les mesures sont-elles correctes?</value>
 					<value>female</value>
 				</item>
 			</select1>
+		</group>
+		<group ref="/data/vitals" appearance="field-list">
+			<label ref="jr:itext('vitals-label')" />
+			<input ref="/data/vitals/height">
+				<label ref="jr:itext('height-label')" />
+			</input>
+			<input ref="/data/vitals/weight">
+				<label ref="jr:itext('weight-label')" />
+			</input>
+			<input ref="/data/vitals/temp">
+				<label ref="jr:itext('temp-label')" />
+			</input>
+			<input ref="/data/vitals/muac">
+				<label ref="jr:itext('muac-label')" />
+			</input>
 		</group>
 		<group ref="/data/zscore_results" appearance="field-list">
 			<label ref="jr:itext('zscore_results-label')" />
