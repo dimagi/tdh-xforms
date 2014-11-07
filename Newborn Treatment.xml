@@ -1,0 +1,900 @@
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:orx="http://openrosa.org/jr/xforms" xmlns="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+	<h:head>
+		<h:title>Newborn Treatment</h:title>
+		<model>
+			<instance>
+				<data xmlns:jrm="http://dev.commcarehq.org/jr/xforms" xmlns="http://openrosa.org/formdesigner/1904f15bf570b2e0169690416432f6103621b155" uiVersion="1" version="1" name="Newborn Treatment"> 
+                    <child_age/>
+                    <child_weight/>
+			<debug>
+				<classification_vih_debug/>
+				<classification_malnutrition_debug/>
+				<classification_occular_debug/>
+				<classification_poids_debug/>
+				<classification_infection_debug/>
+				<child_age_debug/>
+				<child_weight_debug/>
+			</debug>
+            <select_treatments>
+            
+                <infection_grave/>
+            </select_treatments>
+            <select_meds>
+            
+                <antibio/>
+            </select_meds>
+            <treatments>
+            
+                <infection_grave>
+                    <infection_grave_title/>
+                    <infection_grave_treat_0 display="true"/>
+                    <infection_grave_treat_1 display="true"/>
+                    <infection_grave_treat_2 display="true"/>
+                    <infection_grave_treat_3/>
+                    <infection_grave_treat_4/>
+                    <infection_grave_treat_5/>
+                    <infection_grave_treat_6/>
+                </infection_grave>
+                <infection_grave_no_ref>
+                    <infection_grave_no_ref_title/>
+                    <infection_grave_no_ref_treat_0 display="true"/>
+                    <infection_grave_no_ref_treat_1 display="true"/>
+                    <infection_grave_no_ref_treat_2 display="true"/>
+                    <infection_grave_no_ref_treat_3/>
+                    <infection_grave_no_ref_treat_4/>
+                    <infection_grave_no_ref_treat_5 display="true"/>
+                    <infection_grave_no_ref_treat_6/>
+                    <infection_grave_no_ref_treat_7/>
+                </infection_grave_no_ref>
+                <infection_locale>
+                    <infection_locale_title/>
+					<show_antibio_3/>
+                    <infection_locale_treat_0 display="true"/>
+					<show_antibio_2/>
+                    <infection_locale_treat_1 display="true"/>
+                    <infection_locale_treat_2/>
+                    <infection_locale_treat_3/>
+                    <infection_locale_treat_4/>
+                    <infection_locale_treat_5/>
+                </infection_locale>
+                <hypothermie_moderee>
+                    <hypothermie_moderee_title/>
+                    <hypothermie_moderee_treat_0/>
+                    <hypothermie_moderee_treat_1/>
+                    <hypothermie_moderee_treat_2/>
+                    <hypothermie_moderee_treat_3/>
+                </hypothermie_moderee>
+                <infection_peu_probable>
+                    <infection_peu_probable_title/>
+                    <infection_peu_probable_treat_0/>
+                    <infection_peu_probable_treat_1/>
+                    <infection_peu_probable_treat_2/>
+                </infection_peu_probable>
+                <poids_tres_faible>
+                    <poids_tres_faible_title/>
+                    <poids_tres_faible_treat_0/>
+                    <poids_tres_faible_treat_1/>
+                    <poids_tres_faible_treat_2/>
+                </poids_tres_faible>
+                <faible_poids>
+                    <faible_poids_title/>
+                    <faible_poids_treat_0/>
+                    <faible_poids_treat_1/>
+                    <faible_poids_treat_2/>
+                    <faible_poids_treat_3/>
+                    <faible_poids_treat_4/>
+                </faible_poids>
+                <pas_de_faible_poids>
+                    <pas_de_faible_poids_title/>
+                    <pas_de_faible_poids_treat_0/>
+                    <pas_de_faible_poids_treat_1/>
+                    <pas_de_faible_poids_treat_2/>
+                </pas_de_faible_poids>
+                <conjonctivite>
+                    <conjonctivite_title/>
+                    <conjonctivite_treat_0/>
+                    <conjonctivite_treat_1/>
+                    <conjonctivite_treat_2/>
+                    <conjonctivite_treat_3/>
+                    <conjonctivite_treat_4/>
+                </conjonctivite>
+                <pas_infection_occulaire>
+                    <pas_infection_occulaire_title/>
+                    <pas_infection_occulaire_treat_0/>
+                    <pas_infection_occulaire_treat_1/>
+                    <pas_infection_occulaire_treat_2/>
+                </pas_infection_occulaire>
+                <vih_probable>
+                    <vih_probable_title/>
+                    <vih_probable_treat_0/>
+                    <vih_probable_treat_1/>
+                    <vih_probable_treat_2/>
+                    <vih_probable_treat_3/>
+                    <vih_probable_treat_4/>
+                </vih_probable>
+                <vih_possible>
+                    <vih_possible_title/>
+                    <vih_possible_treat_0/>
+                    <vih_possible_treat_1/>
+                    <vih_possible_treat_2/>
+                    <vih_possible_treat_3/>
+                    <vih_possible_treat_4/>
+                </vih_possible>
+                <vih_peu_probable>
+                    <vih_peu_probable_title/>
+                    <vih_peu_probable_treat_0/>
+                    <vih_peu_probable_treat_1/>
+                    <vih_peu_probable_treat_2/>
+                </vih_peu_probable>
+                <maladie_grave>
+                    <maladie_grave_title/>
+                    <maladie_grave_treat_0 display="true"/>
+                    <maladie_grave_treat_1 display="true"/>
+                    <maladie_grave_treat_2/>
+                    <maladie_grave_treat_3/>
+                </maladie_grave>
+                <probleme_alimentation>
+                    <probleme_alimentation_title/>
+                    <probleme_alimentation_treat_0/>
+                    <probleme_alimentation_treat_1/>
+                    <probleme_alimentation_treat_2/>
+                    <probleme_alimentation_treat_3/>
+                    <probleme_alimentation_treat_4/>
+                    <probleme_alimentation_treat_5/>
+                    <probleme_alimentation_treat_6/>
+                    <probleme_alimentation_treat_7/>
+                    <probleme_alimentation_treat_8/>
+                    <probleme_alimentation_treat_9/>
+                    <probleme_alimentation_treat_10/>
+                    <probleme_alimentation_treat_11/>
+                    <probleme_alimentation_treat_12/>
+                    <probleme_alimentation_treat_13/>
+                    <probleme_alimentation_treat_14/>
+                    <probleme_alimentation_treat_15/>
+                    <probleme_alimentation_treat_16/>
+                    <probleme_alimentation_treat_17/>
+                </probleme_alimentation>
+                <pas_de_probleme_alimentation>
+                    <pas_de_probleme_alimentation_title/>
+                    <pas_de_probleme_alimentation_treat_0/>
+                    <pas_de_probleme_alimentation_treat_1/>
+                    <pas_de_probleme_alimentation_treat_2/>
+                </pas_de_probleme_alimentation>
+            </treatments>
+            <other_treatments/>
+            <classification_vih_loaded/>
+            <classification_malnutrition_loaded/>
+            <classification_occular_loaded/>
+            <classification_poids_loaded/>
+            <classification_infection_loaded/>
+			<child_age_loaded/>
+			<child_weight_loaded/>
+			<classification_vih/>
+            <classification_malnutrition/>
+            <classification_occular/>
+            <classification_poids/>
+            <classification_infection/>
+			<antibio_valid_meds/>
+			<child_case_id/>
+    
+				</data></instance>
+            <instance id="medications" src="jr://instance/fixture/item-list:medications"/>
+				
+				<setvalue event="xforms-ready" ref="/data/child_case_id" value="instance('commcaresession')/session/data/case_id_case_visit"/>
+				
+				<bind nodeset="/data/debug" relevant="true()"/>
+				<bind nodeset="/data/classification_occular" calculate="if(not(/data/debug/classification_occular_debug = ''), /data/debug/classification_occular_debug, /data/classification_occular_loaded)" />
+				<bind nodeset="/data/classification_vih" calculate="if(not(/data/debug/classification_vih_debug = ''), /data/debug/classification_vih_debug, /data/classification_vih_loaded)" />
+				<bind nodeset="/data/classification_poids" calculate="if(not(/data/debug/classification_poids_debug = ''), /data/debug/classification_poids_debug, /data/classification_poids_loaded)" />
+				<bind nodeset="/data/classification_malnutrition" calculate="if(not(/data/debug/classification_malnutrition_debug = ''), /data/debug/classification_malnutrition_debug, /data/classification_malnutrition_loaded)" />
+				<bind nodeset="/data/classification_infection" calculate="if(not(/data/debug/classification_infection_debug = ''), /data/debug/classification_infection_debug, /data/classification_infection_loaded)" />
+				<bind nodeset="/data/child_age" calculate="if(not(/data/debug/child_age_debug = ''), /data/debug/child_age_debug, /data/child_age_loaded)" type="xsd:double" constraint=". &gt; 0 and . &lt; 150"/>
+				<bind nodeset="/data/child_weight" calculate="if(not(/data/debug/child_weight_debug = ''), /data/debug/child_weight_debug, /data/child_weight_loaded)" type="xsd:double" constraint=". &gt; 0 and . &lt; 150" />
+				
+                <bind nodeset="/data/select_treatments/infection_grave" relevant="/data/classification_infection = 'infection_grave'" required="true()"/>
+            
+                <bind nodeset="/data/antibio_valid_meds" calculate="concat(if(count(/data/treatments/infection_locale/infection_locale_treat_0) &gt; 0, 'antibio:3:infection_locale', ''), ' ',if(count(/data/treatments/infection_locale/infection_locale_treat_1) &gt; 0, 'antibio:2:infection_locale', ''), ' ')"/>
+                <bind nodeset="/data/select_meds/antibio" relevant="count(instance('medications')/medications_list/medications[selected(/data/antibio_valid_meds, @key)][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0" required="true()"/>
+            
+                <bind nodeset="/data/treatments/infection_grave" relevant="/data/classification_infection = 'infection_grave'  and /data/select_treatments/infection_grave = 'infection_grave'"/>
+                <bind nodeset="/data/treatments/infection_grave/infection_grave_treat_0" relevant="count(instance('medications')/medications_list/medications[@key = 'm12:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/infection_grave/infection_grave_treat_1" relevant="count(instance('medications')/medications_list/medications[@key = 'm13:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/infection_grave/infection_grave_treat_2" relevant="count(instance('medications')/medications_list/medications[@key = 'm11:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/infection_grave_no_ref" relevant="/data/classification_infection = 'infection_grave'  and /data/select_treatments/infection_grave = 'infection_grave_no_ref'"/>
+                <bind nodeset="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_0" relevant="count(instance('medications')/medications_list/medications[@key = 'm12_1:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_1" relevant="count(instance('medications')/medications_list/medications[@key = 'm13_2:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_2" relevant="count(instance('medications')/medications_list/medications[@key = 'm11:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_5" relevant="count(instance('medications')/medications_list/medications[@key = 'm11:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/infection_locale" relevant="/data/classification_infection = 'infection_locale' "/>
+				<bind nodeset="/data/treatments/infection_locale/show_antibio_3" relevant="/data/select_meds/antibio = 'antibio:3:infection_locale'" />
+                <bind nodeset="/data/treatments/infection_locale/infection_locale_treat_0" relevant="count(instance('medications')/medications_list/medications[@key = 'antibio:3:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+				<bind nodeset="/data/treatments/infection_locale/show_antibio_2" relevant="/data/select_meds/antibio = 'antibio:2:infection_locale'" />
+                <bind nodeset="/data/treatments/infection_locale/infection_locale_treat_1" relevant="count(instance('medications')/medications_list/medications[@key = 'antibio:2:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/hypothermie_moderee" relevant="/data/classification_infection = 'hypothermie_moderee' "/>
+                <bind nodeset="/data/treatments/infection_peu_probable" relevant="/data/classification_infection = 'infection_peu_probable' "/>
+                <bind nodeset="/data/treatments/poids_tres_faible" relevant="/data/classification_poids = 'poids_tres_faible' "/>
+                <bind nodeset="/data/treatments/faible_poids" relevant="/data/classification_poids = 'faible_poids' "/>
+                <bind nodeset="/data/treatments/pas_de_faible_poids" relevant="/data/classification_poids = 'pas_de_faible_poids' "/>
+                <bind nodeset="/data/treatments/conjonctivite" relevant="/data/classification_occular = 'conjonctivite' "/>
+                <bind nodeset="/data/treatments/pas_infection_occulaire" relevant="/data/classification_occular = 'pas_infection_occulaire' "/>
+                <bind nodeset="/data/treatments/vih_probable" relevant="/data/classification_vih = 'vih_probable' "/>
+                <bind nodeset="/data/treatments/vih_possible" relevant="/data/classification_vih = 'vih_possible' "/>
+                <bind nodeset="/data/treatments/vih_peu_probable" relevant="/data/classification_vih = 'vih_peu_probable' "/>
+                <bind nodeset="/data/treatments/maladie_grave" relevant="/data/classification_malnutrition = 'maladie_grave' "/>
+                <bind nodeset="/data/treatments/maladie_grave/maladie_grave_treat_0" relevant="count(instance('medications')/medications_list/medications[@key = 'm12:maladie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/maladie_grave/maladie_grave_treat_1" relevant="count(instance('medications')/medications_list/medications[@key = 'm13:maladie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]) &gt; 0"/>
+                <bind nodeset="/data/treatments/probleme_alimentation" relevant="/data/classification_malnutrition = 'probleme_alimentation' "/>
+                <bind nodeset="/data/treatments/pas_de_probleme_alimentation" relevant="/data/classification_malnutrition = 'pas_de_probleme_alimentation' "/>
+				<bind nodeset="/data/other_treatments" type="xsd:string" />
+			<itext>
+				<translation lang="en">
+					<text id="infection_grave_treat_2-label"><value>&#10148; Si le nouveau-né convulse donner Phénobartital pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en prise unique </value><value form="help">help</value><value form="help-text">*Pour dégager les voies respiratoires*
+&#10148; Placer l’enfant sur le côté
+&#10148; Ne rien mettre dans sa bouche
+&#10148; Si les lèvres et la langue sont bleuâtres, ouvrir la bouche pour s’assurer que les voies respiratoires sont libres
+&#10148; Si besoin, aspirer les sécrétions de la gorge avec une sonde introduite par la narine</value></text>
+					<text id="infection_grave_treat_4-label"><value>&#10148; Prévenir l'hypoglycémie</value><value form="help">help</value><value form="help-text">Si l’enfant est capable de téter :
+&#9644;&#9644;&#9644;&#8226; Demander à la mère d’allaiter l’enfant.
+
+Si l’enfant est incapable de téter mais est capable d’avaler :
+&#9644;&#9644;&#9644;&#8226; Donner du lait exprimé ou un substitut de lait maternel
+
+Si l’enfant est incapable d’avaler
+&#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
+&#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
+					<text id="infection_grave_treat_5-label"><value>&#10148; Expliquer à la mère comment garder le nouveau-né au chaud pendant l'évacuation  et </value><value form="help">help</value><value form="help-text">*Comment réchauffer le nouveau-né par le contact peau à peau :*
+&#10148; Retirer à l’enfant ses vêtements froids
+&#10148; Le mettre sur la poitrine de sa mère, vêtu d’une chemise préchauffée ouverte à l’avant, d’une couche, d’un bonnet et de chaussettes
+&#10148; Couvrir l’enfant sur la poitrine de sa mère avec les vêtements de celle-ci, ainsi qu’une couverture préchauffée
+&#10148; Vérifier la température toutes les heures jusqu'à ce qu’elle soit normale
+&#10148; Garder l’enfant avec sa mère
+&#10148; Demander à la mère d’allaiter l’enfant fréquemment
+
+Si le contact peau à peau n’est pas possible :
+&#9644;&#9644;&#9644;&#8226; Si un appareil de chauffage radiant est disponible, l’utiliser pour réchauffer le nouveau-né, ou
+&#9644;&#9644;&#9644;&#8226; Réchauffer la salle avec du matériel de chauffage ou habiller le nouveau-né avec des vêtements chauds ou le couvrir avec une couverture chaude.
+
+*Réévaluer après une heure :*
+&#9644;&#9644;&#9644;&#8226; Rechercher les signes de maladie grave
+&#9644;&#9644;&#9644;&#8226; Mesurer la température axillaire
+
+S’il existe un signe quelconque de maladie grave ou si la température reste en dessous de 36,5°C :
+&#9644;&#9644;&#9644;&#8226; Evacuer rapidement à l’hôpital après avoir fait le traitement pré-transfert pour maladie grave
+
+S’il n’existe aucun signe de maladie grave et la température est égale ou supérieure à 36,5 °C:
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur comment garder l’enfant au chaud à la maison
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur les soins à domicile
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur quand revenir immédiatement
+&#9644;&#9644;&#9644;&#8226; Revoir le nouveau né dans 2 jours</value></text>
+					<text id="infection_grave_no_ref_treat_4-label"><value>&#10148; Prévenir l'hypoglycémie</value><value form="help">help</value><value form="help-text">Si l’enfant est capable de téter :
+&#9644;&#9644;&#9644;&#8226; Demander à la mère d’allaiter l’enfant.
+
+Si l’enfant est incapable de téter mais est capable d’avaler :
+&#9644;&#9644;&#9644;&#8226; Donner du lait exprimé ou un substitut de lait maternel
+
+Si l’enfant est incapable d’avaler
+&#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
+&#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
+					<text id="infection_grave_no_ref_treat_5-label"><value>&#10148; Si le nouveau-né convulse donner Phénobartital pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en prise unique </value><value form="help">help</value><value form="help-text">*Pour dégager les voies respiratoires*
+&#10148; Placer l’enfant sur le côté
+&#10148; Ne rien mettre dans sa bouche
+&#10148; Si les lèvres et la langue sont bleuâtres, ouvrir la bouche pour s’assurer que les voies respiratoires sont libres
+&#10148; Si besoin, aspirer les sécrétions de la gorge avec une sonde introduite par la narine</value></text>
+					<text id="infection_grave_no_ref_treat_7-label"><value>&#10148; Expliquer à la mère comment garder le nouveau-né au chaud pendant l'évacuation </value><value form="help">help</value><value form="help-text">*Comment réchauffer le nouveau-né par le contact peau à peau :*
+&#10148; Retirer à l’enfant ses vêtements froids
+&#10148; Le mettre sur la poitrine de sa mère, vêtu d’une chemise préchauffée ouverte à l’avant, d’une couche, d’un bonnet et de chaussettes
+&#10148; Couvrir l’enfant sur la poitrine de sa mère avec les vêtements de celle-ci, ainsi qu’une couverture préchauffée
+&#10148; Vérifier la température toutes les heures jusqu'à ce qu’elle soit normale
+&#10148; Garder l’enfant avec sa mère
+&#10148; Demander à la mère d’allaiter l’enfant fréquemment
+
+Si le contact peau à peau n’est pas possible :
+&#9644;&#9644;&#9644;&#8226; Si un appareil de chauffage radiant est disponible, l’utiliser pour réchauffer le nouveau-né, ou
+&#9644;&#9644;&#9644;&#8226; Réchauffer la salle avec du matériel de chauffage ou habiller le nouveau-né avec des vêtements chauds ou le couvrir avec une couverture chaude.
+
+*Réévaluer après une heure :*
+&#9644;&#9644;&#9644;&#8226; Rechercher les signes de maladie grave
+&#9644;&#9644;&#9644;&#8226; Mesurer la température axillaire
+
+S’il existe un signe quelconque de maladie grave ou si la température reste en dessous de 36,5°C :
+&#9644;&#9644;&#9644;&#8226; Evacuer rapidement à l’hôpital après avoir fait le traitement pré-transfert pour maladie grave
+
+S’il n’existe aucun signe de maladie grave et la température est égale ou supérieure à 36,5 °C:
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur comment garder l’enfant au chaud à la maison
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur les soins à domicile
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur quand revenir immédiatement
+&#9644;&#9644;&#9644;&#8226; Revoir le nouveau né dans 2 jours</value></text>
+					<text id="infection_locale_treat_2-label"><value>&#10148; Enseigner à la mère comment traiter les infections locales a domicile </value><value form="help">help</value><value form="help-text">&#10148; Expliquer comment et pourquoi le traitement est administré.
+&#10148; Observer la mère pendant qu’elle donne le premier traitement au dispensaire.
+&#10148; Dites lui de donner le traitement 2 fois par jour.
+&#10148; Elle doit revenir au dispensaire si l’infection s’aggrave.
+
+La mère doit :
+&#10148; Se laver les mains à l’eau propre et au savon
+&#10148; Nettoyer doucement le pus et la croûte avec de l’eau et du savon
+&#10148; Sécher la zone avec un linge propre
+&#10148; Appliquer du violet de gentiane
+&#10148; Se laver les mains</value></text>
+					<text id="infection_locale_treat_4-label"><value>&#10148; Expliquer quand revenir immédiatement </value><value form="help">help</value><value form="help-text">Conseiller à la mère de revenir immédiatement si le nourrisson présente l’un des ces signes :
+&#9644;&#9644;&#9644;&#8226; Difficulté à téter ou à boire
+&#9644;&#9644;&#9644;&#8226; Devient plus malade
+&#9644;&#9644;&#9644;&#8226; A de la fièvre
+&#9644;&#9644;&#9644;&#8226; Respire rapidement
+&#9644;&#9644;&#9644;&#8226; Respire difficilement
+&#9644;&#9644;&#9644;&#8226; Sang dans les selles
+</value></text>
+					<text id="hypothermie_moderee_treat_0-label"><value>&#10148; Suivre </value><value form="help">help</value><value form="help-text">*Comment réchauffer le nouveau-né par le contact peau à peau :*
+&#10148; Retirer à l’enfant ses vêtements froids
+&#10148; Le mettre sur la poitrine de sa mère, vêtu d’une chemise préchauffée ouverte à l’avant, d’une couche, d’un bonnet et de chaussettes
+&#10148; Couvrir l’enfant sur la poitrine de sa mère avec les vêtements de celle-ci, ainsi qu’une couverture préchauffée
+&#10148; Vérifier la température toutes les heures jusqu'à ce qu’elle soit normale
+&#10148; Garder l’enfant avec sa mère
+&#10148; Demander à la mère d’allaiter l’enfant fréquemment
+
+Si le contact peau à peau n’est pas possible :
+&#9644;&#9644;&#9644;&#8226; Si un appareil de chauffage radiant est disponible, l’utiliser pour réchauffer le nouveau-né, ou
+&#9644;&#9644;&#9644;&#8226; Réchauffer la salle avec du matériel de chauffage ou habiller le nouveau-né avec des vêtements chauds ou le couvrir avec une couverture chaude.
+
+*Réévaluer après une heure :*
+&#9644;&#9644;&#9644;&#8226; Rechercher les signes de maladie grave
+&#9644;&#9644;&#9644;&#8226; Mesurer la température axillaire
+
+S’il existe un signe quelconque de maladie grave ou si la température reste en dessous de 36,5°C :
+&#9644;&#9644;&#9644;&#8226; Evacuer rapidement à l’hôpital après avoir fait le traitement pré-transfert pour maladie grave
+
+S’il n’existe aucun signe de maladie grave et la température est égale ou supérieure à 36,5 °C:
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur comment garder l’enfant au chaud à la maison
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur les soins à domicile
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur quand revenir immédiatement
+&#9644;&#9644;&#9644;&#8226; Revoir le nouveau né dans 2 jours</value></text>
+					<text id="faible_poids_treat_0-label"><value>&#10148; Apprendre à la mère à tenir le bébé au chaud à domicile </value><value form="help">help</value><value form="help-text">*Comment réchauffer le nouveau-né par le contact peau à peau :*
+&#10148; Retirer à l’enfant ses vêtements froids
+&#10148; Le mettre sur la poitrine de sa mère, vêtu d’une chemise préchauffée ouverte à l’avant, d’une couche, d’un bonnet et de chaussettes
+&#10148; Couvrir l’enfant sur la poitrine de sa mère avec les vêtements de celle-ci, ainsi qu’une couverture préchauffée
+&#10148; Vérifier la température toutes les heures jusqu'à ce qu’elle soit normale
+&#10148; Garder l’enfant avec sa mère
+&#10148; Demander à la mère d’allaiter l’enfant fréquemment
+
+Si le contact peau à peau n’est pas possible :
+&#9644;&#9644;&#9644;&#8226; Si un appareil de chauffage radiant est disponible, l’utiliser pour réchauffer le nouveau-né, ou
+&#9644;&#9644;&#9644;&#8226; Réchauffer la salle avec du matériel de chauffage ou habiller le nouveau-né avec des vêtements chauds ou le couvrir avec une couverture chaude.
+
+*Réévaluer après une heure :*
+&#9644;&#9644;&#9644;&#8226; Rechercher les signes de maladie grave
+&#9644;&#9644;&#9644;&#8226; Mesurer la température axillaire
+
+S’il existe un signe quelconque de maladie grave ou si la température reste en dessous de 36,5°C :
+&#9644;&#9644;&#9644;&#8226; Evacuer rapidement à l’hôpital après avoir fait le traitement pré-transfert pour maladie grave
+
+S’il n’existe aucun signe de maladie grave et la température est égale ou supérieure à 36,5 °C:
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur comment garder l’enfant au chaud à la maison
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur les soins à domicile
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur quand revenir immédiatement
+&#9644;&#9644;&#9644;&#8226; Revoir le nouveau né dans 2 jours</value></text>
+					<text id="pas_de_faible_poids_treat_1-label"><value>&#10148; Conseiller la mère sur les soins du nouveau-né à domicile </value><value form="help">help</value><value form="help-text">*ALLAITER EXCLUSIVEMENT LE BEBE AU SEIN (Si approprié )*
+&#10148; Donner uniquement du lait maternel au bébé
+&#10148; Allaiter fréquemment, aussi souvent et aussi longtemps que le voudrait l’enfant, nuit et jour, qu’il soit malade ou en bonne santé .
+
+*S’ASSURER QUE LE NOUVEAU-NE EST AU CHAUD A TOUT MOMENT*
+
+En temps de fraîcheur, habiller le bébé avec des vêtements appropriés, lui couvrir la tête et les pieds.
+&#10148; *Expliquer QUAND REVENIR AU DISPENSAIRE?*</value></text>				
+					<text id="poids_tres_faible_treat_0-label"><value>&#10148; Réchauffer le nouveau-né avant et pendant l'évacuation</value><value form="help">help</value><value form="help-text">Réchauffer le nouveau-né par le contact peau à peau :
+&#10148; Garder le bébé habillé avec chemise ouverte devant, bonnet, et chaussettes
+&#10148; le garder en contact peau à peau avec sa mère ou l'accompagnant
+&#10148; Envelopper la mère ou l'accompagnant et le bébé dans une couverture sèche et douce</value></text>
+					<text id="poids_tres_faible_treat_1-label"><value>&#10148; Prévenir l'hypoglycémie</value><value form="help">help</value><value form="help-text">Si l’enfant est capable de téter :
+&#9644;&#9644;&#9644;&#8226; Demander à la mère d’allaiter l’enfant.
+
+Si l’enfant est incapable de téter mais est capable d’avaler :
+&#9644;&#9644;&#9644;&#8226; Donner du lait exprimé ou un substitut de lait maternel
+
+Si l’enfant est incapable d’avaler
+&#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
+&#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
+					<text id="conjonctivite_treat_1-label"><value>&#10148; Administrer en une injection unique de Ceftriaxone en IM </value><value form="help">help</value><value form="help-text">*Nettoyer les deux yeux, 3 fois par jour*
+&#9644;&#9644;&#9644;&#8226; Se laver les mains
+&#9644;&#9644;&#9644;&#8226; Demander à l’enfant de fermer les yeux.
+&#9644;&#9644;&#9644;&#8226; Essuyer doucement le pus à l’aide d’un tissu propre et humide
+
+*Ensuite, appliquer la pommade à la tétracycline dans les deux yeux, 3 fois par jour*
+&#9644;&#9644;&#9644;&#8226; Demander à l’enfant de regarder vers le haut
+&#9644;&#9644;&#9644;&#8226; Appliquer une petite quantité de pommade à l’intérieur de la paupière inférieure
+&#9644;&#9644;&#9644;&#8226; Se laver les mains de nouveau
+
+*Traiter jusqu’à ce que la rougeur disparaisse.*
+&#9644;&#9644;&#9644;&#8226; Ne pas utiliser d’autre pommade ou de collyre et ne rien mettre d’autre dans les yeux.&#8226;</value></text>
+					<text id="pas_infection_occulaire_treat_1-label"><value>&#10148; Conseiller la mère sur les soins du nouveau né à domicile </value><value form="help">help</value><value form="help-text">*ALLAITER EXCLUSIVEMENT LE BEBE AU SEIN (Si approprié )*
+&#10148; Donner uniquement du lait maternel au bébé
+&#10148; Allaiter fréquemment, aussi souvent et aussi longtemps que le voudrait l’enfant, nuit et jour, qu’il soit malade ou en bonne santé .
+
+*S’ASSURER QUE LE NOUVEAU-NE EST AU CHAUD A TOUT MOMENT*
+
+En temps de fraîcheur, habiller le bébé avec des vêtements appropriés, lui couvrir la tête et les pieds.
+&#10148; *Expliquer QUAND REVENIR AU DISPENSAIRE?*</value></text>
+					<text id="vih_possible_treat_0-label"><value>&#10148; Conseiller sur les bénéfices d'un test de dépistage du VIH de la mère et de l'enfant</value><value form="help">help</value><value form="help-text">&#8226; Rassurer la mère qu’avec l’aide du personnel de santé, l’état de son enfant pourrait s’améliorer et être maintenu
+&#9644;&#9644;&#9644;&#8226; Conseiller la mère sur les grossesses futures, une sexualité sans risque et le traitement précoce des Infections Sexuellement Transmissibles
+&#9644;&#9644;&#9644;&#8226; Encourager la mère au conseil volontaire et au test
+&#9644;&#9644;&#9644;&#8226; S’assurer de la bonne alimentation de l’enfant. Conseiller la mère sur les bonnes pratiques alimentaires
+
+&#9644;&#9644;&#9644;&#8226; Si la mère est malade, la soigner ou la référer pour assistance
+&#9644;&#9644;&#9644;&#8226; Si elle a un problème aux seins (tel que engorgement, crevasse du mamelon, infection du sein), la soigner ou la transférer pour traitement
+&#9644;&#9644;&#9644;&#8226; Lui conseiller de bien se nourrir pour entretenir sa force et sa santé
+&#9644;&#9644;&#9644;&#8226; Vérifier l’état vaccinal de la mère et lui faire une piqûre antitétanique, si nécessaire
+&#9644;&#9644;&#9644;&#8226; S’assurer qu’elle a accès :
+&#9644;&#9644;&#9644;&#8226; au planning familial
+&#9644;&#9644;&#9644;&#8226; aux conseils sur la prévention des infections sexuellement transmissibles et du sida</value>
+					</text>
+					<text id="probleme_alimentation_treat_1-label"><value>&#10148; Si la prise du sein est mauvaise ou si la succion n'est pas efficace </value><value form="help">help</value><value form="help-text">*Montrer à la mère comment tenir le nourrisson :*
+&#10148; le nourrisson doit faire face au sein, et son nez en face du mamelon
+&#10148; le corps du nourrisson doit être proche du corps de la mère
+&#10148; la mère doit soutenir tout le corps du nourrisson, pas seulement la nuque et les épaules
+
+*Montrer à la mère comment aider le nourrisson à prendre le sein. Elle doit :*
+&#10148; toucher les lèvres du nourrisson avec son mamelon
+&#10148; attendre que la bouche du nourrisson soit grande ouverte
+&#10148; approcher rapidement le nourrisson du sein en veillant que la lèvre inférieure du nourrisson soit bien en-dessous du mamelon.
+&#10148; Vérifier la bonne prise du sein et l’efficacité de la succion
+&#10148; Si la prise du sein ou la succion n'est pas correcte, réessayer.
+
+*Si l’enfant n’est pas nourri comme indiqué ci-dessus, conseiller la mère en conséquence.*
+*En outre si la mère signale qu’elle a des difficultés à allaiter au sein :*
+&#9644;&#9644;&#9644;&#8226; Evaluer l’allaitement. (Voir tableau EVALUER, CLASSER ET TRAITER LE NOURRISSON.) Si nécessaire, montrer à la mère le bon positionnement pour l’allaitement et la bonne prise du sein
+
+Si l’enfant a moins de 4 mois et consomme un autre lait ou d’autres aliments :
+&#9644;&#9644;&#9644;&#8226; Renforcer la confiance de la mère en lui assurant qu’elle peut produire tout le lait dont l’enfant a besoin.
+&#9644;&#9644;&#9644;&#8226; Suggérer de mettre l’enfant au sein plus fréquemment, de l’y laisser plus longtemps, le jour comme la nuit, et de réduire progressivement l’autre lait ou les aliments.
+
+Si la consommation d’un autre lait doit continuer, conseiller à la mère :
+&#9644;&#9644;&#9644;&#8226; D’allaiter au sein autant que possible, y compris la nuit
+&#9644;&#9644;&#9644;&#8226; De s’assurer que l’autre lait est un lait de substitution localement approprié
+&#9644;&#9644;&#9644;&#8226; De s’assurer que l’autre lait est préparé correctement, de façon hygiénique et est donné en quantité appropriée
+&#9644;&#9644;&#9644;&#8226; De finir, dans l’heure, le lait préparé
+
+Si la mère nourrit l’enfant au biberon :
+&#9644;&#9644;&#9644;&#8226; Recommander de remplacer le biberon par une tasse
+&#9644;&#9644;&#9644;&#8226; Montrer à la mère comment utiliser une tasse pour nourrir son enfant
+
+Si l’enfant se nourrit mal, conseiller à la mère :
+&#9644;&#9644;&#9644;&#8226; De s’asseoir avec l’enfant et de l’encourager à manger.
+&#9644;&#9644;&#9644;&#8226; De donner à l’enfant une ration adéquate dans une assiette ou dans un bol séparé
+
+Si l’enfant se nourrit mal pendant une maladie, conseiller à la mère :
+&#9644;&#9644;&#9644;&#8226; D’allaiter au sein plus fréquemment et plus longtemps, si possible
+&#9644;&#9644;&#9644;&#8226; D’offrir des aliments faciles à manger, variés, appétissants et préférés par l’enfant pour l’encourager à manger le plus possible, et lui donner de fréquents petits repas
+&#9644;&#9644;&#9644;&#8226; De désobstruer le nez de l’enfant si son nez bouché l’empêche de manger
+&#9644;&#9644;&#9644;&#8226; Dire à la mère que l’appétit sera meilleur quand l’enfant ira mieux
+
+Revoir tout problème d’alimentation dans 5 jours</value></text>
+					<text id="other_treatments-label">
+						<value>Tous les autres traitements ou des commentaires à entrer?</value>
+					</text>
+
+                </translation>
+            </itext>
+        </model>
+	</h:head>
+	<h:body>
+			<group ref="/data/debug" appearance="field-list">
+				<select1 ref="/data/debug/classification_infection_debug">
+					<label>Infection DEBUG consultation:</label>
+					<item><label>Maladie grave ou infection bactérienne grave</label><value>infection_grave</value></item>
+					<item><label>Infection bactérienne locale</label><value>infection_locale</value></item>
+					<item><label>Hypothermie modérée</label><value>hypothermie_moderee</value></item>
+					<item><label>Infection bactérienne peu probable et pas d'hypothermie</label><value>infection_peu_probable</value></item>
+				</select1>
+				<select1 ref="/data/debug/classification_poids_debug">
+					<label>Faible poids DEBUG consultation:</label>
+					<item><label>Très faible poids</label><value>poids_tres_faible</value></item>
+					<item><label>Faible poids</label><value>faible_poids</value></item>
+					<item><label>Pas de faible poids</label><value>pas_de_faible_poids</value></item>
+				</select1>
+				<select1 ref="/data/debug/classification_occular_debug">
+					<label>D'infections occulaires DEBUG consultation:</label>
+					<item><label>Conjonctivite purulente du nouveau-né</label><value>conjonctivite</value></item>
+					<item><label>Pas d'infection occulaire</label><value>pas_infection_occulaire</value></item>
+				</select1>
+				<select1 ref="/data/debug/classification_vih_debug">
+					<label>Infection à VIH DEBUG consultation:</label>
+					<item><label>Infection VIH symptomatique probable</label><value>vih_probable</value></item>
+					<item><label>Infection VIH symptomatique possible</label><value>vih_possible</value></item>
+					<item><label>Infection VIH peu problable</label><value>vih_peu_probable</value></item>	
+				</select1>
+				<select1 ref="/data/debug/classification_malnutrition_debug">
+					<label>Malnutrition DEBUG consultation:</label>
+					<item><label>Maladie grave ou infection bactérienne grave (alim)</label><value>maladie_grave</value></item>
+					<item><label>Problème d'alimentation</label><value>probleme_alimentation</value></item>
+					<item><label>Pas de problèmes d'alimentation</label><value>pas_de_probleme_alimentation</value></item>
+				</select1>
+				<input ref="/data/debug/child_age_debug">
+					<label>DEBUG: Quel est l'âge de l'enfant (Months)?</label>
+				</input>
+				<input ref="/data/debug/child_weight_debug">
+					<label>DEBUG: Poids (kg)</label>
+				</input>
+			</group>
+            <group ref="/data/select_treatments" appearance="field-list">
+                
+               <select1 ref="/data/select_treatments/infection_grave">
+                   <label>Maladie grave ou infection bactérienne grave</label>
+                   <item><label>Maladie grave ou infection bactérienne grave</label><value>infection_grave</value></item>
+                   <item><label>Maladie grave ou infection bactérienne grave si référence impossible</label><value>infection_grave_no_ref</value></item>
+               </select1>
+            </group>
+            <group ref="/data/select_meds" appearance="field-list">
+                
+               <select1 ref="/data/select_meds/antibio">
+                   <label>Choisissez un antibiotique</label>
+                   <itemset nodeset="instance('medications')/medications_list/medications[selected(/data/antibio_valid_meds, @key)][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]">
+                       <label ref="@treat_name"/>
+                       <value ref="@key"/>
+                   </itemset>
+               </select1>
+            </group>
+            <group ref="/data/treatments">
+                
+               <group ref="/data/treatments/infection_grave" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/infection_grave/infection_grave_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Maladie grave ou infection bactérienne grave&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/infection_grave/infection_grave_treat_0" appearance="minimal">
+                       <label>&#10148; Administrer la première dose pre-transfert d'antibiotiques en IM : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave/infection_grave_treat_1" appearance="minimal">
+                       <label>&#10148; Administrer la première dose pre-transfert d'antibiotiques en IM : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave/infection_grave_treat_2" appearance="minimal">
+                       <label ref="jr:itext('infection_grave_treat_2-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave/infection_grave_treat_3" appearance="minimal">
+                       <label>&#10148; Réchauffer le nouveau-né si hypothermie</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave/infection_grave_treat_4" appearance="minimal">
+                       <label ref="jr:itext('infection_grave_treat_4-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave/infection_grave_treat_5" appearance="minimal">
+                       <label ref="jr:itext('infection_grave_treat_5-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave/infection_grave_treat_6" appearance="minimal">
+                       <label>&#10148; Référer le bébé vers l'hôpital</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/infection_grave_no_ref" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Maladie grave ou infection bactérienne grave si référence impossible&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_0" appearance="minimal">
+                       <label>&#10148; Administrer : Ampicilline - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_1" appearance="minimal">
+                       <label>&#10148; Administrer : Gentamicine - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_2:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_2" appearance="minimal">
+                       <label>&#10148; Phénobartital pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en prise unique</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_3" appearance="minimal">
+                       <label>&#10148; Rechauffer le nouveau-né si hypothermie</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_4" appearance="minimal">
+                       <label ref="jr:itext('infection_grave_no_ref_treat_4-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_5" appearance="minimal">
+                       <label ref="jr:itext('infection_grave_no_ref_treat_5-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_6" appearance="minimal">
+                       <label>&#10148; Référer le bébé vers l'hôpital</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_7" appearance="minimal">
+                       <label ref="jr:itext('infection_grave_no_ref_treat_7-label')" />
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/infection_locale" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/infection_locale/infection_locale_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Infection bactérienne locale&#9644;&#9644;&#9644;</label>
+               </trigger>
+				   <group ref="/data/treatments/infection_locale/show_antibio_3">
+					   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_0" appearance="minimal">
+						   <label>&#10148; Donner un antibiotique approprié par voie orale :
+&#9644;&#9644;&#9644;&#8226; 1ère intention : Erytromycine Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 4 fois par jour pendant 8 jours</label>
+					   </trigger>
+				   <group ref="/data/treatments/infection_locale/show_antibio_2">
+				   </group>
+					   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_1" appearance="minimal">
+						   <label>&#10148; Donner un antibiotique approprié par voie orale :
+&#9644;&#9644;&#9644;&#8226; 2ème intention : Amoxiciline Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 3 fois par jour pendant 8 jours</label>
+					   </trigger>
+				   </group>
+                   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_2" appearance="minimal">
+                       <label ref="jr:itext('infection_locale_treat_2-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_3" appearance="minimal">
+                       <label>&#10148; Conseiller la mère sur les soins du nouveau-né à domicile</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_4" appearance="minimal">
+                       <label ref="jr:itext('infection_locale_treat_4-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_5" appearance="minimal">
+                       <label>&#10148; Revoir dans 2 jours</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/hypothermie_moderee" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/hypothermie_moderee/hypothermie_moderee_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Hypothermie modérée&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/hypothermie_moderee/hypothermie_moderee_treat_0" appearance="minimal">
+                       <label ref="jr:itext('hypothermie_moderee_treat_0-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/hypothermie_moderee/hypothermie_moderee_treat_1" appearance="minimal">
+                       <label>&#10148; Réévaluer après 1 heure et décider en suivant les instructions du tableau</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/hypothermie_moderee/hypothermie_moderee_treat_2" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/hypothermie_moderee/hypothermie_moderee_treat_3" appearance="minimal">
+                       <label>&#10148; Revoir dans 2 jours</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/infection_peu_probable" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/infection_peu_probable/infection_peu_probable_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Infection bactérienne peu probable et pas d'hypothermie&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/infection_peu_probable/infection_peu_probable_treat_0" appearance="minimal">
+                       <label>&#10148; Traiter le nouveau-né pour tout autre problème</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_peu_probable/infection_peu_probable_treat_1" appearance="minimal">
+                       <label>&#10148; Conseiller la mère sur les soins du nouveau-né à domicile</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/infection_peu_probable/infection_peu_probable_treat_2" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/poids_tres_faible" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/poids_tres_faible/poids_tres_faible_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Très faible poids&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/poids_tres_faible/poids_tres_faible_treat_0" appearance="minimal">
+                       <label ref="jr:itext('poids_tres_faible_treat_0-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/poids_tres_faible/poids_tres_faible_treat_1" appearance="minimal">
+                       <label ref="jr:itext('poids_tres_faible_treat_1-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/poids_tres_faible/poids_tres_faible_treat_2" appearance="minimal">
+                       <label>&#10148; &#201;vacuer le nouveau-né vers l'hôpital</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/faible_poids" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/faible_poids/faible_poids_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Faible poids&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/faible_poids/faible_poids_treat_0" appearance="minimal">
+                       <label ref="jr:itext('faible_poids_treat_0-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/faible_poids/faible_poids_treat_1" appearance="minimal">
+                       <label>&#10148; Encourager la mère à allaiter toutes les 2 ou 3 heures</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/faible_poids/faible_poids_treat_2" appearance="minimal">
+                       <label>&#10148; Revoir le nouveau-né tous les jours jusqu'à ce qu'il s'alimente correctement, qu'il prenne du poids et que la température corporelle reste stable</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/faible_poids/faible_poids_treat_3" appearance="minimal">
+                       <label>&#10148; Ensuite revoir le nouveau-né, 7 jours après la dernière visite</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/faible_poids/faible_poids_treat_4" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/pas_de_faible_poids" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/pas_de_faible_poids/pas_de_faible_poids_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Pas de faible poids&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/pas_de_faible_poids/pas_de_faible_poids_treat_0" appearance="minimal">
+                       <label>&#10148; Traiter le nouveau-né pour tout autre problème</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/pas_de_faible_poids/pas_de_faible_poids_treat_1" appearance="minimal">
+                       <label ref="jr:itext('pas_de_faible_poids_treat_1-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/pas_de_faible_poids/pas_de_faible_poids_treat_2" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/conjonctivite" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/conjonctivite/conjonctivite_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Conjonctivite purulente du nouveau-né&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/conjonctivite/conjonctivite_treat_0" appearance="minimal">
+                       <label>&#10148; Traiter l'infection locale</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/conjonctivite/conjonctivite_treat_1" appearance="minimal">
+                       <label ref="jr:itext('conjonctivite_treat_1-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/conjonctivite/conjonctivite_treat_2" appearance="minimal">
+                       <label>&#10148; Conseiller et traiter les parents</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/conjonctivite/conjonctivite_treat_3" appearance="minimal">
+                       <label>&#10148; Conseiller à la mère comment garder le bébé au chaud.</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/conjonctivite/conjonctivite_treat_4" appearance="minimal">
+                       <label>&#10148; Revoir le bébé 2 jours plus tard</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/pas_infection_occulaire" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/pas_infection_occulaire/pas_infection_occulaire_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Pas d'infection occulaire&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/pas_infection_occulaire/pas_infection_occulaire_treat_0" appearance="minimal">
+                       <label>&#10148; Traiter le nouveau né pour tout autre problème</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/pas_infection_occulaire/pas_infection_occulaire_treat_1" appearance="minimal">
+                       <label ref="jr:itext('pas_infection_occulaire_treat_1-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/pas_infection_occulaire/pas_infection_occulaire_treat_2" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/vih_probable" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/vih_probable/vih_probable_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Infection VIH symptomatique probable&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/vih_probable/vih_probable_treat_0" appearance="minimal">
+                       <label>&#10148; Donner des conseils particuliers à la mère qui a choisi d'allaiter</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_probable/vih_probable_treat_1" appearance="minimal">
+                       <label>&#9644;&#9644;&#9644;&#8226; Faire un allaitement maternel exclusif avec sevrage précoce à quatre mois</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_probable/vih_probable_treat_2" appearance="minimal">
+                       <label>&#9644;&#9644;&#9644;&#8226; Si possibilité d'allaitement artificiel, le faire exclusivement</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_probable/vih_probable_treat_3" appearance="minimal">
+                       <label>&#10148; Organiser la PCR</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_probable/vih_probable_treat_4" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/vih_possible" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/vih_possible/vih_possible_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Infection VIH symptomatique possible&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/vih_possible/vih_possible_treat_0" appearance="minimal">
+                       <label ref="jr:itext('vih_possible_treat_0-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_possible/vih_possible_treat_1" appearance="minimal">
+                       <label>&#10148; Faire le test avec le consentement de l'intéressé</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_possible/vih_possible_treat_2" appearance="minimal">
+                       <label>&#10148; Conseiller de revenir rapidement à l'apparition de tout nouveau problème</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_possible/vih_possible_treat_3" appearance="minimal">
+                       <label>&#10148; Revoir tous les 7 jours pendant le 1er mois</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_possible/vih_possible_treat_4" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/vih_peu_probable" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/vih_peu_probable/vih_peu_probable_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Infection VIH peu problable&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/vih_peu_probable/vih_peu_probable_treat_0" appearance="minimal">
+                       <label>&#10148; Traiter pour toute autre classification trouvée</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_peu_probable/vih_peu_probable_treat_1" appearance="minimal">
+                       <label>&#10148; Refaire le test sérologique de la mère</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/vih_peu_probable/vih_peu_probable_treat_2" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/maladie_grave" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/maladie_grave/maladie_grave_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Maladie grave ou infection bactérienne grave&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/maladie_grave/maladie_grave_treat_0" appearance="minimal">
+                       <label>&#10148; Donner la première dose d'antibiotique IM : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:maladie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (mélanger avec 2.1ml d'eau distillée pour avoir 500mg/2.5ml)</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/maladie_grave/maladie_grave_treat_1" appearance="minimal">
+                       <label>&#10148; Donner la première dose d'antibiotiques IM : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:maladie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (diluer avec 6ml d'eau physiologique pour avoir 20mg/ml)</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/maladie_grave/maladie_grave_treat_2" appearance="minimal">
+                       <label>&#10148; Expliquer à la mère comment veiller à ce que le bébé n'ait pas froid sur le chemin de l'hôpital</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/maladie_grave/maladie_grave_treat_3" appearance="minimal">
+                       <label>&#10148; Référer d'URGENCE à l'hôpital</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/probleme_alimentation" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Problème d'alimentation&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_0" appearance="minimal">
+                       <label/>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_1" appearance="minimal">
+                       <label ref="jr:itext('probleme_alimentation_treat_1-label')" />
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_2" appearance="minimal">
+                       <label>&#9644;&#9644;&#9644;&#8226; expliquer la bonne position et la bonne prise du sein</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_3" appearance="minimal">
+                       <label>&#9644;&#9644;&#9644;&#8226; aider la mère à traiter les anomalies du mamelon si elles existent</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_4" appearance="minimal">
+                       <label>&#9644;&#9644;&#9644;&#8226; déobstruer le nez s’il est bouche?</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_5" appearance="minimal">
+                       <label>&#10148; Si la mère allaite au sein moins de 12 fois en 24 heures conseiller d'allaiter plus souvent</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_6" appearance="minimal">
+                       <label>&#10148; Si le nouveau-né re&#231;oit d'autres aliments ou liquides en plus du lait maternel :</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_7" appearance="minimal">
+                       <label>&#9644;&#9644;&#9644;&#8226; conseiller à la mère d'allaiter davantage</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_8" appearance="minimal">
+                       <label>&#9644;&#9644;&#9644;&#8226; réduire les autres aliments et liquides</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_9" appearance="minimal">
+                       <label>&#9644;&#9644;&#9644;&#8226; conseiller d'utiliser une tasse</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_10" appearance="minimal">
+                       <label>&#10148; Si la mère est VIH positive donner des conseils appropriés</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_11" appearance="minimal">
+                       <label>&#10148; Si pas d'allaitement au sein référer pour conseils sur l'allaitement au sein et éventuellement la relactation si mère séronégative au VIH</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_12" appearance="minimal">
+                       <label>&#10148; Apprendre à la mére à préparer correctement un substitut au lait maternel et á utiliser une tasse surtout si la mére est HIV positif</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_13" appearance="minimal">
+                       <label>&#10148; En cas de muguet, apprendre à la mère à le traiter à domicile</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_14" appearance="minimal">
+                       <label>&#10148; En cas de malformation à la bouche, référer pour prise en charge</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_15" appearance="minimal">
+                       <label>&#10148; Apprendre à la mère à soigner le nouveau-né à domicile</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_16" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/probleme_alimentation/probleme_alimentation_treat_17" appearance="minimal">
+                       <label>&#10148; Revoir dans 2 jours</label>
+                   </trigger>
+               </group>
+               <group ref="/data/treatments/pas_de_probleme_alimentation" appearance="field-list">
+                   
+               <trigger ref="/data/treatments/pas_de_probleme_alimentation/pas_de_probleme_alimentation_title" appearance="minimal">
+                   <label>&#9644;&#9644;&#9644;Pas de problèmes d'alimentation&#9644;&#9644;&#9644;</label>
+               </trigger>
+                   <trigger ref="/data/treatments/pas_de_probleme_alimentation/pas_de_probleme_alimentation_treat_0" appearance="minimal">
+                       <label>&#10148; Apprendre la mère à soigner le nouveau-né à domicile</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/pas_de_probleme_alimentation/pas_de_probleme_alimentation_treat_1" appearance="minimal">
+                       <label>&#10148; Féliciter la mère pour la bonne alimentation du nourrisson</label>
+                   </trigger>
+                   <trigger ref="/data/treatments/pas_de_probleme_alimentation/pas_de_probleme_alimentation_treat_2" appearance="minimal">
+                       <label>&#10148; Expliquer quand revenir immédiatement</label>
+                   </trigger>
+               </group>
+            </group>
+			<input ref="/data/other_treatments">
+				<label ref="jr:itext('other_treatments-label')" />
+			</input>
+
+
+	</h:body>
+</h:html>
