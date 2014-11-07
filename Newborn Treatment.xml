@@ -228,7 +228,7 @@
 				<bind nodeset="/data/other_treatments" type="xsd:string" />
 			<itext>
 				<translation lang="en">
-					<text id="infection_grave_treat_2-label"><value>&#10148; Si le nouveau-né convulse donner Phénobartital pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en prise unique </value><value form="help">help</value><value form="help-text">*Pour dégager les voies respiratoires*
+					<text id="infection_grave_treat_2-label"><value>&#10148; Si le nouveau-né convulse donner Phénobartital pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg en prise unique </value><value form="help">help</value><value form="help-text">*Pour dégager les voies respiratoires*
 &#10148; Placer l’enfant sur le côté
 &#10148; Ne rien mettre dans sa bouche
 &#10148; Si les lèvres et la langue sont bleuâtres, ouvrir la bouche pour s’assurer que les voies respiratoires sont libres
@@ -275,7 +275,7 @@ Si l’enfant est incapable de téter mais est capable d’avaler :
 Si l’enfant est incapable d’avaler
 &#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
 &#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
-					<text id="infection_grave_no_ref_treat_5-label"><value>&#10148; Si le nouveau-né convulse donner Phénobartital pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en prise unique </value><value form="help">help</value><value form="help-text">*Pour dégager les voies respiratoires*
+					<text id="infection_grave_no_ref_treat_5-label"><value>&#10148; Si le nouveau-né convulse donner Phénobartital pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg en prise unique </value><value form="help">help</value><value form="help-text">*Pour dégager les voies respiratoires*
 &#10148; Placer l’enfant sur le côté
 &#10148; Ne rien mettre dans sa bouche
 &#10148; Si les lèvres et la langue sont bleuâtres, ouvrir la bouche pour s’assurer que les voies respiratoires sont libres
@@ -539,10 +539,10 @@ Revoir tout problème d’alimentation dans 5 jours</value></text>
                    <label>&#9644;&#9644;&#9644;Maladie grave ou infection bactérienne grave&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/infection_grave/infection_grave_treat_0" appearance="minimal">
-                       <label>&#10148; Administrer la première dose pre-transfert d'antibiotiques en IM : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                       <label>&#10148; Administrer la première dose pre-transfert d'antibiotiques en IM : Ampicilline pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave/infection_grave_treat_1" appearance="minimal">
-                       <label>&#10148; Administrer la première dose pre-transfert d'antibiotiques en IM : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                       <label>&#10148; Administrer la première dose pre-transfert d'antibiotiques en IM : Gentamicine pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave/infection_grave_treat_2" appearance="minimal">
                        <label ref="jr:itext('infection_grave_treat_2-label')" />
@@ -566,13 +566,13 @@ Revoir tout problème d’alimentation dans 5 jours</value></text>
                    <label>&#9644;&#9644;&#9644;Maladie grave ou infection bactérienne grave si référence impossible&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_0" appearance="minimal">
-                       <label>&#10148; Administrer : Ampicilline - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Administrer : Ampicilline - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_1" appearance="minimal">
-                       <label>&#10148; Administrer : Gentamicine - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_2:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Administrer : Gentamicine - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_2:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_2" appearance="minimal">
-                       <label>&#10148; Phénobartital pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en prise unique</label>
+                       <label>&#10148; Phénobartital pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm11:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg en prise unique</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_3" appearance="minimal">
                        <label>&#10148; Rechauffer le nouveau-né si hypothermie</label>
@@ -598,13 +598,13 @@ Revoir tout problème d’alimentation dans 5 jours</value></text>
 				   <group ref="/data/treatments/infection_locale/show_antibio_3">
 					   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_0" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique approprié par voie orale :
-&#9644;&#9644;&#9644;&#8226; 1ère intention : Erytromycine Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 4 fois par jour pendant 8 jours</label>
+&#9644;&#9644;&#9644;&#8226; 1ère intention : Erytromycine Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 4 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   <group ref="/data/treatments/infection_locale/show_antibio_2">
 				   </group>
 					   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_1" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique approprié par voie orale :
-&#9644;&#9644;&#9644;&#8226; 2ème intention : Amoxiciline Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 3 fois par jour pendant 8 jours</label>
+&#9644;&#9644;&#9644;&#8226; 2ème intention : Amoxiciline Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 3 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/infection_locale/infection_locale_treat_2" appearance="minimal">
@@ -803,10 +803,10 @@ Revoir tout problème d’alimentation dans 5 jours</value></text>
                    <label>&#9644;&#9644;&#9644;Maladie grave ou infection bactérienne grave&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/maladie_grave/maladie_grave_treat_0" appearance="minimal">
-                       <label>&#10148; Donner la première dose d'antibiotique IM : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:maladie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (mélanger avec 2.1ml d'eau distillée pour avoir 500mg/2.5ml)</label>
+                       <label>&#10148; Donner la première dose d'antibiotique IM : Ampicilline pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:maladie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (mélanger avec 2.1ml d'eau distillée pour avoir 500mg/2.5ml)</label>
                    </trigger>
                    <trigger ref="/data/treatments/maladie_grave/maladie_grave_treat_1" appearance="minimal">
-                       <label>&#10148; Donner la première dose d'antibiotiques IM : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:maladie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (diluer avec 6ml d'eau physiologique pour avoir 20mg/ml)</label>
+                       <label>&#10148; Donner la première dose d'antibiotiques IM : Gentamicine pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:maladie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (diluer avec 6ml d'eau physiologique pour avoir 20mg/ml)</label>
                    </trigger>
                    <trigger ref="/data/treatments/maladie_grave/maladie_grave_treat_2" appearance="minimal">
                        <label>&#10148; Expliquer à la mère comment veiller à ce que le bébé n'ait pas froid sur le chemin de l'hôpital</label>

@@ -769,7 +769,7 @@ Si l’enfant est incapable de téter mais est capable d’avaler :
 Si l’enfant est incapable d’avaler:
 &#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
 &#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
-					<text id="pneumonie_grave_treat_4-label"><value>&#10148; Si convultions donner Diazepam Injectable - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm17:pneumonie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en intra-rectal - Répéter si nécessaire une fois </value><value form="help">help</value><value form="help-text">*Dégager les voies respiratoires*
+					<text id="pneumonie_grave_treat_4-label"><value>&#10148; Si convultions donner Diazepam Injectable - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm17:pneumonie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg en intra-rectal - Répéter si nécessaire une fois </value><value form="help">help</value><value form="help-text">*Dégager les voies respiratoires*
 &#9644;&#9644;&#9644;&#8226; Placer l’enfant sur le côté, tête en extension
 &#9644;&#9644;&#9644;&#8226; Ne rien mettre dans la bouche
 &#9644;&#9644;&#9644;&#8226; Si les lèvres et la langue sont bleuâtres, ouvrir la bouche pour s’assurer que les voies respiratoires sont libres
@@ -794,7 +794,7 @@ Si l’enfant est incapable de téter mais est capable d’avaler :
 Si l’enfant est incapable d’avaler:
 &#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
 &#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
-						<text id="pneumonie_grave_no_ref_treat_3-label"><value>&#10148; Si convultions donner Diazepam Injectable - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm17:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en intra-rectal - Répéter si nécessaire une fois </value><value form="help">help</value><value form="help-text">*Dégager les voies respiratoires*
+						<text id="pneumonie_grave_no_ref_treat_3-label"><value>&#10148; Si convultions donner Diazepam Injectable - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm17:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg en intra-rectal - Répéter si nécessaire une fois </value><value form="help">help</value><value form="help-text">*Dégager les voies respiratoires*
 &#9644;&#9644;&#9644;&#8226; Placer l’enfant sur le côté, tête en extension
 &#9644;&#9644;&#9644;&#8226; Ne rien mettre dans la bouche
 &#9644;&#9644;&#9644;&#8226; Si les lèvres et la langue sont bleuâtres, ouvrir la bouche pour s’assurer que les voies respiratoires sont libres
@@ -988,7 +988,7 @@ Si l’enfant consomme un autre lait :
 
 *POUR L’ENFANT DIARRHEIQUE :*
 &#9644;&#9644;&#9644;&#8226; L’administration des liquides supplémentaires peut sauver la vie de l’enfant diarrhéique. Administrer les liquides selon le Plan A ou le Plan B du Tableau TRAITER L'ENFANT</value></text>
-					<text id="paludisme_grave_treat_0-label"><value>&#10148; Donner : Quinine IM - charge - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm15_1:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (en IM faire la dilution pour obtenir 60mg de sel de quinine par ml. Risque de nécrose si dilution trop concentrée) </value><value form="help">help</value><value form="help-text">*Pour les enfants à transférer classés MALADIE FÉBRILE TRES GRAVE OU PALUDISME GRAVE :*
+					<text id="paludisme_grave_treat_0-label"><value>&#10148; Donner : Quinine IM - charge - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm15_1:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (en IM faire la dilution pour obtenir 60mg de sel de quinine par ml. Risque de nécrose si dilution trop concentrée) </value><value form="help">help</value><value form="help-text">*Pour les enfants à transférer classés MALADIE FÉBRILE TRES GRAVE OU PALUDISME GRAVE :*
 &#9644;&#9644;&#9644;&#8226; Vérifier quel type de quinine est disponible au dispensaire.
 &#9644;&#9644;&#9644;&#8226; Administrer la première dose de quinine en intramusculaire 20 mg/kg et transférer l’enfant d’urgence à l’hôpital.
 
@@ -1005,13 +1005,13 @@ Si l’enfant est incapable de téter mais est capable d’avaler :
 Si l’enfant est incapable d’avaler:
 &#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
 &#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
-					<text id="paludisme_grave_treat_7-label"><value>&#10148; *Si suspicion de méningite* donner : Chloramphénicol Huileux - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm14:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (Répéter 1 fois au bout de 48h si fièvre persiste. Ne pas dépasser 3 g par prise. Réserver pour le traitement des méningites à méningocoques  pendant les épidémies) et suivre </value><value form="help">help</value><value form="help-text">&#8226; Expliquer à la mère pourquoi le médicament est administré.
+					<text id="paludisme_grave_treat_7-label"><value>&#10148; *Si suspicion de méningite* donner : Chloramphénicol Huileux - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm14:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (Répéter 1 fois au bout de 48h si fièvre persiste. Ne pas dépasser 3 g par prise. Réserver pour le traitement des méningites à méningocoques  pendant les épidémies) et suivre </value><value form="help">help</value><value form="help-text">&#8226; Expliquer à la mère pourquoi le médicament est administré.
 &#9644;&#9644;&#9644;&#8226; Déterminer la dose appropriée en fonction du poids de l’enfant (ou de l'âge)
 &#9644;&#9644;&#9644;&#8226; Utiliser une aiguille et une seringue stériles. Mesurer la dose avec précision
 &#9644;&#9644;&#9644;&#8226; Injecter le médicament en intramusculaire.
 &#9644;&#9644;&#9644;&#8226; Si l’enfant ne peut pas être transféré, suivre les instructions donner le chloramphénicol est utilisé uniquement en cas d’épidémie
 &#9644;&#9644;&#9644;&#8226; Si la fièvre persiste après 48 heures, répéter l’injection de chloramphénicol huileux en IM à la même dose.</value></text>
-					<text id="paludisme_grave_no_ref_treat_0-label"><value>&#10148; Donner : Quinine IM - charge - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm15_1:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (en IM faire la dilution pour obtenir 60mg de sel de quinine par ml. Risque de nécrose si dilution trop concentrée) </value><value form="help">help</value><value form="help-text">*Pour les enfants à transférer classés MALADIE FÉBRILE TRES GRAVE OU PALUDISME GRAVE :*
+					<text id="paludisme_grave_no_ref_treat_0-label"><value>&#10148; Donner : Quinine IM - charge - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm15_1:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (en IM faire la dilution pour obtenir 60mg de sel de quinine par ml. Risque de nécrose si dilution trop concentrée) </value><value form="help">help</value><value form="help-text">*Pour les enfants à transférer classés MALADIE FÉBRILE TRES GRAVE OU PALUDISME GRAVE :*
 &#9644;&#9644;&#9644;&#8226; Vérifier quel type de quinine est disponible au dispensaire.
 &#9644;&#9644;&#9644;&#8226; Administrer la première dose de quinine en intramusculaire 20 mg/kg et transférer l’enfant d’urgence à l’hôpital.
 
@@ -1028,7 +1028,7 @@ Si l’enfant est incapable de téter mais est capable d’avaler :
 Si l’enfant est incapable d’avaler:
 &#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
 &#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
-					<text id="paludisme_grave_no_ref_treat_6-label"><value>&#10148; *Si suspicion de méningite* donner : Chloramphénicol Huileux - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm14:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (Répéter 1 fois au bout de 48h si fièvre persiste. Ne pas dépasser 3 g par prise. Réserver pour le traitement des méningites à méningocoques  pendant les épidémies) et uivre </value><value form="help">help</value><value form="help-text">&#8226; Expliquer à la mère pourquoi le médicament est administré.
+					<text id="paludisme_grave_no_ref_treat_6-label"><value>&#10148; *Si suspicion de méningite* donner : Chloramphénicol Huileux - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm14:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (Répéter 1 fois au bout de 48h si fièvre persiste. Ne pas dépasser 3 g par prise. Réserver pour le traitement des méningites à méningocoques  pendant les épidémies) et uivre </value><value form="help">help</value><value form="help-text">&#8226; Expliquer à la mère pourquoi le médicament est administré.
 &#9644;&#9644;&#9644;&#8226; Déterminer la dose appropriée en fonction du poids de l’enfant (ou de l'âge)
 &#9644;&#9644;&#9644;&#8226; Utiliser une aiguille et une seringue stériles. Mesurer la dose avec précision
 &#9644;&#9644;&#9644;&#8226; Injecter le médicament en intramusculaire.
@@ -1691,7 +1691,7 @@ Si l’enfant est incapable de téter mais est capable d’avaler :
 Si l’enfant est incapable d’avaler:
 &#9644;&#9644;&#9644;&#8226; Donner 50 ml de lait ou d’eau sucrée par sonde nasogastrique.
 &#9644;&#9644;&#9644;&#8226; Pour faire de l’eau sucrée, dissoudre 4 carreaux de sucre (20 grammes) dans une tasse de 200 ml d’eau propre.</value></text>
-					<text id="paludisme_grave_tdr_negatif_treat_6-label"><value>&#10148; *Si suspicion de méningite* donner : Chloramphénicol Huileux - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm14:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (Répéter 1 fois au bout de 48h si fièvre persiste. Ne pas dépasser 3 g par prise. Réserver pour le traitement des méningites à méningocoques  pendant les épidémies) et suivre </value><value form="help">help</value><value form="help-text">&#8226; Expliquer à la mère pourquoi le médicament est administré.
+					<text id="paludisme_grave_tdr_negatif_treat_6-label"><value>&#10148; *Si suspicion de méningite* donner : Chloramphénicol Huileux - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm14:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (Répéter 1 fois au bout de 48h si fièvre persiste. Ne pas dépasser 3 g par prise. Réserver pour le traitement des méningites à méningocoques  pendant les épidémies) et suivre </value><value form="help">help</value><value form="help-text">&#8226; Expliquer à la mère pourquoi le médicament est administré.
 &#9644;&#9644;&#9644;&#8226; Déterminer la dose appropriée en fonction du poids de l’enfant (ou de l'âge)
 &#9644;&#9644;&#9644;&#8226; Utiliser une aiguille et une seringue stériles. Mesurer la dose avec précision
 &#9644;&#9644;&#9644;&#8226; Injecter le médicament en intramusculaire.
@@ -1870,10 +1870,10 @@ Si l’enfant est incapable d’avaler:
                    <label>&#9644;&#9644;&#9644;Pneumonie grave ou maladie très grave&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave/pneumonie_grave_treat_0" appearance="minimal">
-                       <label>&#10148; Donner la première dose en intramusculaire de : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:pneumonie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                       <label>&#10148; Donner la première dose en intramusculaire de : Ampicilline pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:pneumonie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave/pneumonie_grave_treat_1" appearance="minimal"> 
-                       <label>&#10148; Donner la première dose en intramusculaire de : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:pneumonie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose" /> mg</label>
+                       <label>&#10148; Donner la première dose en intramusculaire de : Gentamicine pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:pneumonie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)" /> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave/pneumonie_grave_treat_2" appearance="minimal">
                        <label ref="jr:itext('pneumonie_grave_treat_2-label')" />
@@ -1894,10 +1894,10 @@ Si l’enfant est incapable d’avaler:
                    <label>&#9644;&#9644;&#9644;Pneumonie grave ou maladie très grave si référence impossible&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave_no_ref/pneumonie_grave_no_ref_treat_0" appearance="minimal">
-                       <label>&#10148; Donner Ampicilline - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Donner Ampicilline - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave_no_ref/pneumonie_grave_no_ref_treat_1" appearance="minimal">
-                       <label>&#10148; Donner Gentamicine - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_1:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Donner Gentamicine - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_1:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave_no_ref/pneumonie_grave_no_ref_treat_2" appearance="minimal">
                        <label ref="jr:itext('pneumonie_grave_no_ref_treat_2-label')" />
@@ -1909,10 +1909,10 @@ Si l’enfant est incapable d’avaler:
                        <label>&#10148; Si l'enfant n'a pas, d'autre classification grave, donner un bronchodilateur en inhalation si respiration sifflante</label>
                    </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave_no_ref/pneumonie_grave_no_ref_treat_5" appearance="minimal">
-                       <label>&#10148; Répéter Ampicilline - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Répéter Ampicilline - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave_no_ref/pneumonie_grave_no_ref_treat_6" appearance="minimal">
-                       <label>&#10148; +AVEC OU SANS+ Gentamicine - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_1:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; +AVEC OU SANS+ Gentamicine - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_1:pneumonie_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/pneumonie_grave_no_ref/pneumonie_grave_no_ref_treat_7" appearance="minimal">
                        <label>&#10148; Ensuite, remplacer le traitement par un antibiotique adapté par voie orale pour compléter les 10 jours de traitement</label>
@@ -1926,13 +1926,13 @@ Si l’enfant est incapable d’avaler:
 				   <group ref="/data/treatments/pneumonie/show_antibio_2">
 					   <trigger ref="/data/treatments/pneumonie/pneumonie_treat_0" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique :
-&#9644;&#9644;&#9644;&#8226; 1ère intention : Amoxiciline Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:pneumonie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 2 fois par jour pendant 8 jours</label>
+&#9644;&#9644;&#9644;&#8226; 1ère intention : Amoxiciline Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:pneumonie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/pneumonie/show_antibio_1">
 					   <trigger ref="/data/treatments/pneumonie/pneumonie_treat_1" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique :
-&#9644;&#9644;&#9644;&#8226; 2ème intension : Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:pneumonie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+&#9644;&#9644;&#9644;&#8226; 2ème intension : Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:pneumonie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/pneumonie/pneumonie_treat_2" appearance="minimal">
@@ -2058,12 +2058,12 @@ Si l’enfant est incapable d’avaler:
                    </trigger>
 				   <group ref="/data/treatments/deshydratation_severe_pas_grave_perfusion/show_antibio_1">
 					   <trigger ref="/data/treatments/deshydratation_severe_pas_grave_perfusion/deshydratation_severe_pas_grave_perfusion_treat_16" appearance="minimal">
-						   <label>&#8226; 1ère intension : Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:deshydratation_severe_pas_grave_perfusion'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+						   <label>&#8226; 1ère intension : Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:deshydratation_severe_pas_grave_perfusion'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/deshydratation_severe_pas_grave_perfusion/show_antibio_3">
 					   <trigger ref="/data/treatments/deshydratation_severe_pas_grave_perfusion/deshydratation_severe_pas_grave_perfusion_treat_17" appearance="minimal">
-						   <label>&#8226; 2ème intension : Erytromycine Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:deshydratation_severe_pas_grave_perfusion'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 4 fois par jour pendant 5 jours - ne pas administrer avec la théophylline</label>
+						   <label>&#8226; 2ème intension : Erytromycine Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:deshydratation_severe_pas_grave_perfusion'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 4 fois par jour pendant 5 jours - ne pas administrer avec la théophylline</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/deshydratation_severe_pas_grave_perfusion/deshydratation_severe_pas_grave_perfusion_treat_18" appearance="minimal">
@@ -2086,12 +2086,12 @@ Si l’enfant est incapable d’avaler:
                    </trigger>
 				   <group ref="/data/treatments/deshydratation_severe_pas_grave_sng/show_antibio_1">
 					   <trigger ref="/data/treatments/deshydratation_severe_pas_grave_sng/deshydratation_severe_pas_grave_sng_treat_3" appearance="minimal">
-						   <label>&#8226; 1ère intension : Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:deshydratation_severe_pas_grave_sng'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+						   <label>&#8226; 1ère intension : Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:deshydratation_severe_pas_grave_sng'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/deshydratation_severe_pas_grave_sng/show_antibio_3">
 					   <trigger ref="/data/treatments/deshydratation_severe_pas_grave_sng/deshydratation_severe_pas_grave_sng_treat_4" appearance="minimal">
-						   <label>&#8226; 2ème intension : Erytromycine Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:deshydratation_severe_pas_grave_sng'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 4 fois par jour pendant 5 jours - ne pas administrer avec la théophylline</label>
+						   <label>&#8226; 2ème intension : Erytromycine Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:deshydratation_severe_pas_grave_sng'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 4 fois par jour pendant 5 jours - ne pas administrer avec la théophylline</label>
 					   </trigger>
 				   </group>
                </group>
@@ -2114,12 +2114,12 @@ Si l’enfant est incapable d’avaler:
                    </trigger>
 				   <group ref="/data/treatments/deshydratation_severe_pas_grave_sans_sng_sans_perfusion/show_antibio_1">
 					   <trigger ref="/data/treatments/deshydratation_severe_pas_grave_sans_sng_sans_perfusion/deshydratation_severe_pas_grave_sans_sng_sans_perfusion_treat_4" appearance="minimal">
-						   <label>&#8226; 1ère intension : Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:deshydratation_severe_pas_grave_sans_sng_sans_perfusion'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+						   <label>&#8226; 1ère intension : Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:deshydratation_severe_pas_grave_sans_sng_sans_perfusion'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/deshydratation_severe_pas_grave_sans_sng_sans_perfusion/show_antibio_3">
 					   <trigger ref="/data/treatments/deshydratation_severe_pas_grave_sans_sng_sans_perfusion/deshydratation_severe_pas_grave_sans_sng_sans_perfusion_treat_5" appearance="minimal">
-						   <label>&#8226; 2ème intension : Erytromycine Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:deshydratation_severe_pas_grave_sans_sng_sans_perfusion'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 4 fois par jour pendant 5 jours - ne pas administrer avec la théophylline</label>
+						   <label>&#8226; 2ème intension : Erytromycine Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:deshydratation_severe_pas_grave_sans_sng_sans_perfusion'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 4 fois par jour pendant 5 jours - ne pas administrer avec la théophylline</label>
 					   </trigger>
 				   </group>
                </group>
@@ -2129,7 +2129,7 @@ Si l’enfant est incapable d’avaler:
                    <label>&#9644;&#9644;&#9644;Signes évidents de déshydratation&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/signes_deshydratation/signes_deshydratation_treat_0" appearance="minimal">
-                       <label>&#10148; Donner : Sulfate de Zinc - <output ref="instance('medications')/medications_list/medications[@key = 'm26:signes_deshydratation'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg pendant 10 jours</label>
+                       <label>&#10148; Donner : Sulfate de Zinc - <output ref="int(instance('medications')/medications_list/medications[@key = 'm26:signes_deshydratation'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg pendant 10 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/signes_deshydratation/signes_deshydratation_treat_1" appearance="minimal">
                        <label>Si l'enfant est +MASs+ et a la +diarrhée+ : donner à boire de l'eau à volonté</label>
@@ -2165,7 +2165,7 @@ Si l’enfant est incapable d’avaler:
                        <label>&#10148; Donner SRO</label>
                    </trigger>
                    <trigger ref="/data/treatments/pas_deshydratation/pas_deshydratation_treat_1" appearance="minimal">
-                       <label>&#10148; Donner Sulfate de Zinc - <output ref="instance('medications')/medications_list/medications[@key = 'm26:pas_deshydratation'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg pendant 10 jours</label>
+                       <label>&#10148; Donner Sulfate de Zinc - <output ref="int(instance('medications')/medications_list/medications[@key = 'm26:pas_deshydratation'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg pendant 10 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/pas_deshydratation/pas_deshydratation_treat_2" appearance="minimal">
                        <label ref="jr:itext('pas_deshydratation_treat_2-label')" />
@@ -2186,13 +2186,13 @@ Si l’enfant est incapable d’avaler:
                        <label>&#10148; Traiter avec un antibiotique approprié :</label>
                    </trigger>
                    <trigger ref="/data/treatments/dysenterie/dysenterie_treat_1" appearance="minimal">
-                       <label>&#8226; 1ère intention : Ciprofloxacine Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm3:dysenterie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 2 fois par jour pendant 8 jours</label>
+                       <label>&#8226; 1ère intention : Ciprofloxacine Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm3:dysenterie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 2 fois par jour pendant 8 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/dysenterie/dysenterie_treat_2" appearance="minimal">
-                       <label>&#8226; 2ème intention ajouter : Métronidazole Oral - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm5:dysenterie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 3 fois par jour pendant 8 jours</label>
+                       <label>&#8226; 2ème intention ajouter : Métronidazole Oral - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm5:dysenterie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 3 fois par jour pendant 8 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/dysenterie/dysenterie_treat_3" appearance="minimal">
-                       <label>&#10148; Donner Sulfate de Zinc - <output ref="instance('medications')/medications_list/medications[@key = 'm26:dysenterie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg - dose unique par jour pendant 14 jours</label>
+                       <label>&#10148; Donner Sulfate de Zinc - <output ref="int(instance('medications')/medications_list/medications[@key = 'm26:dysenterie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg - dose unique par jour pendant 14 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/dysenterie/dysenterie_treat_4" appearance="minimal">
                        <label ref="jr:itext('dysenterie_treat_4-label')" />
@@ -2231,7 +2231,7 @@ Si l’enfant est incapable d’avaler:
                        <label>&#10148; Donner : Multivitamines - <output ref="instance('medications')/medications_list/medications[@key = 'm25:diahree_persistante'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> comprimé - dose unique par jour pendant 15 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/diahree_persistante/diahree_persistante_treat_1" appearance="minimal">
-                       <label>&#10148; Donner : Sulfate de Zinc - <output ref="instance('medications')/medications_list/medications[@key = 'm26:diahree_persistante'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg - dose unique par jour pendant 10 jours</label>
+                       <label>&#10148; Donner : Sulfate de Zinc - <output ref="int(instance('medications')/medications_list/medications[@key = 'm26:diahree_persistante'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg - dose unique par jour pendant 10 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/diahree_persistante/diahree_persistante_treat_2" appearance="minimal">
                        <label ref="jr:itext('diahree_persistante_treat_2-label')" />
@@ -2249,19 +2249,19 @@ Si l’enfant est incapable d’avaler:
                        <label ref="jr:itext('paludisme_grave_treat_0-label')" />
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave/paludisme_grave_treat_1" appearance="minimal">
-                       <label>&#10148; Donner : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/>mg</label>
+                       <label>&#10148; Donner : Ampicilline pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/>mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave/paludisme_grave_treat_2" appearance="minimal">
-                       <label>&#10148; Donner : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/>mg</label>
+                       <label>&#10148; Donner : Gentamicine pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/>mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave/paludisme_grave_treat_3" appearance="minimal">
                        <label ref="jr:itext('paludisme_grave_treat_3-label')" />
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave/paludisme_grave_treat_4" appearance="minimal">
-                       <label>&#10148; Si la fièvre est élevée (38,5&#176;C ou plus) et si l'enfant peut boire donner : Paracétamol Oral - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg - 4 fois par jour tant que douleur ou température supérieure à 38&#176;5</label>
+                       <label>&#10148; Si la fièvre est élevée (38,5&#176;C ou plus) et si l'enfant peut boire donner : Paracétamol Oral - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg - 4 fois par jour tant que douleur ou température supérieure à 38&#176;5</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave/paludisme_grave_treat_5" appearance="minimal">
-                       <label>&#10148; Si la fièvre est élevée (38,5&#176;C ou plus) et si l'enfant +ne peut pas+ boire donner : Acetylsalicylate De Lysine - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm16:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg - 4 fois par jour tant que douleur ou température supérieure à 38&#176;5</label>
+                       <label>&#10148; Si la fièvre est élevée (38,5&#176;C ou plus) et si l'enfant +ne peut pas+ boire donner : Acetylsalicylate De Lysine - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm16:paludisme_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg - 4 fois par jour tant que douleur ou température supérieure à 38&#176;5</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave/paludisme_grave_treat_6" appearance="minimal">
                        <label>&#10148; *Transférer d'URGENCE au centre de référence*</label>
@@ -2279,13 +2279,13 @@ Si l’enfant est incapable d’avaler:
                        <label ref="jr:itext('paludisme_grave_no_ref_treat_0-label')" />
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_no_ref/paludisme_grave_no_ref_treat_1" appearance="minimal">
-                       <label>&#10148; Donner :  Quinine IM - entretien (12h après la dose de charge) - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm15_2:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg - 2 fois par jour (espacé de 12h) pendant 2 à 3 jours (En IM faire la dilution pour obtenir 60mg de sel de quinine par ml. Risque de nécrose si dilution trop concentrée)</label>
+                       <label>&#10148; Donner :  Quinine IM - entretien (12h après la dose de charge) - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm15_2:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg - 2 fois par jour (espacé de 12h) pendant 2 à 3 jours (En IM faire la dilution pour obtenir 60mg de sel de quinine par ml. Risque de nécrose si dilution trop concentrée)</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_no_ref/paludisme_grave_no_ref_treat_2" appearance="minimal">
-                       <label>&#10148; Donner : Ampicilline - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Donner : Ampicilline - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_no_ref/paludisme_grave_no_ref_treat_3" appearance="minimal">
-                       <label>&#10148; Donner : Gentamicine - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_1:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Donner : Gentamicine - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_1:paludisme_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_no_ref/paludisme_grave_no_ref_treat_4" appearance="minimal">
                        <label ref="jr:itext('paludisme_grave_no_ref_treat_4-label')" />
@@ -2329,7 +2329,7 @@ Si l’enfant est incapable d’avaler:
                        <label ref="jr:itext('paludisme_simple_treat_5-label')" />
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_simple/paludisme_simple_treat_6" appearance="minimal">
-                       <label>&#10148; Donner : Paracétamol Oral - une dose au dispensaire si la tempe&#769;rature est de 38.5&#176;C - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:paludisme_simple'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                       <label>&#10148; Donner : Paracétamol Oral - une dose au dispensaire si la tempe&#769;rature est de 38.5&#176;C - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:paludisme_simple'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_simple/paludisme_simple_treat_7" appearance="minimal">
                        <label>&#10148; Enveloppement humide</label>
@@ -2362,13 +2362,13 @@ Si l’enfant est incapable d’avaler:
 				   <group ref="/data/treatments/rougeole_compliquee/show_antibio_1">
 					   <trigger ref="/data/treatments/rougeole_compliquee/rougeole_compliquee_treat_2" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique :
-&#9644;&#9644;&#9644;&#8226; 1ère intention : Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:rougeole_compliquee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+&#9644;&#9644;&#9644;&#8226; 1ère intention : Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:rougeole_compliquee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/rougeole_compliquee/show_antibio_2">
 					   <trigger ref="/data/treatments/rougeole_compliquee/rougeole_compliquee_treat_3" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique :
-&#9644;&#9644;&#9644;&#8226; 2ème intension : Amoxiciline Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:rougeole_compliquee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 2 fois par jour pendant 8 jours</label>
+&#9644;&#9644;&#9644;&#8226; 2ème intension : Amoxiciline Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:rougeole_compliquee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/rougeole_compliquee/rougeole_compliquee_treat_4" appearance="minimal">
@@ -2421,13 +2421,13 @@ Si l’enfant est incapable d’avaler:
 				   <group ref="/data/treatments/rougeole/show_antibio_1">
 					   <trigger ref="/data/treatments/rougeole/rougeole_treat_2" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique :
-&#9644;&#9644;&#9644;&#8226; 1ère intention : Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:rougeole'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+&#9644;&#9644;&#9644;&#8226; 1ère intention : Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:rougeole'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/rougeole/show_antibio_2">
 					   <trigger ref="/data/treatments/rougeole/rougeole_treat_3" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique :
-&#9644;&#9644;&#9644;&#8226; 2ème intension : Amoxiciline Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:rougeole'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 2 fois par jour pendant 8 jours</label>
+&#9644;&#9644;&#9644;&#8226; 2ème intension : Amoxiciline Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:rougeole'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/rougeole/rougeole_treat_4" appearance="minimal">
@@ -2463,14 +2463,14 @@ Si l’enfant est incapable d’avaler:
                </trigger>
                    <trigger ref="/data/treatments/mastoidite/mastoidite_treat_0" appearance="minimal">
                        <label>&#10148; Donner la première dose d'antibiotique approprié :
-&#9644;&#9644;&#9644;&#8226; Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:mastoidite'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (mélanger avec 2.1ml d'eau distillée pour avoir 500mg/2,5ml)</label>
+&#9644;&#9644;&#9644;&#8226; Ampicilline pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:mastoidite'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (mélanger avec 2.1ml d'eau distillée pour avoir 500mg/2,5ml)</label>
                    </trigger>
                    <trigger ref="/data/treatments/mastoidite/mastoidite_treat_1" appearance="minimal">
                        <label>&#10148; Donner la première dose d'antibiotique approprié :
-&#9644;&#9644;&#9644;&#8226; Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:mastoidite'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (diluer avec 6ml d'eau physiologique pour avoir 20mg/ml)</label>
+&#9644;&#9644;&#9644;&#8226; Gentamicine pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:mastoidite'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (diluer avec 6ml d'eau physiologique pour avoir 20mg/ml)</label>
                    </trigger>
                    <trigger ref="/data/treatments/mastoidite/mastoidite_treat_2" appearance="minimal">
-                       <label>&#10148; Donner Paracétamol Oral pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:mastoidite'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg dose unique</label>
+                       <label>&#10148; Donner Paracétamol Oral pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:mastoidite'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg dose unique</label>
                    </trigger>
                    <trigger ref="/data/treatments/mastoidite/mastoidite_treat_3" appearance="minimal">
                        <label>&#10148; *Référer d'URGENCE en pédiatrie au CMA*</label>
@@ -2483,11 +2483,11 @@ Si l’enfant est incapable d’avaler:
 				   </trigger>
 				   <group ref="/data/treatments/infection_aigue_oreille/show_antibio_1">				
 					   <trigger ref="/data/treatments/infection_aigue_oreille/infection_aigue_oreille_treat_0" appearance="minimal">
-						   <label>&#10148; Donner Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:infection_aigue_oreille'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+						   <label>&#10148; Donner Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:infection_aigue_oreille'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/infection_aigue_oreille/infection_aigue_oreille_treat_1" appearance="minimal">
-                       <label>&#10148; Donner Paracétamol Oral pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:infection_aigue_oreille'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg dose unique</label>
+                       <label>&#10148; Donner Paracétamol Oral pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:infection_aigue_oreille'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg dose unique</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_aigue_oreille/infection_aigue_oreille_treat_2" appearance="minimal">
                        <label ref="jr:itext('infection_aigue_oreille_treat_2-label')" />
@@ -2517,7 +2517,7 @@ Si l’enfant est incapable d’avaler:
                    <label>&#9644;&#9644;&#9644;Anémie grave&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/anemie_grave/anemie_grave_treat_0" appearance="minimal">
-                       <label>&#10148; Donner Quinine IM - charge - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm15_1:anemie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (en IM faire la dilution pour obtenir 60mg de sel de quinine par ml. Risque de nécrose si dilution trop concentrée)</label>
+                       <label>&#10148; Donner Quinine IM - charge - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm15_1:anemie_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (en IM faire la dilution pour obtenir 60mg de sel de quinine par ml. Risque de nécrose si dilution trop concentrée)</label>
                    </trigger>
                    <trigger ref="/data/treatments/anemie_grave/anemie_grave_treat_1" appearance="minimal">
                        <label ref="jr:itext('anemie_grave_treat_1-label')" />
@@ -2558,12 +2558,12 @@ Si l’enfant est incapable d’avaler:
 				   </group>
 				   <group ref="/data/treatments/anemie/show_deparasitage_meb">
 					   <trigger ref="/data/treatments/anemie/anemie_treat_5" appearance="minimal">
-						   <label>&#8226; Mebendazole Oral - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:mebendazole:anemie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 2 fois par jour pendant 3 jours si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
+						   <label>&#8226; Mebendazole Oral - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:mebendazole:anemie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 2 fois par jour pendant 3 jours si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/anemie/show_deparasitage_alb">
 					   <trigger ref="/data/treatments/anemie/anemie_treat_6" appearance="minimal">
-						   <label>&#8226; Albendazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:albendazole:anemie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en dose unique si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
+						   <label>&#8226; Albendazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:albendazole:anemie'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg en dose unique si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/anemie/anemie_treat_7" appearance="minimal">
@@ -2624,13 +2624,13 @@ Si l’enfant est incapable d’avaler:
 				   <group ref="/data/treatments/mass/show_antibio_2">
 					   <trigger ref="/data/treatments/mass/mass_treat_4" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique :
-&#9644;&#9644;&#9644;&#8226; 1ère intention : Amoxiciline Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:mass'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 2 fois par jour pendant 7 jours</label>
+&#9644;&#9644;&#9644;&#8226; 1ère intention : Amoxiciline Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:mass'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 2 fois par jour pendant 7 jours</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/mass/show_antibio_1">
 					   <trigger ref="/data/treatments/mass/mass_treat_5" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique :
-&#9644;&#9644;&#9644;&#8226; 2ème intension : Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:mass'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 7 jours</label>
+&#9644;&#9644;&#9644;&#8226; 2ème intension : Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:mass'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 7 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/mass/mass_treat_6" appearance="minimal">
@@ -2639,13 +2639,13 @@ Si l’enfant est incapable d’avaler:
 				   <group ref="/data/treatments/mass/show_deparasitage_meb">
 					   <trigger ref="/data/treatments/mass/mass_treat_7" appearance="minimal">
 						   <label>&#10148; Donner :
-&#9644;&#9644;&#9644;&#8226; Mebendazole Oral - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:mebendazole:mass'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 2 fois par jour pendant 3 jours si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
+&#9644;&#9644;&#9644;&#8226; Mebendazole Oral - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:mebendazole:mass'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 2 fois par jour pendant 3 jours si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/mass/show_deparasitage_alb">
 					   <trigger ref="/data/treatments/mass/mass_treat_8" appearance="minimal">
 						   <label>&#10148; Donner :
-&#9644;&#9644;&#9644;&#8226; Albendazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:albendazole:mass'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en dose unique si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
+&#9644;&#9644;&#9644;&#8226; Albendazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:albendazole:mass'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg en dose unique si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/mass/mass_treat_9" appearance="minimal">
@@ -2672,13 +2672,13 @@ Si l’enfant est incapable d’avaler:
 				   <group ref="/data/treatments/mam/show_deparasitage_meb">
 					   <trigger ref="/data/treatments/mam/mam_treat_2" appearance="minimal">
 						   <label>&#10148; Donner :
-&#9644;&#9644;&#9644;&#8226; Mebendazole Oral - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:mebendazole:mam'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 2 fois par jour pendant 3 jours si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
+&#9644;&#9644;&#9644;&#8226; Mebendazole Oral - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:mebendazole:mam'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 2 fois par jour pendant 3 jours si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/mam/show_deparasitage_alb">
 					   <trigger ref="/data/treatments/mam/mam_treat_3" appearance="minimal">
 						   <label>&#10148; Donner :
-&#9644;&#9644;&#9644;&#8226; Albendazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:albendazole:mam'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg en dose unique si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
+&#9644;&#9644;&#9644;&#8226; Albendazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'deparasitage:albendazole:mam'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg en dose unique si l'enfant n'en a pas re&#231;u pendant les 6 mois précédents</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/mam/mam_treat_4" appearance="minimal">
@@ -2742,11 +2742,11 @@ Si l’enfant est incapable d’avaler:
                    </trigger>
 					<group ref="/data/treatments/vih_symp_confirmee/show_antibio_1">
 					   <trigger ref="/data/treatments/vih_symp_confirmee/vih_symp_confirmee_treat_1" appearance="minimal">
-						   <label>&#10148; Traiter Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:vih_symp_confirmee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+						   <label>&#10148; Traiter Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:vih_symp_confirmee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/vih_symp_confirmee/vih_symp_confirmee_treat_2" appearance="minimal">
-                       <label>&#10148; Relais Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_2:vih_symp_confirmee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 3 fois par jour pendant 3 semaines</label>
+                       <label>&#10148; Relais Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_2:vih_symp_confirmee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 3 fois par jour pendant 3 semaines</label>
                    </trigger>
                    <trigger ref="/data/treatments/vih_symp_confirmee/vih_symp_confirmee_treat_3" appearance="minimal">
                        <label>&#10148; Vérifier le statut vaccinal</label>
@@ -2780,11 +2780,11 @@ Si l’enfant est incapable d’avaler:
                    </trigger>
 				   <group ref="/data/treatments/vih_confirmee/show_antibio_1">
 					   <trigger ref="/data/treatments/vih_confirmee/vih_confirmee_treat_1" appearance="minimal">
-						   <label>&#10148; Traiter Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:vih_confirmee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+						   <label>&#10148; Traiter Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:vih_confirmee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/vih_confirmee/vih_confirmee_treat_2" appearance="minimal">
-                       <label>&#10148; Relais Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_2:vih_confirmee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 3 fois par jour pendant 3 semaines</label>
+                       <label>&#10148; Relais Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_2:vih_confirmee'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 3 fois par jour pendant 3 semaines</label>
                    </trigger>
                    <trigger ref="/data/treatments/vih_confirmee/vih_confirmee_treat_3" appearance="minimal">
                        <label>&#10148; Vérifier le statut vaccinal</label>
@@ -2817,10 +2817,10 @@ Si l’enfant est incapable d’avaler:
                        <label ref="jr:itext('vih_symp_probable_treat_0-label')" />
                    </trigger>
                    <trigger ref="/data/treatments/vih_symp_probable/vih_symp_probable_treat_1" appearance="minimal">
-                       <label>&#10148; Traiter avec Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_2:vih_symp_probable'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 3 fois par jour pendant 3 semaines</label>
+                       <label>&#10148; Traiter avec Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_2:vih_symp_probable'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 3 fois par jour pendant 3 semaines</label>
                    </trigger>
                    <trigger ref="/data/treatments/vih_symp_probable/vih_symp_probable_treat_2" appearance="minimal">
-                       <label>&#10148; Relais avec Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_3:vih_symp_probable'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jours - tous les jours - ne pas arrêter sans avis médical</label>
+                       <label>&#10148; Relais avec Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_3:vih_symp_probable'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jours - tous les jours - ne pas arrêter sans avis médical</label>
                    </trigger>
                    <trigger ref="/data/treatments/vih_symp_probable/vih_symp_probable_treat_3" appearance="minimal">
                        <label>&#10148; Donner Multivitamines - <output ref="instance('medications')/medications_list/medications[@key = 'm25_1:vih_symp_probable'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> comprimé</label>
@@ -2854,11 +2854,11 @@ Si l’enfant est incapable d’avaler:
                    </trigger>
 				   <group ref="/data/treatments/vih_possible/show_antibio_1">
 					   <trigger ref="/data/treatments/vih_possible/vih_possible_treat_1" appearance="minimal">
-						   <label>&#10148; Traiter avec Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:vih_possible'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
+						   <label>&#10148; Traiter avec Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:1:vih_possible'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jour pendant 8 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/vih_possible/vih_possible_treat_2" appearance="minimal">
-                       <label>&#10148; Relais avec Cotrimoxazole - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_3:vih_possible'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg-smx par prise - 2 fois par jours - tous les jours - ne pas arrêter sans avis médical</label>
+                       <label>&#10148; Relais avec Cotrimoxazole - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm1_3:vih_possible'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg-smx par prise - 2 fois par jours - tous les jours - ne pas arrêter sans avis médical</label>
                    </trigger>
                    <trigger ref="/data/treatments/vih_possible/vih_possible_treat_3" appearance="minimal">
                        <label>&#10148; Donner Multivitamines - <output ref="instance('medications')/medications_list/medications[@key = 'm25_1:vih_possible'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> comprimé</label>
@@ -2942,19 +2942,19 @@ Si l’enfant est incapable d’avaler:
                    <label>&#9644;&#9644;&#9644;Maladie fébrile très grave et TDR négatif&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_tdr_negatif/paludisme_grave_tdr_negatif_treat_0" appearance="minimal">
-                       <label>&#10148; Donner : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                       <label>&#10148; Donner : Ampicilline pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_tdr_negatif/paludisme_grave_tdr_negatif_treat_1" appearance="minimal">
-                       <label>&#10148; Donner : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                       <label>&#10148; Donner : Gentamicine pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_tdr_negatif/paludisme_grave_tdr_negatif_treat_2" appearance="minimal">
                        <label ref="jr:itext('paludisme_grave_tdr_negatif_treat_2-label')" />
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_tdr_negatif/paludisme_grave_tdr_negatif_treat_3" appearance="minimal">
-                       <label>&#10148; Si la fièvre est élevée (38,5&#176;C ou plus) et si l'enfant peut boire donner : Paracétamol Oral - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg - 4 fois par jour tant que douleur ou température supérieure à 38&#176;5</label>
+                       <label>&#10148; Si la fièvre est élevée (38,5&#176;C ou plus) et si l'enfant peut boire donner : Paracétamol Oral - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm6:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg - 4 fois par jour tant que douleur ou température supérieure à 38&#176;5</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_tdr_negatif/paludisme_grave_tdr_negatif_treat_4" appearance="minimal">
-                       <label>&#10148; Si la fièvre est élevée (38,5&#176;C ou plus) et si l'enfant +ne peut pas+ boire donner : Acetylsalicylate De Lysine - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm16:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg - 4 fois par jour tant que douleur ou température supérieure à 38&#176;5</label>
+                       <label>&#10148; Si la fièvre est élevée (38,5&#176;C ou plus) et si l'enfant +ne peut pas+ boire donner : Acetylsalicylate De Lysine - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm16:paludisme_grave_tdr_negatif'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg - 4 fois par jour tant que douleur ou température supérieure à 38&#176;5</label>
                    </trigger>
                    <trigger ref="/data/treatments/paludisme_grave_tdr_negatif/paludisme_grave_tdr_negatif_treat_5" appearance="minimal">
                        <label>&#10148; *Transférer d'URGENCE au centre de référence*</label>

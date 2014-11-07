@@ -609,10 +609,10 @@ S’il n’existe aucun signe de maladie grave et la température est égale ou 
                    <label>&#9644;&#9644;&#9644;Possibilité d'Infection Bactérienne Grave&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/infection_grave/infection_grave_treat_0" appearance="minimal">
-                       <label>&#10148; Donner la première dose en intramusculaire de : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                       <label>&#10148; Donner la première dose en intramusculaire de : Ampicilline pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave/infection_grave_treat_1" appearance="minimal">
-                       <label>&#10148; Donner la première dose en intramusculaire de : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg</label>
+                       <label>&#10148; Donner la première dose en intramusculaire de : Gentamicine pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:infection_grave'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave/infection_grave_treat_2" appearance="minimal">
                        <label ref="jr:itext('infection_grave_treat_2-label')" />
@@ -630,10 +630,10 @@ S’il n’existe aucun signe de maladie grave et la température est égale ou 
                    <label>&#9644;&#9644;&#9644;Possibilité d'Infection Bactérienne Grave si référence impossible&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_0" appearance="minimal">
-                       <label>&#10148; Donner la première dose en intramusculaire de : Ampicilline - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Donner la première dose en intramusculaire de : Ampicilline - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12_1:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_1" appearance="minimal">
-                       <label>&#10148; Donner la première dose en intramusculaire de : Gentamicine - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_1:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - toutes les 12h pendant 5 jours</label>
+                       <label>&#10148; Donner la première dose en intramusculaire de : Gentamicine - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13_1:infection_grave_no_ref'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - toutes les 12h pendant 5 jours</label>
                    </trigger>
                    <trigger ref="/data/treatments/infection_grave_no_ref/infection_grave_no_ref_treat_2" appearance="minimal">
                        <label ref="jr:itext('infection_grave_no_ref_treat_2-label')" />
@@ -647,13 +647,13 @@ S’il n’existe aucun signe de maladie grave et la température est égale ou 
 				   <group ref="/data/treatments/infection_locale/show_antibio_2">
 					   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_0" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique approprié par voie orale
-&#9644;&#9644;&#9644;&#8226; 1ère intention : Amoxiciline Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 3 fois par jour pendant 5 jours</label>
+&#9644;&#9644;&#9644;&#8226; 1ère intention : Amoxiciline Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:2:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 3 fois par jour pendant 5 jours</label>
 					   </trigger>
 				   </group>
 				   <group ref="/data/treatments/infection_locale/show_antibio_3">
 					   <trigger ref="/data/treatments/infection_locale/infection_locale_treat_1" appearance="minimal">
 						   <label>&#10148; Donner un antibiotique approprié par voie orale
-&#9644;&#9644;&#9644;&#8226; 2ème intension : Erytromycine Orale - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg par prise - 4 fois par jour pendant 5 jours</label>
+&#9644;&#9644;&#9644;&#8226; 2ème intension : Erytromycine Orale - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'antibio:3:infection_locale'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg par prise - 4 fois par jour pendant 5 jours</label>
 					   </trigger>
 				   </group>
                    <trigger ref="/data/treatments/infection_locale/infection_locale_treat_2" appearance="minimal">
@@ -789,10 +789,10 @@ S’il n’existe aucun signe de maladie grave et la température est égale ou 
                    <label>&#9644;&#9644;&#9644;Incapable de se nourrir / possibilité d'une infection bactérienne grave&#9644;&#9644;&#9644;</label>
                </trigger>
                    <trigger ref="/data/treatments/incapable_nourrir/incapable_nourrir_treat_0" appearance="minimal">
-                       <label>&#10148; Donner la première dose d'antibiotique en intramusculaire : Ampicilline pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:incapable_nourrir'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (mélanger avec 2.1ml d'eau distillée pour avoir 500mg/2,5ml)</label>
+                       <label>&#10148; Donner la première dose d'antibiotique en intramusculaire : Ampicilline pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm12:incapable_nourrir'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (mélanger avec 2.1ml d'eau distillée pour avoir 500mg/2,5ml)</label>
                    </trigger>
                    <trigger ref="/data/treatments/incapable_nourrir/incapable_nourrir_treat_1" appearance="minimal">
-                       <label>&#10148; Donner la première dose d'antibiotique en intramusculaire : Gentamicine pré référence - <output ref="/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:incapable_nourrir'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose"/> mg (diluer avec 6ml d'eau physiologique pour avoir 20mg/ml)</label>
+                       <label>&#10148; Donner la première dose d'antibiotique en intramusculaire : Gentamicine pré référence - <output ref="int(/data/child_weight * instance('medications')/medications_list/medications[@key = 'm13:incapable_nourrir'][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]/@dose)"/> mg (diluer avec 6ml d'eau physiologique pour avoir 20mg/ml)</label>
                    </trigger>
                    <trigger ref="/data/treatments/incapable_nourrir/incapable_nourrir_treat_2" appearance="minimal">
                        <label ref="jr:itext('incapable_nourrir_treat_2-label')" />
