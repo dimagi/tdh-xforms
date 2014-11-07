@@ -236,7 +236,11 @@
 			<bind nodeset="/data/diarrhee/diarrhee_persistante" relevant="/data/diarrhee/diarrhee_qa = 'yes' and /data/diarrhee/diarrhee_qb &gt;= 14 and (/data/diarrhee/diarrhee_qe != '' or /data/diarrhee/diarrhee_qa = 'no')" />
 			<bind nodeset="/data/diarrhee/diarrhee_sang" relevant="/data/diarrhee/diarrhee_qa = 'yes' and /data/diarrhee/diarrhee_qc = 'yes' and (/data/diarrhee/diarrhee_qe != '' or /data/diarrhee/diarrhee_qa = 'no')" />
 			<bind nodeset="/data/diarrhee/diarrhee_qa" required="true()" />
-			<bind nodeset="/data/diarrhee/diarrhee_qb" type="xsd:int" relevant="/data/diarrhee/diarrhee_qa = 'yes'" required="true()" />
+			<bind nodeset="/data/diarrhee/diarrhee_qb" type="xsd:int"
+				constraint=". &gt;= 1 and .&lt;= 30"
+				jr:constraintMsg="jr:itext('diarrhee/diarrhee_qb-constraintMsg')"
+				relevant="/data/diarrhee/diarrhee_qa = 'yes'"
+				required="true()" />
 			<bind nodeset="/data/diarrhee/diarrhee_qc" relevant="/data/diarrhee/diarrhee_qa = 'yes'" required="true()" />
 			<bind nodeset="/data/diarrhee/diarrhee_qd" relevant="/data/diarrhee/diarrhee_qa = 'yes'" required="true()" />
 			<bind nodeset="/data/diarrhee/diarrhee_qe" relevant="/data/diarrhee/diarrhee_qa = 'yes'" required="true()" />
@@ -246,9 +250,16 @@
 			<bind nodeset="/data/alimentation/alimentation_low" relevant="/data/incapable_nourir != 'yes' and /data/signes_pb_alim != 'yes' and /data/alimentation/alimentation_qh != ''" />
 			<bind nodeset="/data/alimentation/alimentation_qa" required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qb" required="true()" />
-			<bind nodeset="/data/alimentation/alimentation_qc" type="xsd:int" relevant="/data/alimentation/alimentation_qb = 'yes'" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qc" type="xsd:int"
+				constraint=". &gt;= 1 and .&lt;= 40"
+				jr:constraintMsg="jr:itext('alimentation/alimentation_qc-constraintMsg')"
+				relevant="/data/alimentation/alimentation_qb = 'yes'"
+				required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qd" required="true()" />
-			<bind nodeset="/data/alimentation/alimentation_qe" type="xsd:int" relevant="/data/alimentation/alimentation_qd = 'yes'" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qe" type="xsd:int"
+				constraint=". &gt;= 1 and .&lt;= 20"
+				jr:constraintMsg="jr:itext('alimentation/alimentation_qe-constraintMsg')"
+				relevant="/data/alimentation/alimentation_qd = 'yes'" required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qf" relevant="/data/alimentation/alimentation_qb = 'yes'" required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qg" relevant="/data/alimentation/alimentation_qb = 'yes'" required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qh" required="true()" />
@@ -651,6 +662,9 @@ Are the measurements correct?</value>
 					<text id="diarrhee/diarrhee_qb-label">
 						<value>How many days?</value>
 					</text>
+					<text id="diarrhee/diarrhee_qb-constraintMsg">
+						<value>The duration should be between 1 and 30 days</value>
+					</text>
 					<text id="diarrhee/diarrhee_qc-label">
 						<value>Y he has blood in the stool?</value>
 					</text>
@@ -670,7 +684,9 @@ Are the measurements correct?</value>
 						<value>No</value>
 					</text>
 					<text id="diarrhee/diarrhee_qe-label">
-						<value>Pinch the skin of the abdomen. The skinfold is he back: Very slowly (longer than 2 seconds)? Or slowly?</value>
+						<value>Pinch the skin of the abdomen. How does it go back?</value>
+						<value form="help">help</value>
+						<value form="help-text">Very slowly: > 2 seconds</value>
 					</text>
 					<text id="diarrhee/diarrhee_qe-normalement-label">
 						<value>Normal</value>
@@ -714,6 +730,9 @@ Are the measurements correct?</value>
 					<text id="alimentation/alimentation_qc-label">
 						<value>If yes, how many times in 24 hours?</value>
 					</text>
+					<text id="alimentation/alimentation_qc-constraintMsg">
+						<value>The value should be between 1 and 40 times</value>
+					</text>
 					<text id="alimentation/alimentation_qd-label">
 						<value>The infant receives it usually other foods or drinks?</value>
 					</text>
@@ -724,7 +743,10 @@ Are the measurements correct?</value>
 						<value>No</value>
 					</text>
 					<text id="alimentation/alimentation_qe-label">
-						<value>If yes, how often?</value>
+						<value>If yes, how many times?</value>
+					</text>
+					<text id="alimentation/alimentation_qe-constraintMsg">
+						<value>The value should be between 1 and 20 times</value>
 					</text>
 					<text id="alimentation/alimentation_qf-label">
 						<value>The infant can he take the breast?</value>
@@ -739,10 +761,12 @@ Are the measurements correct?</value>
 						<value>Taking good </value>
 					</text>
 					<text id="alimentation/alimentation_qg-label">
-						<value>Is the infant suckling effectively (that is to say, by slow deep sucks with pauses)?</value>
+						<value>Is the infant suckling effectively?</value>
+						<value form="help">help</value>
+						<value form="help-text">That is to say, by slow deep sucks with pauses</value>
 					</text>
 					<text id="alimentation/alimentation_qg-pas_succion-label">
-						<value>Not Sucking </value>
+						<value>Not Sucking</value>
 					</text>
 					<text id="alimentation/alimentation_qg-non_efficace-label">
 						<value>Not Effective</value>
@@ -1049,7 +1073,7 @@ Les mesures sont-elles correctes?</value>
 						<value>Compter la fréquence respiratoire</value>
 					</text>
 					<text id="inf_bac/inf_bac_freq_resp-constraintMsg">
-						<value>Doit être compris entre 10 et 120</value>
+						<value>La fréquence respiratoire doit être comprise entre 10 et 120</value>
 					</text>
 					<text id="inf_bac/inf_bac_qc-label">
 						<value>Rechercher un tirage sous-costal grave</value>
@@ -1192,6 +1216,9 @@ Les mesures sont-elles correctes?</value>
 					<text id="diarrhee/diarrhee_qb-label">
 						<value>Depuis combien de jours ?</value>
 					</text>
+					<text id="diarrhee/diarrhee_qb-constraintMsg">
+						<value>La dureé doit être comprise entre 1 et 30 jous</value>
+					</text>
 					<text id="diarrhee/diarrhee_qc-label">
 						<value>Y a-t-il du sang dans les selles?</value>
 					</text>
@@ -1211,10 +1238,12 @@ Les mesures sont-elles correctes?</value>
 						<value>Non</value>
 					</text>
 					<text id="diarrhee/diarrhee_qe-label">
-						<value>Pincer la peau de l’abdomen. Le pli cutané s’efface-t-il: Très lentement (plus de 2 secondes)? Ou lentement?</value>
+						<value>Pincer la peau de l’abdomen. Comment s'efface-t-il ?</value>
+						<value form="help">help</value>
+						<value form="help-text">Très lentement: > 2 secondes</value>
 					</text>
 					<text id="diarrhee/diarrhee_qe-normalement-label">
-						<value>Normalemente</value>
+						<value>Normalement</value>
 					</text>
 					<text id="diarrhee/diarrhee_qe-lentement-label">
 						<value>Lentement</value>
@@ -1255,6 +1284,9 @@ Les mesures sont-elles correctes?</value>
 					<text id="alimentation/alimentation_qc-label">
 						<value>Si oui, combien de fois en 24 heures ?</value>
 					</text>
+					<text id="alimentation/alimentation_qc-constraintMsg">
+						<value>La valeur doit être comprise entre 1 et 40 fois</value>
+					</text>
 					<text id="alimentation/alimentation_qd-label">
 						<value>Le nourrisson reçoit-il d’habitude d’autres aliments ou d’autres boissons ?</value>
 					</text>
@@ -1266,6 +1298,9 @@ Les mesures sont-elles correctes?</value>
 					</text>
 					<text id="alimentation/alimentation_qe-label">
 						<value>Si oui, combien de fois ?</value>
+					</text>
+					<text id="alimentation/alimentation_qe-constraintMsg">
+						<value>La valeur doit être comprise entre 1 et 20 fois</value>
 					</text>
 					<text id="alimentation/alimentation_qf-label">
 						<value>Le nourrisson peut-il bien prendre le sein?</value>
@@ -1280,16 +1315,18 @@ Les mesures sont-elles correctes?</value>
 						<value>Bonne prise</value>
 					</text>
 					<text id="alimentation/alimentation_qg-label">
-						<value>Est-ce que le nourrisson tète efficacement (c’est-à-dire par succions profondes et lentes entrecoupées de pauses) ?</value>
+						<value>Est-ce que le nourrisson tète efficacement ?</value>
+						<value form="help">help</value>
+						<value form="help-text">C'est-à-dire par succions profondes et lentes entrecoupées de pauses ?</value>
 					</text>
 					<text id="alimentation/alimentation_qg-pas_succion-label">
-						<value>Pas succion</value>
+						<value>Pas de succion</value>
 					</text>
 					<text id="alimentation/alimentation_qg-non_efficace-label">
-						<value> Non efficace</value>
+						<value>Succion non efficace</value>
 					</text>
 					<text id="alimentation/alimentation_qg-efficace-label">
-						<value>Efficace</value>
+						<value>Succion efficace</value>
 					</text>
 					<text id="alimentation/alimentation_qh-label">
 						<value>Regarder la bouche pour détecter des ulcérations ou plaques blanches (muguet).</value>

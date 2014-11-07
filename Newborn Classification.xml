@@ -250,7 +250,10 @@
 			<bind nodeset="/data/alimentation/alimentation_low" relevant="/data/maladie_grave_alim != 'yes' and /data/pb_alim != 'yes' and ((/data/alimentation/alimentation_qi != '' and /data/alimentation/alimentation_qb = 'yes') or (/data/alimentation/alimentation_qg and /data/alimentation/alimentation_qb = 'no'))" />
 			<bind nodeset="/data/alimentation/alimentation_qa" required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qb" required="true()" />
-			<bind nodeset="/data/alimentation/alimentation_qc" type="xsd:int" relevant="/data/alimentation/alimentation_qb = 'yes'" required="true()" />
+			<bind nodeset="/data/alimentation/alimentation_qc" type="xsd:int"
+				constraint=". &gt;= 1 and .&lt;= 40"
+				jr:constraintMsg="jr:itext('alimentation/alimentation_qc-constraintMsg')"
+				relevant="/data/alimentation/alimentation_qb = 'yes'" required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qd" required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qe" relevant="/data/alimentation/alimentation_qd = 'yes'" required="true()" />
 			<bind nodeset="/data/alimentation/alimentation_qf" required="true()" />
@@ -607,7 +610,9 @@ Are the measurements correct?</value>
 						<value>No</value>
 					</text>
 					<text id="inf_bac/inf_bac_qh-label">
-						<value>Assess the axillary temperature (moderate hypothermia =&gt; 35.5 &lt;= T &lt;= 36.6 / severe Hypothermic =&gt; T &lt;35.5 / Fever =&gt; T =&gt; 37.5)</value>
+						<value>Assess the axillary temperature</value>
+						<value form="help">help</value>
+						<value form="help-text">Moderate hypothermia: 35.5 &lt;= T &lt;= 36.6 / severe hypothermia: T &lt; 35.5 / Fever T &gt;= 37.5</value>
 					</text>
 					<text id="inf_bac/inf_bac_qh-normale-label">
 						<value>Normal</value>
@@ -792,6 +797,9 @@ Are the measurements correct?</value>
 					<text id="alimentation/alimentation_qc-label">
 						<value>If yes, how many times in 24 hours?</value>
 					</text>
+					<text id="alimentation/alimentation_qc-constraintMsg">
+						<value>The value should be between 1 and 40 times</value>
+					</text>
 					<text id="alimentation/alimentation_qd-label">
 						<value>The infant receives it usually other foods or liquids in addition to breast milk?</value>
 					</text>
@@ -820,7 +828,9 @@ Are the measurements correct?</value>
 						<value>No</value>
 					</text>
 					<text id="alimentation/alimentation_qg-label">
-						<value>Watch mouth newborn to detect defects at the mouth (cleft lip, cleft palate)</value>
+						<value>Watch mouth newborn to detect defects at the mouth</value>
+						<value form="help">help</value>
+						<value form="help-text">cleft lip, cleft palate</value>
 					</text>
 					<text id="alimentation/alimentation_qg-yes-label">
 						<value>Yes</value>
@@ -841,7 +851,9 @@ Are the measurements correct?</value>
 						<value>Taking good </value>
 					</text>
 					<text id="alimentation/alimentation_qi-label">
-						<value>Does the infant head effectively (that is to say, by slow deep sucks with pauses)?</value>
+						<value>Does the infant head effectively?</value>
+						<value form="help">help</value>
+						<value form="help-text">That is to say, by slow deep sucks with pauses</value>
 					</text>
 					<text id="alimentation/alimentation_qi-pas_succion-label">
 						<value>Not Sucking </value>
@@ -1082,7 +1094,7 @@ Les mesures sont-elles correctes?</value>
 						<value>Compter la fréquence respiratoire</value>
 					</text>
 					<text id="inf_bac/inf_bac_freq_resp-constraintMsg">
-						<value>Doit être compris entre 10 et 120</value>
+						<value>La fréquence respiratoire doit être comprise entre 10 et 120</value>
 					</text>
 					<text id="inf_bac/inf_bac_qd-label">
 						<value>Rechercher un tirage sous-costal grave</value>
@@ -1109,10 +1121,10 @@ Les mesures sont-elles correctes?</value>
 						<value>Normaux</value>
 					</text>
 					<text id="inf_bac/inf_bac_qf-bouge_stimule-label">
-						<value>Bouge stimule</value>
+						<value>Mouvements seulement si stimulation</value>
 					</text>
 					<text id="inf_bac/inf_bac_qf-pas_mouvements-label">
-						<value>Pas mouvements</value>
+						<value>Pas de mouvements même si stimulation</value>
 					</text>
 					<text id="inf_bac/inf_bac_qg-label">
 						<value>Rechercher des pustules sur la peau</value>
@@ -1124,7 +1136,9 @@ Les mesures sont-elles correctes?</value>
 						<value>Non</value>
 					</text>
 					<text id="inf_bac/inf_bac_qh-label">
-						<value>Apprécier la température axilaire (Hypothermie modérée =&gt; 35.5 &lt;= T &lt;= 36.6  / Hypothermique sévère =&gt; T &lt; 35.5 / Fievre =&gt; T =&gt; 37.5)</value>
+						<value>Apprécier la température axilaire</value>
+						<value form="help">help</value>
+						<value form="help-text">Hypothermie modérée: 35.5 &lt;= T &lt;= 36.6 / Hypothermique sévère: T &lt; 35.5 / Fievre: T &gt;= 37.5</value>
 					</text>
 					<text id="inf_bac/inf_bac_qh-normale-label">
 						<value>Normale</value>
@@ -1214,13 +1228,13 @@ Les mesures sont-elles correctes?</value>
 						<value>Quel est l'état sérologique de la mère ?</value>
 					</text>
 					<text id="vih/vih_qa-negatif_grossesse-label">
-						<value>Negatif Grossesse</value>
+						<value>Negatif pendant la grossesse</value>
 					</text>
 					<text id="vih/vih_qa-inconnue-label">
-						<value>Inconnue</value>
+						<value>Inconnu</value>
 					</text>
 					<text id="vih/vih_qa-positive-label">
-						<value>Positive</value>
+						<value>Positif</value>
 					</text>
 					<text id="vih/vih_qb-label">
 						<value>Hépatomégalie</value>
@@ -1309,6 +1323,9 @@ Les mesures sont-elles correctes?</value>
 					<text id="alimentation/alimentation_qc-label">
 						<value>Si oui, combien de fois en 24 heures ?</value>
 					</text>
+					<text id="alimentation/alimentation_qc-constraintMsg">
+						<value>La valeur doit être comprise entre 1 et 40 fois</value>
+					</text>
 					<text id="alimentation/alimentation_qd-label">
 						<value>Le nourrisson reçoit-il d’habitude d’autres aliments ou liquides en plus du lait maternel ?</value>
 					</text>
@@ -1337,7 +1354,9 @@ Les mesures sont-elles correctes?</value>
 						<value>Non</value>
 					</text>
 					<text id="alimentation/alimentation_qg-label">
-						<value>Regarder la bouche du nouveau-né pour détecter une malformation au niveau de la bouche (bec de lièvre, une fente palatine)</value>
+						<value>Regarder la bouche du nouveau-né pour détecter une malformation au niveau de la bouche</value>
+						<value form="help">help</value>
+						<value form="help-text">bec de lièvre, une fente palatine</value>
 					</text>
 					<text id="alimentation/alimentation_qg-yes-label">
 						<value>Oui</value>
@@ -1349,25 +1368,27 @@ Les mesures sont-elles correctes?</value>
 						<value>Le nourrisson peut-il bien prendre le sein ?</value>
 					</text>
 					<text id="alimentation/alimentation_qh-pas_prise-label">
-						<value>Pas prise</value>
+						<value>Pas de prise de sein</value>
 					</text>
 					<text id="alimentation/alimentation_qh-mauvaise_prise-label">
-						<value>Mauvaise prise</value>
+						<value>Mauvaise prise de sein</value>
 					</text>
 					<text id="alimentation/alimentation_qh-bonne_prise-label">
-						<value>Bonne prise</value>
+						<value>Bonne prise de sein</value>
 					</text>
 					<text id="alimentation/alimentation_qi-label">
-						<value>Est-ce que le nourrisson tête efficacement (c'est-à-dire par succions profondes et lentes entrecoupées de pauses) ?</value>
+						<value>Est-ce que le nourrisson tète efficacement ?</value>
+						<value form="help">help</value>
+						<value form="help-text">C'est-à-dire par succions profondes et lentes entrecoupées de pauses ?</value>
 					</text>
 					<text id="alimentation/alimentation_qi-pas_succion-label">
-						<value>Pas succion</value>
+						<value>Pas de succion</value>
 					</text>
 					<text id="alimentation/alimentation_qi-non_efficace-label">
-						<value>Non efficace</value>
+						<value>Succion non efficace</value>
 					</text>
 					<text id="alimentation/alimentation_qi-efficace-label">
-						<value>Efficace</value>
+						<value>Succion efficace</value>
 					</text>
 					<text id="other_comments-label">
 						<value>D'autres symptômes ou des commentaires à entrer?</value>

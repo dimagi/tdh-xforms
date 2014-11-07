@@ -141,6 +141,7 @@
 						<paleur_palmaire />
 					</anemie>
 					<malnutrition>
+						<show_malnutrition_label />
 						<malnutrition_na />
 						<no_malnutrition />
 						<malnutrition_mam />
@@ -405,6 +406,7 @@
 			<bind nodeset="/data/anemie/anemia_serious" relevant="/data/anemie_grave = 'yes' and /data/anemie/paleur_palmaire != ''" />
 			<bind nodeset="/data/anemie/paleur_palmaire" required="true()" />
 			<bind nodeset="/data/malnutrition" required="true()" />
+			<bind nodeset="/data/malnutrition/show_malnutrition_label" relevant="/data/age_in_months &gt;= 6" />
 			<bind nodeset="/data/malnutrition/malnutrition_na" relevant="date(today()) - date(/data/dob) &lt;= 6 * 30.4375" />
 			<bind nodeset="/data/malnutrition/no_malnutrition" relevant="date(today()) - date(/data/dob) &gt;= 6 * 30.4375 and /data/ma_normal = 'yes' and /data/malnutrition/oedemes = 'no' and ((/data/malnutrition/test_appetit != '' and /data/vitals/muac &lt; 115) or (/data/malnutrition/oedemes != '' and /data/vitals/muac &gt;= 115))" />
 			<bind nodeset="/data/malnutrition/malnutrition_mam" relevant="date(today()) - date(/data/dob) &gt;= 6 * 30.4375 and /data/ma_mam = 'yes' and /data/malnutrition/oedemes = 'no' and ((/data/malnutrition/test_appetit != '' and /data/vitals/muac &lt; 115) or (/data/malnutrition/oedemes != '' and /data/vitals/muac &gt;= 115))" />
@@ -1142,7 +1144,9 @@ Are the measurements correct?</value>
 						<value>Febrile disease or severe Malaria</value>
 					</text>
 					<text id="fievre_presence-label">
-						<value>The child does have a fever (by history or feels hot or axillary temperature of over 38 ° C or rectal temperature over 37.5 ° C)?</value>
+						<value>The child does have a fever ?</value>
+						<value form="help">help</value>
+						<value form="help-text">By history or feels hot or axillary temperature of over 38 ° C or rectal temperature over 37.5 ° C</value>
 					</text>
 					<text id="fievre_presence-yes-label">
 						<value>Yes</value>
@@ -1166,7 +1170,7 @@ Are the measurements correct?</value>
 						<value>No</value>
 					</text>
 					<text id="tdr-label">
-						<value>Making a RDT</value>
+						<value>Make a RDT: What is the result ?</value>
 					</text>
 					<text id="tdr-tdr+-label">
 						<value>RDT+</value>
@@ -2140,7 +2144,9 @@ Les mesures sont-elles correctes?</value>
 						<value>Maladie fébrile très grave ou paludisme grave</value>
 					</text>
 					<text id="fievre_presence-label">
-						<value>L'enfant a-t-il de la fièvre (antécédents ou chaud au toucher ou temperature axillaire de plus 38°C ou température rectale de plus 37,5°C) ?</value>
+						<value>L'enfant a-t-il de la fièvre ?</value>
+						<value form="help">help</value>
+						<value form="help-text">Antécédents ou chaud au toucher ou temperature axillaire de plus 38°C ou température rectale de plus 37,5°C</value>
 					</text>
 					<text id="fievre_presence-yes-label">
 						<value>Oui</value>
@@ -2164,7 +2170,7 @@ Les mesures sont-elles correctes?</value>
 						<value>Non</value>
 					</text>
 					<text id="tdr-label">
-						<value>Réaliser un TDR</value>
+						<value>Réaliser un TDR: quel est le résultat ?</value>
 					</text>
 					<text id="tdr-tdr+-label">
 						<value>TDR+</value>
@@ -3445,7 +3451,9 @@ Les mesures sont-elles correctes?</value>
 			</select1>
 		</group>
 		<group ref="/data/malnutrition" appearance="field-list">
-			<label ref="jr:itext('malnutrition-label')" />
+			<trigger ref="/data/malnutrition/show_malnutrition_label">
+				<label ref="jr:itext('malnutrition-label')" />
+			</trigger>
 			<trigger ref="/data/malnutrition/malnutrition_na" appearance="minimal">
 				<label ref="jr:itext('malnutrition_na-label')" />
 			</trigger>
