@@ -1780,6 +1780,7 @@ Si l’enfant est incapable d’avaler:
 
             <group ref="/data/select_treatments" appearance="field-list">
                 
+                    <label>SÉLECTIONNEZ PARMI LES OPTIONS DE TRAITEMENT CI-DESSOUS</label>
                <select1 ref="/data/select_treatments/pneumonie_grave">
                    <label>Pneumonie grave ou maladie très grave</label>
                    <item><label>Pneumonie grave ou maladie très grave</label><value>pneumonie_grave</value></item>
@@ -1805,6 +1806,7 @@ Si l’enfant est incapable d’avaler:
             </group>
             <group ref="/data/select_meds" appearance="field-list">
                 
+                    <label>SÉLECTIONNEZ PARMI LES OPTIONS CI-DESSOUS DE MÉDECINE</label>
                <select1 ref="/data/select_meds/perfusion_p1_a">
                    <label>Choisissez la solution de perfusion</label>
                    <itemset nodeset="instance('medications')/medications_list/medications[selected(/data/perfusion_p1_a_valid_meds, @key)][coalesce(@min_age_months, 0) &lt;= /data/child_age][coalesce(@max_age_months, 100) &gt; /data/child_age][coalesce(@min_weight, 0) &lt;= /data/child_weight][coalesce(@max_weight, 100) &gt; /data/child_weight]">
