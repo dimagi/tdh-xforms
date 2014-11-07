@@ -544,7 +544,7 @@ S’il n’existe aucun signe de maladie grave et la température est égale ou 
 				</select1>
 				<select1 ref="/data/debug/classification_diahree_debug">
 					<label>Diarrhée DEBUG consultation:</label>
-					<item><label>Diarrhée persistante grave</label><value>diarrhee_persistante</value></item>
+					<item><label>Diarrhée persistante grave</label><value>diahree_persistante_grave</value></item>
 					<item><label>Sang dans les selles</label><value>sang_scelles</value></item>
 				</select1>
 				<select1 ref="/data/debug/classification_malnutrition_debug">
