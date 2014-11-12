@@ -417,10 +417,13 @@
 			<bind nodeset="/data/vih" />
 			<bind nodeset="/data/vih/vih_pas" relevant="/data/vih/serologie_enfant = 'negative' and /data/vih/serologie_mere = 'negative' and /data/au_plus_une_maladie = 'yes' and /data/vih/serologie_mere != ''" />
 			<bind nodeset="/data/vih/vih_peu_probable" relevant="/data/vih/serologie_enfant = 'inconnue' and /data/vih/serologie_mere = 'inconnue' and /data/au_plus_une_maladie = 'yes' and /data/vih/serologie_mere != ''" />
+			<!-- suspected HIV if inconclusive mother serology AND inconclusive child serology AND child has more than two diseases -->
 			<bind nodeset="/data/vih/vih_symp_suspecte" relevant="/data/vih/serologie_mere = 'inconnue' and /data/vih/serologie_enfant = 'inconnue' and /data/au_moins_deux_maladies = 'yes' and /data/vih/serologie_mere != ''" />
 			<bind nodeset="/data/vih/vih_possible" relevant="/data/vih/serologie_enfant = 'inconnue' and /data/vih/serologie_mere = 'positive' or (date(today()) - date(/data/dob) &lt; 18 * 30.4375 and /data/vih/serologie_enfant = 'positive') and /data/au_plus_une_maladie = 'yes' and /data/vih/serologie_mere != ''" />
-			<bind nodeset="/data/vih/vih_symp_probable" relevant="/data/au_moins_deux_maladies = 'yes' and /data/vih/serologie_enfant = 'positive' and date(today()) - date(/data/dob) &lt; 18 * 30.4375 and /data/vih/serologie_mere != ''" />
+			<!-- probable HIV if more than two diseases AND positive infant serology AND child is less than 18 months old AND the virological test is not positive AND non-null mother serology -->
+			<bind nodeset="/data/vih/vih_symp_probable" relevant="/data/au_moins_deux_maladies = 'yes' and /data/vih/serologie_enfant = 'positive' and date(today()) - date(/data/dob) &lt; 18 * 30.4375 and /data/vih/test_enfant != 'positif' and /data/vih/serologie_mere != ''" />
 			<bind nodeset="/data/vih/vih_confirmee" relevant="((/data/vih/serologie_enfant = 'positive' and (date(today()) - date(/data/dob)) &gt;= 18 * 30.4375) or /data/vih/test_enfant = 'positif') and /data/au_plus_une_maladie = 'yes' and /data/vih/serologie_mere != ''" />
+			<!-- confirmed HIV if ((child over 18 months old with positive serology) OR positive virological test) AND has at least 2 diseases AND non-null mother serology -->
 			<bind nodeset="/data/vih/vih_symp_confirmee" relevant="((/data/vih/serologie_enfant = 'positive' and (date(today()) - date(/data/dob)) &gt;= 18 * 30.4375) or /data/vih/test_enfant = 'positif') and /data/au_moins_deux_maladies = 'yes' and /data/vih/serologie_mere != ''" />
 			<bind nodeset="/data/vih/serologie_enfant" required="true()" />
 			<bind nodeset="/data/vih/test_enfant" required="true()" />
